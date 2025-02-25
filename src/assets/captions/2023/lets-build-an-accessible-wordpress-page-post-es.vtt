@@ -1,0 +1,3340 @@
+WEBVTT
+
+00:00:00.690 --> 00:00:04.200
+AMBER HINDS:
+Día de la Accesibilidad de WordPress 2023.
+
+00:00:04.200 --> 00:00:08.310
+Creemos una
+página y una publicación de WordPress accesible con el conferencista,
+
+00:00:08.310 --> 00:00:12.410
+Peter Ingersoll,
+creador, encargado del mantenimiento y formador de WordPress,
+
+00:00:12.410 --> 00:00:14.490
+Ingersoll interactivo.
+
+00:00:14.490 --> 00:00:19.000
+Esta presentación se
+grabó el 27 de septiembre de 2023.
+
+00:00:19.000 --> 00:00:23.660
+LAURA ADAMONIS: Bienvenidos nuevamente al
+Día de la Accesibilidad de WordPress 2023.
+
+00:00:23.660 --> 00:00:28.060
+Mi nombre es Laura Adamonis y soy
+diseñadora de sitios web con mi propia agencia.
+
+00:00:28.060 --> 00:00:30.850
+Soy voluntaria como
+creadora de contenido para el equipo de capacitación.
+
+00:00:30.850 --> 00:00:33.390
+en learn.wordpress.org.
+
+00:00:33.390 --> 00:00:39.890
+Vivo en Carolina del Norte y
+soy de Chicago.
+
+00:00:39.890 --> 00:00:43.220
+Me apasiona el
+UX/UI y la accesibilidad.
+
+00:00:43.220 --> 00:00:46.890
+Hoy, gracias por
+acompañarnos en creemos 
+
+00:00:46.890 --> 00:00:51.890
+una página y publicación accesibles en WordPress
+con Peter Ingersoll.
+
+00:00:51.890 --> 00:00:56.330
+Peter ha estado trabajando en
+la web desde el principio,
+
+00:00:56.330 --> 00:00:59.170
+donde tuvo la suerte
+de ser parte de un pequeño grupo
+
+00:00:59.170 --> 00:01:03.560
+para desarrollar el acceso en línea a
+los principales periódicos de Connecticut.
+
+00:01:03.560 --> 00:01:05.710
+Mientras trabajaba en marketing
+y comunicaciones,
+
+00:01:05.710 --> 00:01:10.190
+desarrollo habilidades técnicas para
+conectar y compartir información extraída
+
+00:01:10.190 --> 00:01:12.840
+de varias fuentes de datos.
+
+00:01:12.840 --> 00:01:16.470
+Eso le permitió iniciar una carrera creando
+sitios web para otras empresas.
+
+00:01:16.470 --> 00:01:21.300
+Aunque inicialmente trabajaba en
+Cold fusion para construir su propio SGC,
+
+00:01:21.300 --> 00:01:24.050
+Peter descubrió
+WordPress en la versión 3.0.
+
+00:01:24.050 --> 00:01:27.050
+Vaya, y no ha mirado atrás.
+
+00:01:27.050 --> 00:01:30.740
+Peter actualmente construye y mantiene
+sitios para una variedad de clientes.
+
+00:01:30.740 --> 00:01:33.030
+con un enfoque en organizaciones sin fines de lucro.
+
+00:01:33.030 --> 00:01:36.750
+Es coorganizador y presentador
+de WordPress Hartford,
+
+00:01:36.750 --> 00:01:40.170
+Connecticut Meetup Group,
+que es un grupo increíble.
+
+00:01:40.170 --> 00:01:44.980
+Peter se considera un defensor
+de los administradores de sitios de WordPress que lo hacen ellos mismos,
+
+00:01:44.980 --> 00:01:46.700
+y no codificadores.
+
+00:01:46.700 --> 00:01:49.722
+En los áltimos años,
+la accesibilidad de los sitios web se ha convertido
+
+00:01:49.723 --> 00:01:53.910
+una parte importante de las habilidades en constante desarrollo de Peter
+.
+
+00:01:53.910 --> 00:01:57.620
+A menudo pueden encontrar a Peter en
+varios grupos de reuniones de WordPress.
+
+00:01:57.620 --> 00:02:02.560
+debates en línea y al acecho
+en varios equipos de WordPress.
+
+00:02:02.560 --> 00:02:06.510
+Como es de Nueva Inglaterra,
+la comida favorita de Peter son los platos al vapor.
+
+00:02:06.510 --> 00:02:10.550
+y langosta con mucha - y
+enfatizá - mucha mantequilla.
+
+00:02:10.550 --> 00:02:12.600
+Tambien es un gran fanático de la música de los 80.
+
+00:02:13.760 --> 00:02:17.140
+Algún fan de Tears for Fears o
+Cars por ahí?
+
+00:02:17.140 --> 00:02:19.180
+Bienvenido, Peter.
+
+00:02:19.180 --> 00:02:23.540
+Oh, no duden en agregar
+sus preguntas en la sección de preguntas y respuestas de Zoom.
+
+00:02:23.540 --> 00:02:27.290
+que encontrarón en la parte inferior de
+su barra de herramientas y se las responderemos.
+
+00:02:27.290 --> 00:02:28.860
+al final de la sesión.
+
+00:02:28.860 --> 00:02:31.910
+Utilicen el chat para conectarse
+con otros asistentes.
+
+00:02:33.367 --> 00:02:37.520
+PETER INGERSOLL: Es agradable
+que Laura me presente.
+
+00:02:37.520 --> 00:02:42.390
+Solemos pasar tiempo en una variedad
+de reuniones, reuniones en línea
+
+00:02:42.390 --> 00:02:43.630
+y grupos y cosas así.
+
+00:02:43.630 --> 00:02:47.190
+Entonces, cuando Laura me dijo que
+me iba a presentar,
+
+00:02:47.190 --> 00:02:51.040
+pensé, oh, una cara amigable
+y alguien que me respaldaró.
+
+00:02:51.040 --> 00:02:52.730
+y se asegurará de que mantenga
+el tiempo aqué y todo.
+
+00:02:53.740 --> 00:02:56.100
+Así que hemos tenido un buen comienzo.
+
+00:02:56.100 --> 00:03:01.400
+Voy a empezar de inmediato
+porque tenemos mucho que cubrir.
+
+00:03:04.130 --> 00:03:08.550
+Como siempre, muerdo una gran parte
+de esto, pero pensé que es muy,
+
+00:03:08.550 --> 00:03:13.950
+Es muy importante que haya un
+enfoque práctico para todo esto.
+
+00:03:13.950 --> 00:03:15.936
+Sí que hay muchas
+presentaciones excelentes,
+
+00:03:15.937 --> 00:03:17.040
+presentaciones fantásticas,
+
+00:03:17.040 --> 00:03:19.790
+muchas demostraciones excelentes,
+pero siempre quiero asegurarme
+
+00:03:19.790 --> 00:03:23.980
+que las personas que crean
+y administran sus propios sitios,
+
+00:03:23.980 --> 00:03:28.940
+no se sientan abrumados por las cosas y
+pueden descubrirlas con sólo empezar
+
+00:03:28.940 --> 00:03:33.450
+a un cierto nivel y ritmo y
+quiero prestar atención a eso.
+
+00:03:33.450 --> 00:03:36.480
+Crear un sitio web accesible
+no tiene que
+
+00:03:36.481 --> 00:03:38.270
+ser algo grande y aterrador.
+
+00:03:38.270 --> 00:03:38.950
+No lo es.
+
+00:03:38.950 --> 00:03:42.470
+En realidad, es solo una cuestión de
+desarrollar los hábitos correctos.
+
+00:03:42.470 --> 00:03:44.610
+cuando sabes a qué
+prestarle atención.
+
+00:03:44.610 --> 00:03:47.580
+Eso es lo que vamos
+a hacer ahora.
+
+00:03:47.580 --> 00:03:51.100
+Voy a crear
+una publicación accesible.
+
+00:03:52.270 --> 00:03:57.150
+He preparado el contenido,
+lo cual es inusual en mí,
+
+00:03:57.150 --> 00:03:59.840
+porque muchas veces
+hago las cosas sobre la marcha.
+
+00:03:59.840 --> 00:04:01.650
+Esta vez trato de hacer
+las cosas un poco más
+
+00:04:01.650 --> 00:04:03.120
+porque el reloj sigue corriendo.
+
+00:04:04.650 --> 00:04:09.840
+Pero a medida que avanzamos,
+dedicaró tiempo a ciertos aspectos.
+
+00:04:09.840 --> 00:04:13.000
+para luego traer
+las cosas ya terminadas
+
+00:04:13.000 --> 00:04:16.970
+a medida que cubrimos algunos
+aspectos diferentes de esto.
+
+00:04:16.970 --> 00:04:19.680
+Entonces, lo primero que haremos
+es ir a la derecha.
+
+00:04:19.680 --> 00:04:24.710
+en la demostración de una construcción de una publicación
+accesible.
+
+00:04:24.710 --> 00:04:28.150
+Por ahora,
+esto es solo una publicación en blanco.
+
+00:04:28.150 --> 00:04:29.150
+Voy a editarla.
+
+00:04:30.730 --> 00:04:38.130
+es más, pueden decirme
+si hacer zoom en la pantalla ayuda,
+
+00:04:38.130 --> 00:04:39.960
+Probablemente tendrá que
+acercar y alejar.
+
+00:04:39.960 --> 00:04:44.000
+Así que voy a empezar a
+traer contenido de inmediato.
+
+00:04:44.000 --> 00:04:52.000
+de mi sitio de prueba aqué y
+lo traeré de tal manera
+
+00:04:56.870 --> 00:04:59.640
+que ya está con formato
+y lo explicaré en detalle.
+
+00:04:59.640 --> 00:05:07.640
+algunas de las cosas 
+ya están con formato y terminadas.
+
+00:05:08.160 --> 00:05:10.110
+Iba a hacer esto sobre la marcha,
+pero pensé que sería mejor
+
+00:05:10.110 --> 00:05:12.480
+simplemente incorporar
+estas cosas.
+
+00:05:12.480 --> 00:05:16.180
+Mi presentación en diapositivas es, en realidad, la
+publicación que estamos creando.
+
+00:05:16.180 --> 00:05:22.380
+Entonces pensé que, mientras construíamos
+esta publicación, podríamos tener contenido
+
+00:05:22.380 --> 00:05:26.400
+eso es específico de esta
+presentación en particular y voy a
+
+00:05:26.400 --> 00:05:30.450
+mostrarles algunas cosas a las
+que deben prestar atención 
+
+00:05:30.450 --> 00:05:32.150
+a medida que entramos en
+algunos de los detalles.
+
+00:05:32.150 --> 00:05:36.180
+Entonces hicimos una especie de
+introducción sobre cómo crear una publicación.
+
+00:05:36.180 --> 00:05:37.980
+en muy poco tiempo.
+
+00:05:37.980 --> 00:05:42.540
+Laura hizo un gran trabajo al contarnos
+un poco sobre mí.
+
+00:05:42.540 --> 00:05:44.770
+Estamos en el editor de WordPress.
+
+00:05:44.770 --> 00:05:47.510
+Ahora mismo estoy usando
+el editor de bloques.
+
+00:05:48.650 --> 00:05:52.590
+Para esta publicación,
+solo uso bloques centrales.
+
+00:05:52.590 --> 00:05:56.370
+Y cuando estemos en la página,
+voy a presentarles algunos bloques.
+
+00:05:56.370 --> 00:05:58.050
+que no son centrales
+de un paquete de bloques.
+
+00:05:58.050 --> 00:06:00.700
+Hablaremos de
+eso más adelante.
+
+00:06:00.700 --> 00:06:03.070
+Pero una de las primeras cosas que
+Debemos empezar a notar, y entraremos
+
+00:06:03.070 --> 00:06:08.520
+en detalles sobre esto,
+es la organización del contenido,
+
+00:06:08.520 --> 00:06:12.780
+una gran cosa que pueden hacer es
+verlo en modo de esquema.
+
+00:06:12.780 --> 00:06:16.950
+Esta genial, pero, sinceramente,
+hay algo de desarrollo que creo.
+
+00:06:16.950 --> 00:06:19.800
+Que se le podría hacer porque
+solo enfoca los encabezados
+
+00:06:19.800 --> 00:06:20.840
+de un bloque central.
+
+00:06:20.840 --> 00:06:24.320
+Voy a seńalar
+algunos de estos bloques.
+
+00:06:24.320 --> 00:06:29.950
+Mi introducción es un título H2
+y esto ayuda a organizar el contenido.
+
+00:06:29.950 --> 00:06:34.210
+Como pueden ver el título de
+este documento, de esta publicación es,
+
+00:06:34.210 --> 00:06:36.310
+Demostración de la creación de una publicación accesible.
+
+00:06:36.310 --> 00:06:39.920
+Ese es el título que preestablecí
+y acabo de traer este contenido.
+
+00:06:39.920 --> 00:06:43.440
+donde tengo un rumbo establecido en H2.
+
+00:06:43.440 --> 00:06:47.420
+Entonces ves el párrafo H2,
+un poco sobre mí.
+
+00:06:47.420 --> 00:06:53.090
+Me refiero a presentarlo y luego un
+subtítulo debajo de la introducción,
+
+00:06:53.090 --> 00:06:53.990
+un poco sobre mí.
+
+00:06:53.990 --> 00:06:55.980
+Así que está configurado con un rumbo H3.
+
+00:06:55.980 --> 00:06:59.290
+Así que ahora estamos empezando a organizar
+desde el principio el contenido.
+
+00:06:59.290 --> 00:07:02.530
+que se incluye en una publicación de blog.
+
+00:07:02.530 --> 00:07:04.850
+Tengo enlaces a contenido.
+
+00:07:04.850 --> 00:07:09.960
+Y una de las principales cosas a tener en cuenta
+al colocar enlaces,
+
+00:07:09.960 --> 00:07:17.960
+es para evitar tener enlaces que
+se abran en una nueva página o una nueva pestańa,
+
+00:07:18.960 --> 00:07:19.960
+o una nueva ventana.
+
+00:07:21.450 --> 00:07:22.770
+A la gente le gusta hacer eso.
+
+00:07:22.770 --> 00:07:26.490
+Quieren asegurarse de que los lectores
+siempre regresen a su sitio.
+
+00:07:26.490 --> 00:07:33.520
+Pero para alguien que usa
+teclados con tecnología asistida,
+
+00:07:33.520 --> 00:07:43.867
+no puede ver la pantalla cuando se abren
+en una ventana o pestańa diferente.
+
+00:07:43.867 --> 00:07:44.700
+Es disruptivo.
+
+00:07:44.700 --> 00:07:47.080
+Es disruptivo
+el proceso que utilizan.
+
+00:07:47.080 --> 00:07:52.350
+Y, sinceramente, a mí, como a muchos, me gusta
+usar la tecla de retroceso o uso...
+
+00:07:52.350 --> 00:07:55.690
+si quiero publicar algo,
+si quiero ir a un enlace,
+
+00:07:55.690 --> 00:07:57.730
+Haré clic derecho y
+dirá abrir en una nueva pestańa.
+
+00:07:57.730 --> 00:07:58.790
+Quiero controlarlo.
+
+00:07:58.790 --> 00:08:03.940
+No necesariamente quiero que la
+persona que definió la página web
+
+00:08:03.940 --> 00:08:06.320
+Defina eso.
+
+00:08:06.320 --> 00:08:10.030
+Vamos a entrar en algunos de
+los detalles que cubrir.
+
+00:08:10.030 --> 00:08:11.830
+Voy a incorporar ese
+contenido ahora mismo.
+
+00:08:16.760 --> 00:08:17.790
+Déjenme cubrir eso.
+
+00:08:19.120 --> 00:08:25.590
+Copiar y pegar entre diferentes
+documentos es bastante sencillo.
+
+00:08:25.590 --> 00:08:30.570
+Lo más fácil es usar
+la vista de lista, que muestra...
+
+00:08:30.570 --> 00:08:33.940
+Esta vista de lista se ha vuelto
+excelente para administrar contenido.
+
+00:08:33.940 --> 00:08:36.980
+Pueden ver el diseño de
+sus párrafos y de su imagen.
+
+00:08:36.980 --> 00:08:41.360
+Tengo muchas ganas
+de que llegue la versión 6.4.
+
+00:08:41.360 --> 00:08:45.120
+Espero poder
+configurar grupos y establecer el nombre
+
+00:08:45.120 --> 00:08:46.690
+del grupo
+aqué mismo en esas vistas
+
+00:08:46.690 --> 00:08:50.000
+para que puedan hacer un
+gran trabajo organizando el contenido.
+
+00:08:50.000 --> 00:08:52.220
+Voy a ir al
+final de lo que ingresó,
+
+00:08:52.220 --> 00:08:57.000
+y solo estoy pegando...
+bueno, miren, no lo copié bien,
+
+00:08:57.000 --> 00:08:57.890
+así que voy a deshacer eso.
+
+00:08:57.890 --> 00:08:59.930
+Me enfrenté al mismo contenido.
+
+00:08:59.930 --> 00:09:01.050
+Déjenme copiar.
+
+00:09:05.200 --> 00:09:08.840
+Uno de los trucos al copiar
+es no hacer un Control V,
+
+00:09:08.840 --> 00:09:11.780
+o Control C,
+sino hacer clic en el botón Copiar.
+
+00:09:11.780 --> 00:09:12.570
+se lo mostrará.
+
+00:09:12.570 --> 00:09:18.540
+Entonces, lo que cubriremos
+aqué, solo para revelar,
+
+00:09:18.540 --> 00:09:21.860
+este es el contenido
+del que estoy copiando.
+
+00:09:21.860 --> 00:09:23.470
+Como pueden ver,
+lo he resaltado.
+
+00:09:23.470 --> 00:09:29.830
+Voy a copiar este
+contenido, copiar los bloques.
+
+00:09:29.830 --> 00:09:34.320
+Luego, cuando vuelva a esta
+página, ahora puedo pegarlos.
+
+00:09:34.320 --> 00:09:36.390
+Así que ahora tengo más contenido.
+
+00:09:36.390 --> 00:09:38.470
+Entonces, lo que cubriremos es cómo
+crear rápidamente una publicación de WordPress.
+
+00:09:38.470 --> 00:09:40.990
+y temas de revisión de páginas y
+accesibilidad.
+
+00:09:40.990 --> 00:09:44.450
+Entraremos en detalles... Y por
+cierto, este sitio, mientras lo publico,
+
+00:09:44.450 --> 00:09:45.070
+estaré en vivo.
+
+00:09:45.070 --> 00:09:50.410
+Está en accesswp.org y la
+página de inicio tendrá un enlace al contenido.
+
+00:09:50.410 --> 00:09:51.410
+que estamos editando.
+
+00:09:53.440 --> 00:09:57.470
+Obviamente, no podemos entrar en
+muchos detalles aqué.
+
+00:09:57.470 --> 00:09:59.520
+con esta presentación,
+pero hay mucho
+
+00:09:59.520 --> 00:10:03.950
+de excelentes
+presentaciones del día de la accesibilidad que se aplican directamente
+
+00:10:03.950 --> 00:10:05.600
+a algunas de las cosas de las
+que estamos hablando.
+
+00:10:05.600 --> 00:10:08.320
+Y destaqué
+algunos de ellos aqué.
+
+00:10:08.320 --> 00:10:11.650
+Cada uno de estos es un enlace
+que se abrirá en esta página.
+
+00:10:12.690 --> 00:10:14.580
+Pueden ver los colores de mis enlaces.
+
+00:10:14.580 --> 00:10:16.160
+Mis enlaces están subrayados.
+
+00:10:17.550 --> 00:10:20.130
+Son de un
+color diferente para el enlace.
+
+00:10:20.130 --> 00:10:21.170
+Son brillantes.
+
+00:10:21.170 --> 00:10:23.270
+Tengo un color flotante.
+
+00:10:25.370 --> 00:10:27.984
+Estos son
+requisitos de contraste de lectura,
+
+00:10:27.985 --> 00:10:30.800
+que es algo a lo que debes
+prestarle mucha atención.
+
+00:10:30.800 --> 00:10:32.400
+Profundizaremos un poco
+más en eso.
+
+00:10:34.130 --> 00:10:38.250
+Así que déjenme regresar y obtener
+un poco más de contenido.
+
+00:10:38.250 --> 00:10:41.050
+Mientras hacemos esto, voy a
+quitar esto del camino,
+
+00:10:44.130 --> 00:10:52.130
+y ahora voy a
+tomar la siguiente sección aqué.
+
+00:10:56.260 --> 00:10:58.900
+A veces es más fácil
+simplemente ir a una sección
+
+00:11:01.400 --> 00:11:04.010
+e incluso simplemente agregar un
+párrafo, por ejemplo.
+
+00:11:04.010 --> 00:11:06.140
+Pero en ese párrafo,
+luego pueden pegarlo.
+
+00:11:06.140 --> 00:11:08.810
+Pequeños trucos que usan
+a veces cuando se quedan atascados
+
+00:11:08.810 --> 00:11:13.230
+en el editor de bloques,
+a veces simplemente obtienen memoria muscular
+
+00:11:13.230 --> 00:11:15.910
+de hacer cosas como ingresar
+un párrafo y luego publicarlo
+
+00:11:15.910 --> 00:11:18.860
+o golpear con la barra para ingresar
+a un bloque, ese tipo de cosas.
+
+00:11:18.860 --> 00:11:20.610
+Las suposiciones, eso es importante.
+
+00:11:20.610 --> 00:11:22.140
+Estamos usando un tema accesible.
+
+00:11:22.140 --> 00:11:23.930
+Estoy usando el tema de cadencia.
+
+00:11:23.930 --> 00:11:26.240
+La gente que me conoce sabe que
+me gusta el tema de la cadencia.
+
+00:11:26.240 --> 00:11:27.200
+por muchas razones.
+
+00:11:27.200 --> 00:11:30.730
+Pero en este caso particular,
+seleccionó el tema de cadencia
+
+00:11:30.730 --> 00:11:38.560
+porque el equipo de Cadence, Ben Rittner
+específicamente como el desarrollador principal,
+
+00:11:40.220 --> 00:11:43.670
+han estado prestando mucha
+atención a la accesibilidad.
+
+00:11:43.670 --> 00:11:47.620
+Lo he visto y, de hecho, he
+incluido algunas solicitudes de funciones.
+
+00:11:47.620 --> 00:11:49.630
+que vi aplicado al tema.
+
+00:11:49.630 --> 00:11:51.680
+Eso es muy,
+muy importante para mí.
+
+00:11:51.680 --> 00:11:57.520
+el hecho de que un desarrollador de temas
+preste atención a la accesibilidad.
+
+00:11:57.520 --> 00:12:00.090
+Entonces, en el repositorio en
+wordpress.org/themes,
+
+00:12:01.150 --> 00:12:04.380
+pueden filtrar por accesibilidad.
+
+00:12:04.380 --> 00:12:06.580
+Hay
+etiquetas de accesibilidad de filtrado.
+
+00:12:06.580 --> 00:12:09.980
+Pero tenga en cuenta que hay muchos
+temas excelentes y accesibles
+
+00:12:09.980 --> 00:12:12.210
+no tienen esta etiqueta
+por varias razones.
+
+00:12:12.210 --> 00:12:16.970
+Una es que es posible que lo hayan desarrollado
+antes de que se convirtiera la etiqueta de accesibilidad.
+
+00:12:19.420 --> 00:12:21.080
+tan frecuente como lo es ahora.
+
+00:12:21.080 --> 00:12:25.800
+Y hay un proceso por
+el que no todos han pasado,
+
+00:12:25.800 --> 00:12:30.120
+pero eso no significa que los
+temas no sean accesibles.
+
+00:12:30.120 --> 00:12:32.240
+Ese filtro es un gran
+punto de partida.
+
+00:12:32.240 --> 00:12:37.960
+Pero temas como la cadencia,
+como generar prensa,
+
+00:12:37.960 --> 00:12:41.290
+Astra en su mayor parte,
+la última vez que revisé, bloque C.
+
+00:12:41.290 --> 00:12:45.040
+Estos son temas clásicos
+, no temas de bloques.
+
+00:12:45.041 --> 00:12:47.830
+que usan el personalizador...
+
+00:12:47.830 --> 00:12:52.067
+Pero son muy
+amigables con la accesibilidad,
+
+00:12:52.067 --> 00:12:53.180
+lo cual es realmente importante.
+
+00:12:53.180 --> 00:12:56.740
+Pero lo más importante, como en todo, es
+asegurarse de probar el tema.
+
+00:12:58.100 --> 00:13:01.480
+Ya hemos preseleccionado
+colores que funcionan juntos,
+
+00:13:01.480 --> 00:13:04.820
+El contraste de color cumple con
+las pautas de accesibilidad.
+
+00:13:04.820 --> 00:13:07.730
+Creo que hay una presentación
+sobre eso, pero en cualquier caso,
+
+00:13:07.730 --> 00:13:11.700
+prestando atención a la web
+en contraste con el verificador y una herramienta
+
+00:13:11.700 --> 00:13:14.990
+que me gusta, la
+cuadrácula de contraste de colores, tal vez al final,
+
+00:13:14.990 --> 00:13:17.580
+Puedo mostrar algunos de los detalles
+de esto donde pueden mirar
+
+00:13:17.580 --> 00:13:21.690
+en la forma en que los colores funcionan
+juntos y qué se cumple.
+
+00:13:21.690 --> 00:13:25.500
+Solo tengo unos pocos
+complementos activos, incluso no todos
+
+00:13:25.500 --> 00:13:28.310
+que se está utilizando ahora mismo, como generar
+bloques que está activo en este sitio
+
+00:13:28.310 --> 00:13:31.540
+porque lo estoy usando para una
+página diferente, para la presentación.
+
+00:13:31.540 --> 00:13:37.570
+Pero el verificador de accesibilidad,
+la advertencia de nuevas ventanas, los bloques de cadencia,
+
+00:13:37.570 --> 00:13:41.500
+todas las versiones gratuitas,
+el formato de texto del lector de pantalla y el formulario WS Light son
+
+00:13:41.500 --> 00:13:42.580
+que se utilizan en esto.
+
+00:13:43.660 --> 00:13:46.510
+Así que estos son los tipos
+de cosas que hay aqué.
+
+00:13:46.510 --> 00:13:49.500
+Ahora, una de las cosas
+a las que hay que prestar atención es que tengo imágenes aqué.
+
+00:13:49.500 --> 00:13:51.630
+Entonces hablemos del texto alternativo.
+
+00:13:51.630 --> 00:13:53.920
+Hablaremos de ello con
+un poco más de detalle ahora,
+
+00:13:53.920 --> 00:13:57.380
+pero tenemos algunas
+fotos, algunas imágenes aqué.
+
+00:13:57.380 --> 00:14:01.350
+Entonces, si resalto la foto mía
+, el título...
+
+00:14:01.350 --> 00:14:09.080
+y el texto alternativo dan
+contexto a la imagen,
+
+00:14:09.080 --> 00:14:11.560
+pero el texto alternativo está destinado a ser...
+para alguien
+
+00:14:11.560 --> 00:14:14.490
+quién no puede ver la imagen,
+de qué es la imagen, describe la imagen,
+
+00:14:14.490 --> 00:14:19.070
+¿Cómo hacemos que sea la misma experiencia
+para esa persona que para cualquier otra persona?
+
+00:14:19.070 --> 00:14:22.220
+Entonces, una foto en la cabeza de un
+hombre blanco de 60 años con sal.
+
+00:14:22.220 --> 00:14:25.160
+y barba color pimienta y
+cabello oscuro, sonriendo a la cámara.
+
+00:14:25.160 --> 00:14:28.910
+Bueno, ese soy yo, pero mi
+nombre es el título a continuación.
+
+00:14:28.910 --> 00:14:34.870
+Lo verón en otra sección
+de esto, pero no se trata de SEO,
+
+00:14:36.300 --> 00:14:38.410
+Relleno de palabras clave o algo
+por el estilo.
+
+00:14:38.410 --> 00:14:44.250
+Se trata de hacer que la
+experiencia sea igual para todos.
+
+00:14:44.250 --> 00:14:47.600
+e incluye a alguien que no puede
+ver la imagen pero quiere una idea.
+
+00:14:47.600 --> 00:14:49.950
+del hecho de que hay
+una foto en la pantalla.
+
+00:14:49.950 --> 00:14:55.140
+Es muy, muy importante prestar
+atención a ese tipo de cosas.
+
+00:14:55.140 --> 00:15:00.360
+Voy a agregar mi
+próximo grupo de bloques.
+
+00:15:06.680 --> 00:15:12.220
+Déjenme tomar desde aqué hasta...
+Aqué es donde deseo
+
+00:15:12.220 --> 00:15:21.533
+que a veces el editor tenía
+un poco más de descripción.
+
+00:15:21.533 --> 00:15:24.370
+Cuando dije el
+editor, la vista de lista,
+
+00:15:25.440 --> 00:15:29.190
+porque mientras miro, estoy trayendo
+ahora probablemente más
+
+00:15:29.190 --> 00:15:33.700
+de lo que quiero, pero está bien,
+vamos a trabajar bien
+
+00:15:33.700 --> 00:15:34.700
+a través del contenido.
+
+00:15:35.590 --> 00:15:39.980
+Bien, entremos en algunas de las
+consideraciones clave para la accesibilidad.
+
+00:15:39.980 --> 00:15:42.340
+Muchas de estas cosas
+no las podemos explicar en gran detalle.
+
+00:15:42.340 --> 00:15:44.600
+pero estoy publicando este
+tipo de contenido...
+
+00:15:44.600 --> 00:15:50.930
+Este es el contenido que se trae
+en una lista ordenada.
+
+00:15:50.930 --> 00:15:54.580
+Ahí es donde tenemos los
+números, así que las listas son nuevamente,
+
+00:15:54.580 --> 00:15:57.370
+funcionan muy bien en
+WordPress para la accesibilidad
+
+00:15:57.370 --> 00:16:00.290
+en cuanto a los comentarios que
+he recibido, cuando se usan correctamente
+
+00:16:00.290 --> 00:16:03.520
+y en este caso es
+solo una especie de lista numerada.
+
+00:16:03.520 --> 00:16:09.030
+Se lee una lista en
+lectores de pantalla, se organiza el contenido
+
+00:16:09.030 --> 00:16:12.510
+para que sea fácil de escanear,
+muy importante mirarlo.
+
+00:16:14.960 --> 00:16:17.340
+Tenemos diferentes formas
+de asimilar el contenido.
+
+00:16:17.340 --> 00:16:24.880
+y diferentes capacidades cognitivas,
+divergencia neuronal, todas esas...
+
+00:16:24.880 --> 00:16:29.720
+todos los problemas que pueden hacer que
+el contenido sea más fácil o más difácil de asimilar.
+
+00:16:31.630 --> 00:16:35.540
+Podemos ayudar con la
+forma en que organizamos el contenido.
+
+00:16:35.540 --> 00:16:39.970
+Entonces, estos temas clave de
+navegación con teclado, estructura de contenido,
+
+00:16:39.970 --> 00:16:43.870
+texto alternativo para imágenes,
+el contraste de color del que hablamos brevemente
+
+00:16:43.870 --> 00:16:45.960
+está ligado al tema.
+
+00:16:45.960 --> 00:16:48.790
+Comience con un buen tema,
+estaré listo en su mayor parte,
+
+00:16:48.790 --> 00:16:50.090
+presta atención a los
+colores a medida que avanzas.
+
+00:16:50.090 --> 00:16:53.220
+Capacidad de respuesta, asegurarse de que
+algo funcione en el móvil.
+
+00:16:53.220 --> 00:16:59.730
+La mayoría de las personas en el mundo utilizan más un dispositivo móvil
+que una PC de escritorio.
+
+00:16:59.730 --> 00:17:04.250
+Así que asegúrese de que si su sitio va
+a funcionar para todos,
+
+00:17:04.250 --> 00:17:06.830
+entonces que funcione en
+el móvil es muy importante.
+
+00:17:08.400 --> 00:17:10.370
+Probando, siempre revisando el sitio.
+
+00:17:10.370 --> 00:17:12.670
+Todas estas son
+cosas muy importantes,
+
+00:17:12.670 --> 00:17:16.100
+hay personas que cubren
+temas como pruebas automatizadas
+
+00:17:16.100 --> 00:17:17.510
+versus prestar atención a.
+
+00:17:18.910 --> 00:17:22.840
+Entonces, una de las cosas clave
+a las que realmente hay que prestar atención
+
+00:17:22.840 --> 00:17:25.940
+y una de las primeras
+cosas más fáciles es usar el teclado
+
+00:17:25.940 --> 00:17:26.900
+al mirar su sitio.
+
+00:17:26.900 --> 00:17:28.520
+De ahí la importancia de
+la navegación con el teclado.
+
+00:17:28.520 --> 00:17:30.500
+¿Por qué es tan importante?
+
+00:17:30.500 --> 00:17:32.680
+Es un problema de movilidad,
+es un lector de pantalla.
+
+00:17:32.680 --> 00:17:37.830
+Es poder ayudar a las personas a trabajar
+en su contenido tabulando
+
+00:17:37.830 --> 00:17:44.080
+a través de su contenido y sabe
+que su sitio funciona correctamente
+
+00:17:44.080 --> 00:17:49.080
+porque lo han organizado, porque
+están usando los encabezados de la manera correcta
+
+00:17:49.080 --> 00:17:51.040
+y enlaza de la manera correcta.
+
+00:17:51.040 --> 00:17:54.510
+Tienen un tema que no se esconde
+donde está el foco de algo.
+
+00:17:54.510 --> 00:17:56.460
+Veremos
+eso en un segundo.
+
+00:17:56.460 --> 00:17:57.610
+Lo actualizaré.
+
+00:17:57.610 --> 00:17:59.390
+Echaremos un vistazo
+a esta página hasta ahora.
+
+00:18:01.290 --> 00:18:03.650
+Mencionó, sin embargo,
+el esquema del título.
+
+00:18:03.650 --> 00:18:06.050
+mientras construimos esto estoy usando...
+todos estos de nuevo
+
+00:18:06.050 --> 00:18:08.620
+nuestros bloques de encabezado principales, los H3.
+
+00:18:09.630 --> 00:18:12.940
+Mi tema de consideración clave
+para la accesibilidad.
+
+00:18:12.940 --> 00:18:14.030
+Es un H2.
+
+00:18:14.030 --> 00:18:18.320
+Pueden ver el contorno del
+edificio de la izquierda a medida que avanzamos,
+
+00:18:18.320 --> 00:18:23.990
+y ese es el
+uso anidado adecuado de los encabezados.
+
+00:18:23.990 --> 00:18:28.720
+Entonces su título H2 se trata
+en H2, una nueva sección.
+
+00:18:28.720 --> 00:18:32.780
+Siempre comparo esto con
+la redacción de ensayos de primer año de secundaria,
+
+00:18:32.780 --> 00:18:34.980
+y desarrollar un esquema
+y cosas así.
+
+00:18:34.980 --> 00:18:37.660
+Hay una lógica y un orden
+si tuvieras que escribir un esquema.
+
+00:18:37.660 --> 00:18:38.850
+antes del documento.
+
+00:18:38.850 --> 00:18:44.260
+Eso es lo que están viendo y
+la forma correcta de usar el título.
+
+00:18:44.260 --> 00:18:47.740
+Así que realmente los miro
+y los conservo.
+
+00:18:47.740 --> 00:18:52.020
+el orden es importante porque
+se trata de hacer algo...
+
+00:18:52.020 --> 00:18:59.300
+Cuando están usando un sitio,
+¿todo reacciona o funciona?
+
+00:18:59.300 --> 00:19:01.800 
+¿de la manera esperada?
+
+00:19:01.800 --> 00:19:05.960
+Hay una lógica en lo que están
+haciendo porque cuando tienen gente
+
+00:19:05.960 --> 00:19:08.200
+quienes tienen diferentes formas de
+usar su sitio más
+
+00:19:08.200 --> 00:19:11.380
+pueden aplicarle una estructura
+, más sentido tiene
+
+00:19:11.380 --> 00:19:15.390
+y la gente sabe dónde está
+y qué esperar a medida que avanza.
+
+00:19:15.390 --> 00:19:18.340
+Por eso
+es tan importante el orden adecuado.
+
+00:19:19.550 --> 00:19:23.550
+La imagen en el texto alternativo,
+voy a tomar la siguiente pareja
+
+00:19:23.550 --> 00:19:25.970
+de enlaces aqué.
+
+00:19:25.970 --> 00:19:30.900
+Voy a copiar este
+bloque de mi fuente.
+
+00:19:33.660 --> 00:19:35.520
+Déjenme pegar eso.
+
+00:19:35.520 --> 00:19:37.820
+Más o menos hablamos de eso,
+pero esto es algo así
+
+00:19:37.820 --> 00:19:42.250
+de tropiezos a la gente también,
+es cuando mostró mi foto,
+
+00:19:42.250 --> 00:19:46.080
+Lo tenía, pero las diferencias
+entre las imágenes y el texto alternativo.
+
+00:19:46.080 --> 00:19:49.180
+El texto alternativo se utiliza para describir
+cómo se ve la imagen.
+
+00:19:49.180 --> 00:19:52.720
+Hay formas mejores y más largas de
+hacerlo, pero el texto alternativo describe
+
+00:19:52.720 --> 00:19:54.870
+cómo se ve la imagen,
+
+00:19:54.871 --> 00:19:58.840
+mientras que el título podría
+darte el contexto
+
+00:19:58.840 --> 00:19:59.960
+por lo que algo es.
+
+00:20:01.750 --> 00:20:04.990
+Algunas cosas clave
+a las que hay que prestar atención son:
+
+00:20:04.990 --> 00:20:10.460
+cuando alguien usa un lector de pantalla,
+gran parte de este contenido llega
+
+00:20:10.460 --> 00:20:11.340
+hacia ellos.
+
+00:20:11.340 --> 00:20:16.720
+Por lo tanto, ser eficiente y no
+verboso es bastante importante.
+
+00:20:16.720 --> 00:20:20.080
+y tampoco dar
+descripción ni texto alternativo
+
+00:20:20.080 --> 00:20:22.180
+para cosas como texto decorativo.
+
+00:20:22.180 --> 00:20:25.330
+Eso es importante porque, nuevamente,
+si tienen muchos íconos
+
+00:20:25.330 --> 00:20:28.840
+y describe qué
+es cada ícono, a diferencia de
+
+00:20:28.840 --> 00:20:32.830
+Tal vez el enlace
+de ese ícono sea contenido diferente.
+
+00:20:32.830 --> 00:20:37.880
+Pero, en las manifestaciones
+que veo, y muchas que se han hecho,
+
+00:20:37.880 --> 00:20:41.870
+por nuestro buen amigo Alex Stein
+cuando pasa por cosas
+
+00:20:41.870 --> 00:20:46.580
+y cuando ve íconos, dice,
+no pongan texto alternativo en los íconos.
+
+00:20:46.580 --> 00:20:50.150
+porque ralentiza el proceso
+de revisión del contenido.
+
+00:20:50.150 --> 00:20:54.390
+Entonces, en esta imagen, mi
+texto alternativo, tengo una descripción,
+
+00:20:54.390 --> 00:20:57.300
+cuál es el título,
+pero la mujer ciega
+
+00:20:57.300 --> 00:21:00.420
+en la computadora usando
+tecnología de asistencia, podría ser bueno...
+
+00:21:00.420 --> 00:21:03.310
+podemos ser un poco más
+detallados, pero no demasiado.
+
+00:21:05.630 --> 00:21:09.230
+Puedo obtener descripciones,
+podría estar usando un suéter verde
+
+00:21:09.230 --> 00:21:12.333
+y sentado en un escritorio...
+un escritorio de color verde,
+
+00:21:12.334 --> 00:21:14.050
+algo en ese sentido.
+
+00:21:14.050 --> 00:21:20.410
+El ícono aqué, no tengo texto alternativo
+y WordPress ya está terminado en mis pruebas.
+
+00:21:20.410 --> 00:21:27.790
+Hace un buen trabajo al dar el
+valor nulo cuando no hay texto alternativo.
+
+00:21:27.790 --> 00:21:31.650
+Básicamente, en un
+lector de pantalla, eso se saltó,
+
+00:21:31.650 --> 00:21:37.610
+lo cual es diferente a
+no tener texto alternativo allí.
+
+00:21:37.610 --> 00:21:40.960
+Necesitan esa etiqueta alt,
+WordPress la coloca por nosotros,
+
+00:21:40.960 --> 00:21:46.440
+pero específicamente para fines decorativos,
+no necesitamos el texto alternativo.
+
+00:21:46.440 --> 00:21:49.500
+Y luego, cosas como cuando
+tienen un gráfico que tiene palabras
+
+00:21:49.500 --> 00:21:52.600
+en él,
+desea incluir esas palabras
+
+00:21:52.600 --> 00:21:55.740
+en su texto alternativo
+porque estamos buscando
+
+00:21:55.740 --> 00:21:59.080
+En eso, estamos leyendo las palabras
+en una imagen, así que leer las palabras
+
+00:21:59.080 --> 00:22:02.610
+en el texto alternativo, si no pueden ver
+la imagen es muy, muy importante.
+
+00:22:02.610 --> 00:22:05.260
+Hasta ahora, echemos un
+vistazo a lo que tenemos.
+
+00:22:05.260 --> 00:22:11.540
+Voy a ver esta publicación
+y esto es lo que hemos creado hasta ahora.
+
+00:22:11.540 --> 00:22:14.100
+Y sí, acorto muchos pasos del
+proceso porque tengo que...
+
+00:22:14.100 --> 00:22:15.580
+en el tiempo dado.
+
+00:22:15.580 --> 00:22:18.840
+Pero una de las primeras cosas es que
+voy a presionar la tecla Tab.
+
+00:22:19.940 --> 00:22:25.090
+Y cuando miro la tecla Tab...
+Bueno, el único problema es
+
+00:22:26.530 --> 00:22:31.150
+cuando están en el administrador, y un
+truco es que abro los sitios con frecuencia
+
+00:22:31.150 --> 00:22:34.870
+en una nueva ventana de incógnito.
+
+00:22:37.880 --> 00:22:38.820
+Abre eso aqué.
+
+00:22:38.820 --> 00:22:43.680
+Y ahora, cuando hago la tabulación,
+pueden ver que mi primer enlace es un salto
+
+00:22:43.680 --> 00:22:45.840
+al contenido si ya
+conozco la navegación.
+
+00:22:45.840 --> 00:22:47.410
+Entonces tengo claro mi objetivo.
+
+00:22:47.410 --> 00:22:50.140
+Se describe
+en cada enlace.
+
+00:22:50.140 --> 00:22:51.470
+Lo está delineando.
+
+00:22:51.470 --> 00:22:53.940
+Muchas veces pueden
+trabajar con alguien que dice:
+
+00:22:53.940 --> 00:22:55.230
+No me gusta cómo se ve.
+
+00:22:55.230 --> 00:22:58.880
+Bueno, el objetivo no es que
+te guste cómo se ve,
+
+00:22:58.880 --> 00:23:01.630
+es para ayudar a que todos
+puedan usar el sitio.
+
+00:23:01.630 --> 00:23:04.670
+Y para que las personas que usan un
+teclado sepan dónde están,
+
+00:23:04.670 --> 00:23:06.120
+es muy, muy importante.
+
+00:23:06.120 --> 00:23:11.760
+El menú desplegable es un buen ejemplo
+de lo que ha hecho la cadencia,
+
+00:23:11.760 --> 00:23:14.970
+donde hicieron que el
+menú desplegable funcione muy bien,
+
+00:23:14.970 --> 00:23:18.530
+donde pueden
+navegar específicamente por el menú desplegable,
+
+00:23:18.530 --> 00:23:20.920
+Salir de el,
+no todos los temas lo hacen.
+
+00:23:21.950 --> 00:23:23.250
+Continúe desde allí.
+
+00:23:23.250 --> 00:23:28.050
+Ahora, cuando entro en el contenido,
+pueden ver dónde está el foco,
+
+00:23:28.050 --> 00:23:30.260
+mis enlaces mientras los resalto.
+
+00:23:31.820 --> 00:23:36.990
+Esto reacciona con el
+teclado de la manera que queremos.
+
+00:23:36.990 --> 00:23:42.030
+Tambien hago una prueba rápida,
+por ejemplo, al usar Wave,
+
+00:23:42.030 --> 00:23:44.470
+lo que me dice que ahora
+mismo no tenemos ningún error,
+
+00:23:44.470 --> 00:23:49.920
+errores de contraste cero, algunas
+alertas a las que prestar atención, Wave,
+
+00:23:49.920 --> 00:23:52.710
+puede ir al
+sitio web de Wave.
+
+00:23:52.710 --> 00:23:56.470
+Estoy usando una extensión de Chrome
+y obtengo algunos detalles
+
+00:23:56.470 --> 00:24:00.990
+sobre cuáles son algunas de estas alertas
+y a qué prestar atención.
+
+00:24:02.870 --> 00:24:04.970
+Estos tienen sentido sin
+entrar en detalles,
+
+00:24:04.970 --> 00:24:08.460
+pero el posible rumbo que está
+viendo, mi información de rumbo
+
+00:24:08.460 --> 00:24:10.060
+y el título del sitio y
+vamos, espera un minuto,
+
+00:24:10.060 --> 00:24:13.420
+es que el encabezado del
+sitio en contraposición al encabezado
+
+00:24:13.420 --> 00:24:16.670
+del contenido, versus el H1 principal?
+
+00:24:16.670 --> 00:24:18.660
+Pueden ver mis enlaces aqué.
+
+00:24:18.660 --> 00:24:22.730
+Quiero decir,
+mis títulos están claramente organizados.
+
+00:24:22.730 --> 00:24:27.060
+Pueden mirar la estructura
+aqué y ver que tiene sentido.
+
+00:24:27.060 --> 00:24:30.600
+Entonces, todas estas cosas a medida que construyes
+la página y la revisas
+
+00:24:30.600 --> 00:24:32.850
+en eso y diciendo, OK, ¿están las cosas
+en el orden correcto?
+
+00:24:32.850 --> 00:24:33.850
+como se esperaba?
+
+00:24:35.210 --> 00:24:41.650
+Otra cosa que es agradable
+acerca de otra extensión de Chrome
+
+00:24:41.650 --> 00:24:43.360
+llamado Tably.
+
+00:24:43.360 --> 00:24:48.450
+Y cuando haces clic en eso, lo que
+hace es recorrer su sitio.
+
+00:24:48.450 --> 00:24:54.430
+y te dirá
+dónde, a medida que avanzas.
+
+00:24:54.430 --> 00:24:55.290
+Así que te haces una idea.
+
+00:24:55.290 --> 00:24:57.640
+Ahora, si esto va en un
+orden lógico, pueden verlo.
+
+00:24:57.640 --> 00:24:58.950
+Simplemente avanzamos.
+
+00:24:58.950 --> 00:25:01.360
+Quiero decir, una de las mejores
+cosas es hacerlo ustedes mismos.
+
+00:25:01.360 --> 00:25:03.400
+Pero herramientas como esta
+te ayudan a ver
+
+00:25:04.780 --> 00:25:09.000
+cómo está organizado lógicamente su sitio,
+lo cual es muy, muy importante
+
+00:25:09.000 --> 00:25:10.000
+por accesibilidad.
+
+00:25:11.020 --> 00:25:14.180
+Volviendo al
+contenido, tengo poco...
+
+00:25:16.570 --> 00:25:19.990
+Tengo otro complemento activo
+que oculta la barra de administración.
+
+00:25:19.990 --> 00:25:24.030
+Entonces, cuando hago demostraciones,
+simplemente se aparta del camino.
+
+00:25:24.030 --> 00:25:30.930
+Voy a traer
+aqué mi áltimo fragmento de contenido.
+
+00:25:38.140 --> 00:25:40.750
+No creo que puedan oírme, pero mi
+gato está afuera de la puerta gritando.
+
+00:25:45.890 --> 00:25:51.360
+Entonces, una cosa, y volveremos
+a esto, pero si comienzas
+
+00:25:51.360 --> 00:25:52.842
+con una buena base
+de accesibilidad,
+
+00:25:52.843 --> 00:25:53.760
+incluyendo temas, colores,
+
+00:25:53.760 --> 00:25:57.780
+y fuentes, crear
+contenido accesible para el sistema no es demasiado difácil,
+
+00:25:57.780 --> 00:25:59.500
+simplemente se convierte en un nuevo hábito.
+
+00:25:59.500 --> 00:26:02.210
+Así que ahora vayamos
+un paso más allí.
+
+00:26:02.210 --> 00:26:05.200
+Así que iré aqué y
+verá esta publicación.
+
+00:26:06.830 --> 00:26:10.490
+Y mientras llamo esto,
+¿ha habido alguna pregunta?
+
+00:26:10.490 --> 00:26:13.800
+que podemos manejar hasta
+ahora, estoy como...
+
+00:26:13.800 --> 00:26:17.940
+Mientras hago esto,
+les mostrará dos cosas más que olvidé hacer,
+
+00:26:17.940 --> 00:26:22.030
+que vuelve a la publicación.
+
+00:26:22.030 --> 00:26:29.650
+Voy a asegurarme de que
+las categorías aqué tengan sentido,
+
+00:26:29.650 --> 00:26:32.920
+que es accesibilidad
+y presentación.
+
+00:26:32.920 --> 00:26:35.710
+Y voy a
+configurar una imagen destacada.
+
+00:26:35.710 --> 00:26:43.480
+Creo que usaremos este
+y tenemos un texto alternativo preestablecido.
+
+00:26:43.480 --> 00:26:46.045
+Podrían hacer eso cuando
+suban imágenes.
+
+00:26:46.046 --> 00:26:47.300
+a su biblioteca de imágenes.
+
+00:26:47.300 --> 00:26:48.650
+Siempre pueden cambiarlos.
+
+00:26:50.130 --> 00:26:53.070
+Y una vez que tenga eso,
+lo actualizaremos.
+
+00:26:54.500 --> 00:27:00.570
+Ahora lo hemos agregado, definido por el
+tema cómo aparece esa imagen,
+
+00:27:00.570 --> 00:27:04.730
+Pienso en cómo son estos enlaces adicionales
+y a qué detalles se refieren.
+
+00:27:04.730 --> 00:27:09.720
+Entonces vayamos aqué y ahora voy
+a vigilar el tiempo.
+
+00:27:09.720 --> 00:27:11.970
+OK, vamos a hacer esto
+bastante rápido, obviamente.
+
+00:27:13.690 --> 00:27:15.630
+Voy a construir una página.
+
+00:27:15.630 --> 00:27:19.140
+Ahora, piensen que sería más grande,
+pero vamos a mostrar elementos
+
+00:27:19.140 --> 00:27:26.260
+y ahora voy a comenzar
+a presentar algunos bloques personalizados.
+
+00:27:26.260 --> 00:27:30.650
+No bloques personalizados, algunos
+paquetes de bloques, específicamente en este caso,
+
+00:27:30.650 --> 00:27:31.790
+bloques de cadencia.
+
+00:27:31.790 --> 00:27:33.440
+Estos son los gratuitos.
+
+00:27:33.440 --> 00:27:38.510
+Nuevamente, hay muchos
+paquetes de bloques buenos, pero el verdadero truco sería
+
+00:27:38.510 --> 00:27:41.030
+¿cómo manejan la accesibilidad?
+
+00:27:41.030 --> 00:27:44.404
+Me gusta la cadencia porque
+me brinda controles adicionales
+
+00:27:44.405 --> 00:27:45.570
+por accesibilidad.
+
+00:27:45.570 --> 00:27:50.290
+Me da la capacidad de
+titular correctamente y utilizar texto aria
+
+00:27:50.290 --> 00:27:50.970
+y cosas así.
+
+00:27:50.970 --> 00:27:53.950
+Cosas en las que no vamos
+a entrar ahora.
+
+00:27:53.950 --> 00:27:58.250
+Y una cosa más, voy a
+volver aqué, porque sí quería
+
+00:27:58.250 --> 00:28:04.930
+para asegurarnos de que resaltamos
+en las publicaciones lo que acabo de hacer.
+
+00:28:06.990 --> 00:28:09.730
+Porque no lo mostró
+todavía, pero a medida que avanzábamos,
+
+00:28:09.730 --> 00:28:16.300
+Tengo
+cargado el complemento del verificador de accesibilidad, lo cual es genial,
+
+00:28:16.300 --> 00:28:20.130
+un digital de gran altura con Amber,
+esta es la herramienta de su equipo.
+
+00:28:20.130 --> 00:28:23.120
+Y realmente es una excelente
+herramienta que me muestra
+
+00:28:23.120 --> 00:28:26.600
+a medida que avanzo el tipo de contenido
+con el que estamos tratando.
+
+00:28:26.600 --> 00:28:28.070
+Una de las cosas que
+hice por primera vez, y creo
+
+00:28:28.070 --> 00:28:34.390
+esta es una nota importante: pongan todo esto
+junto, es el nivel de lectura...
+
+00:28:34.390 --> 00:28:37.190
+porque gran parte del
+contenido de mi primera pasada
+
+00:28:37.190 --> 00:28:41.060
+en esto estaba
+escrito ChatGPT y no lo dije
+
+00:28:41.060 --> 00:28:43.060
+en qué nivel de lectura venía.
+
+00:28:43.060 --> 00:28:45.670
+Llegó a un
+nivel de lectura superior al de 12. grado,
+
+00:28:45.670 --> 00:28:52.300
+que también requería un nivel de resumen
+y algo para hacerlo más simple.
+
+00:28:52.300 --> 00:28:52.830
+Eso no es bueno.
+
+00:28:52.830 --> 00:28:54.610
+Nuevamente, no es bueno para nadie.
+
+00:28:55.860 --> 00:28:59.320
+Lo bueno de la accesibilidad
+es que es bueno para todos
+
+00:28:59.320 --> 00:29:00.920
+cuando realmente
+le prestas atención.
+
+00:29:00.920 --> 00:29:03.560
+Entonces, recordarlo a medida que avanzas
+, ya sabes,
+
+00:29:03.560 --> 00:29:05.350
+¿Tengo algún error de contraste?
+
+00:29:05.350 --> 00:29:09.080
+¿Tengo otros
+errores específicos a medida que avanzamos?
+
+00:29:09.080 --> 00:29:12.080
+Esto en realidad muestra los mismos
+errores que mostró la herramienta Wave.
+
+00:29:13.570 --> 00:29:19.123
+Y luego, ¿me mantengo en
+el buen nivel de lectura?
+
+00:29:19.124 --> 00:29:21.180
+Todas son herramientas fantásticas.
+
+00:29:21.180 --> 00:29:23.640
+Entonces, si mirara
+esto desde el principio,
+
+00:29:23.640 --> 00:29:29.050
+Me encanta esta nueva capacidad de activar
+el verificador de accesibilidad.
+
+00:29:29.050 --> 00:29:33.480
+en el front-end, y luego mirar
+algunos de esos aspectos
+
+00:29:33.480 --> 00:29:39.530
+cuando se abordan los
+problemas específicos a los que hay que prestar atención.
+
+00:29:39.530 --> 00:29:41.520
+los guía a través de las
+cosas que realmente deben mirar.
+
+00:29:43.220 --> 00:29:46.010
+Así que, de nuevo, tienen que mirarse a
+ustedes mismos, incluso aunque vayan...
+
+00:29:46.010 --> 00:29:46.550
+a través de la herramienta.
+
+00:29:46.550 --> 00:29:49.790
+Solo quiero asegurarme de que
+cubramos eso rápidamente.
+
+00:29:49.790 --> 00:29:52.430
+Muy bien,
+lo primero que voy a hacer es construir la página.
+
+00:29:52.430 --> 00:29:59.890
+Lo que voy a hacer es
+traer un elemento héroe.
+
+00:29:59.890 --> 00:30:04.420
+Ahora, este elemento de héroe se compone
+de... y verán mucho
+
+00:30:04.420 --> 00:30:11.960
+de estas cosas son
+bloques de cadencia, incluidos los encabezados de cadencia.
+
+00:30:11.960 --> 00:30:18.080
+Quería demostrar esto porque,
+si bien el Outliner funciona muy bien,
+
+00:30:18.080 --> 00:30:24.150
+lo que no hace es
+no ver encabezados de bloques
+
+00:30:24.150 --> 00:30:28.940
+que no son bloques de encabezado principales,
+aunque utilicen H2, H3,
+
+00:30:28.940 --> 00:30:36.940
+Encabezado H4... simplemente describe el
+elemento CSS que dice que esto es un encabezado.
+
+00:30:40.430 --> 00:30:43.890
+Espero que eso suceda porque
+el problema es cuando lo miras,
+
+00:30:43.890 --> 00:30:48.590
+aunque esto está configurado como
+H2, no está configurado como un encabezado.
+
+00:30:48.590 --> 00:30:52.500
+Esta es nuevamente una de las
+razones por las que me gusta la cadencia,
+
+00:30:52.500 --> 00:31:00.220
+tienen algo llamado
+avance de texto, que les permite
+
+00:31:00.220 --> 00:31:04.200
+configurar el encabezado si desean
+hacer las cosas en el orden correcto.
+
+00:31:04.200 --> 00:31:07.740
+y también les permite usar todas
+las funciones, y van a...
+
+00:31:07.740 --> 00:31:10.730
+configurar esto como un div,
+y luego controlarán todo
+
+00:31:10.730 --> 00:31:12.590
+de los colores y cosas así
+, lo que hace
+
+00:31:12.590 --> 00:31:16.760
+Algunos de estos paquetes de bloques más avanzados
+funcionan.
+
+00:31:16.760 --> 00:31:20.430
+Sin decirlo, quiero que
+parezca cierto... lo quiero
+
+00:31:20.430 --> 00:31:22.650
+para que sea más grande aqué, así que
+lo pondré en el título dos,
+
+00:31:22.650 --> 00:31:25.270
+aunque eso no tiene sentido
+en el orden, y eso es una trampa
+
+00:31:25.270 --> 00:31:27.190
+en la que caen muchas personas.
+
+00:31:27.190 --> 00:31:30.170
+Dejan caer algo,
+quiero esto más grande, así que voy a...
+
+00:31:30.170 --> 00:31:32.450
+para aumentar el tamaño del encabezado.
+
+00:31:32.450 --> 00:31:40.629
+Los números de encabezado, H2, H3,
+H4, no son solo para formato.
+
+00:31:40.630 --> 00:31:42.686
+Obviamente,
+hay un elemento de formato,
+
+00:31:42.687 --> 00:31:44.190
+pero decir que quiero texto grande,
+
+00:31:44.190 --> 00:31:48.870
+así que voy a usar un H2 en un
+área donde no debería usarse un H2,
+
+00:31:48.870 --> 00:31:50.350
+es necesario que
+prestes atención a eso.
+
+00:31:51.670 --> 00:31:55.698
+Así que ahora mismo,
+mi esquema en el front-end de todos modos,
+
+00:31:55.699 --> 00:31:57.950
+y en el back-end
+no se muestra.
+
+00:31:57.950 --> 00:32:00.870
+Voy a ir al front-end,
+podremos ver claramente
+
+00:32:02.550 --> 00:32:04.190
+cómo son esos títulos.
+
+00:32:05.520 --> 00:32:09.500
+Tienen lo que se llama un
+botón, pero hay un todo...
+
+00:32:10.840 --> 00:32:13.470
+preste atención a qué es un
+botón versus qué es un enlace.
+
+00:32:13.470 --> 00:32:17.170
+Y un botón es algo que
+está destinado a realizar una acción.
+
+00:32:17.170 --> 00:32:20.810
+en la página, enviando un
+formulario y lo tendremos
+
+00:32:20.810 --> 00:32:23.660
+en un momento,
+en lugar de vincularlo a otra cosa.
+
+00:32:23.660 --> 00:32:29.050
+Pueden hacer que un enlace parezca un
+botón, pero no está marcado.
+
+00:32:29.050 --> 00:32:34.350
+en HTML como un botón porque
+eso tiene cierta implicación
+
+00:32:34.350 --> 00:32:37.520
+a través de cosas como lectores de pantalla
+que no queremos que sucedan.
+
+00:32:37.520 --> 00:32:40.880
+En este caso particular,
+esto es realmente solo un vínculo.
+
+00:32:40.880 --> 00:32:45.860
+Puedo mostrar cuál es el enlace,
+aunque tenga el formato de botón.
+
+00:32:45.860 --> 00:32:48.270
+Otra opción es
+la que uso muy a menudo;
+
+00:32:49.740 --> 00:32:56.010
+el titular... perdón por el
+texto avanzado, que como que cae
+
+00:32:56.010 --> 00:32:59.280
+en la categoría de título, pero
+usando un div y luego formateándolo
+
+00:32:59.280 --> 00:33:02.070
+para que parezca un botón
+si eso es lo que quiero.
+
+00:33:02.070 --> 00:33:10.070
+En la parte posterior de esto, hay una fila,
+y la fila tiene una imagen de fondo,
+
+00:33:10.760 --> 00:33:18.760
+pero también tiene una superposición blanca establecida
+en un cierto porcentaje de opacidad.
+
+00:33:20.730 --> 00:33:24.010
+Esto es 100% opaco, esto es más bajo.
+
+00:33:24.010 --> 00:33:29.220
+Debes prestar atención a
+esto en función de si tiene sentido.
+
+00:33:29.220 --> 00:33:32.590
+a las imágenes allí y
+todavía tenemos suficiente contraste
+
+00:33:32.590 --> 00:33:38.030
+entre las letras que tenemos
+aqué y la imagen detrás de ellas?
+
+00:33:38.030 --> 00:33:42.760
+Y luego, de hecho, incluso podrían poner
+color de fondo detrás de ciertos textos.
+
+00:33:42.760 --> 00:33:44.550
+para señalarlo aún más.
+
+00:33:44.550 --> 00:33:51.060
+Entonces, si tienen un
+fondo oscuro con texto más claro,
+
+00:33:51.060 --> 00:33:52.570
+pero tal vez haya
+algunas áreas más claras,
+
+00:33:52.570 --> 00:33:55.310
+tal vez poner una sombra detrás
+del texto, hay diferentes maneras
+
+00:33:55.310 --> 00:33:58.470
+para aumentar ese contraste,
+pero solo asegurándose
+
+00:33:58.470 --> 00:34:02.060
+que están prestando atención a
+ese contraste de color y otro,
+
+00:34:02.060 --> 00:34:04.930
+un pequeño consejo es asegurarse
+de que el color de fondo,
+
+00:34:04.930 --> 00:34:06.610
+porque mientras tengan
+una imagen de fondo,
+
+00:34:06.610 --> 00:34:08.850
+también pueden tener
+el color de fondo que están configurando
+
+00:34:08.850 --> 00:34:12.610
+también es el mismo
+color claro si tienen texto oscuro
+
+00:34:12.610 --> 00:34:18.700
+o viceversa, porque a menudo las
+herramientas no leen la imagen,
+
+00:34:18.700 --> 00:34:20.690
+pero el color de fondo.
+
+00:34:20.690 --> 00:34:23.470
+Y eso es importante porque
+alguien puede incluso no saberlo.
+
+00:34:23.470 --> 00:34:25.180
+mostrar las imágenes.
+
+00:34:25.180 --> 00:34:27.710
+¿Y quieren saber cómo
+se ve ese color de fondo?
+
+00:34:27.710 --> 00:34:32.140
+aunque tengas
+una imagen de fondo.
+
+00:34:32.140 --> 00:34:40.140
+Volviendo a mi contenido aqué,
+voy a sacar algunos más.
+
+00:34:50.520 --> 00:34:55.340
+Intenté presionar Control
+C y no siempre funciona
+
+00:34:55.340 --> 00:34:56.890
+para lo que queremos.
+
+00:34:58.370 --> 00:35:01.260
+Copia los bloques,
+los voy a traer aqué.
+
+00:35:02.480 --> 00:35:03.260
+Déjenme traer el chequeador.
+
+00:35:03.260 --> 00:35:06.150
+El verificador hasta ahora me dice
+que estoy en buena forma.
+
+00:35:08.130 --> 00:35:10.160
+Pega los
+bloques adicionales que tenemos aqué.
+
+00:35:11.350 --> 00:35:16.000
+Aqué hay un texto de encabezado configurado en H2.
+
+00:35:16.000 --> 00:35:17.780
+Ahora lo estoy organizando.
+
+00:35:17.780 --> 00:35:23.590
+Nuevamente, esto usa los
+bloques de cadencia solo para mostrar nuevamente,
+
+00:35:23.590 --> 00:35:28.500
+no necesariamente
+aparece en el esquema.
+
+00:35:28.500 --> 00:35:34.010
+Sin embargo, pueden ver que esta
+es la siguiente área de enfoque,
+
+00:35:34.010 --> 00:35:38.770
+Lo establecio como encabezado principal
+y ahora podemos ver que aparece aqué.
+
+00:35:38.770 --> 00:35:41.013
+Eso es algo a lo que hay que
+prestar atención de lo que es,
+
+00:35:41.014 --> 00:35:41.760
+o no está allí.
+
+00:35:41.760 --> 00:35:43.330
+Así que no confíes completamente en eso.
+
+00:35:44.850 --> 00:35:48.070
+Una cosa en la que pensar también
+en términos de accesibilidad es
+
+00:35:48.070 --> 00:35:51.250
+cuando centran algo
+en lugar de a la izquierda, justifican algo,
+
+00:35:51.250 --> 00:35:54.690
+Piensen en
+los niveles de habilidad de lectura, la amplitud que tienen.
+
+00:35:54.690 --> 00:35:57.414
+Intenta que
+el texto sea un poco más fino y más grande.
+
+00:35:57.415 --> 00:35:58.390
+en un área más pequeña.
+
+00:35:59.760 --> 00:36:05.680
+Para personas que tienen problemas
+para leer, escanear,
+
+00:36:05.680 --> 00:36:09.040
+dislexia, hay muchas maneras en que
+pueden ayudar a las personas con eso
+
+00:36:09.040 --> 00:36:11.650
+por la forma en que organizan esto.
+
+00:36:11.650 --> 00:36:14.620
+Pero, de nuevo, el beneficio es que están
+haciendo que su contenido sea más fácil.
+
+00:36:14.621 --> 00:36:15.610
+para todos.
+
+00:36:15.610 --> 00:36:17.890
+Más fácil de escanear, más fácil de
+leer, más fácil de leer.
+
+00:36:19.340 --> 00:36:21.887
+Aqué hay un área clásica
+donde la gente tiene un tipo
+
+00:36:21.888 --> 00:36:24.804
+de las tres secciones
+e imágenes y enlaces a
+
+00:36:24.805 --> 00:36:27.720
+y a menudo aqué es donde
+pueden encontrar un enlace
+
+00:36:27.720 --> 00:36:28.640
+siendo un botón.
+
+00:36:28.640 --> 00:36:29.510
+Estos no son botones.
+
+00:36:29.510 --> 00:36:30.780
+Estos son enlaces de texto.
+
+00:36:32.490 --> 00:36:38.450
+Pueden tener, y ahora mismo esto
+usa una cadencia, el encabezado
+
+00:36:38.450 --> 00:36:43.420
+ese mismo título para poder tener
+el texto avanzado.
+
+00:36:43.420 --> 00:36:44.780
+Puedo ponerle un ícono.
+
+00:36:44.780 --> 00:36:50.780
+Está integrado en este
+bloque particular, en este paquete de bloques.
+
+00:36:50.780 --> 00:36:54.840
+Mantengo el texto justificado a la izquierda
+solo porque nuevamente es más fácil.
+
+00:36:54.840 --> 00:36:59.310
+En algunos casos, el centro de la sección que pueden
+ver en la parte superior centró esa área.
+
+00:36:59.310 --> 00:37:03.820
+Pero a medida que desarrollo este contenido,
+tengo cosas que tienen sentido.
+
+00:37:03.820 --> 00:37:04.850
+donde están.
+
+00:37:04.850 --> 00:37:07.950
+Tengo texto alternativo para
+estas imágenes aqué.
+
+00:37:07.950 --> 00:37:11.240
+En este caso particular,
+solo estoy vinculando en la parte inferior.
+
+00:37:11.240 --> 00:37:16.250
+En algunos casos, pueden vincular
+desde el título, etc.
+
+00:37:16.250 --> 00:37:18.190
+Pero también tengan en cuenta que,
+sí tienen un lector de pantalla,
+
+00:37:18.190 --> 00:37:20.500
+y hacen de todo un
+vínculo, vínculo, vínculo.
+
+00:37:20.500 --> 00:37:23.400
+Los leeré todos
+, leeré los mismos.
+
+00:37:23.400 --> 00:37:25.590
+En muchos casos,
+lo que están tratando de decir es,
+
+00:37:26.650 --> 00:37:29.420
+déjenme presentarle una sección y
+luego si quieren ir a ella,
+
+00:37:29.420 --> 00:37:31.550
+Déjenme presentarle y vamos a ello.
+
+00:37:31.550 --> 00:37:35.750
+Así no inundaran
+a los usuarios con enlaces.
+
+00:37:37.100 --> 00:37:43.170
+De nuevo, algo a tener en cuenta
+, y preferiría que lo hicieras.
+
+00:37:43.170 --> 00:37:46.010
+una decisión consciente de
+hacer o no hacer algo que
+
+00:37:46.010 --> 00:37:48.680
+simplemente decir, bueno,
+siempre lo hacemos de esa manera.
+
+00:37:50.000 --> 00:37:53.350
+Así que déjenme salir de eso.
+
+00:37:53.350 --> 00:37:54.650
+Voy a actualizar esto.
+
+00:37:56.020 --> 00:37:57.420
+Echemos un vistazo a nuestra puntuación.
+
+00:38:02.030 --> 00:38:06.950
+Y mira, lo estamos haciendo muy bien,
+tengo siete advertencias aqué.
+
+00:38:06.950 --> 00:38:11.400
+Estoy en un nivel de lectura de 12. grado,
+no estoy seguro de por qué es así.
+
+00:38:11.400 --> 00:38:14.810
+Tendremos que echar un vistazo
+a lo que tengo aqué.
+
+00:38:14.810 --> 00:38:16.260
+que podría analizar eso.
+
+00:38:17.590 --> 00:38:20.660
+No pensé que en mi demostración tuviera
+eso, pero está bien.
+
+00:38:20.660 --> 00:38:22.650
+Estamos trabajando en esto.
+
+00:38:22.650 --> 00:38:23.360
+Continuemos.
+
+00:38:23.360 --> 00:38:28.820
+Déjenme traer el resto
+del contenido para poder avanzar.
+
+00:38:28.820 --> 00:38:31.100
+a través de estas secciones.
+
+00:38:35.890 --> 00:38:39.520
+Otro truco también, si no están
+seguros de cuál es la mejor manera
+
+00:38:39.520 --> 00:38:41.820
+y quieren decir, OK,
+estoy en esta fila y ahora quiero
+
+00:38:41.820 --> 00:38:45.650
+para agregar después,
+agregar antes agregar después de otra manera
+
+00:38:45.650 --> 00:38:49.430
+que pueden poner contenido rápidamente
+donde quieras.
+
+00:38:49.430 --> 00:38:52.260
+Déjenme pegar todo
+lo que tenemos aqué.
+
+00:38:52.260 --> 00:38:54.710
+¿Pegué el mismo contenido?
+
+00:38:54.710 --> 00:38:55.710
+Lo hice.
+
+00:38:56.730 --> 00:38:59.500
+Porque presioné Control C nuevamente.
+
+00:39:00.600 --> 00:39:03.050
+Copiar cuadro, ahí vamos.
+
+00:39:04.940 --> 00:39:10.850
+Bien, de nuevo, si están creando
+una página, en este caso,
+
+00:39:10.850 --> 00:39:12.150
+Tengo más texto.
+
+00:39:12.150 --> 00:39:14.610
+Lo estoy haciendo más estrecho,
+hacióndolo más fácil.
+
+00:39:16.080 --> 00:39:20.650
+Aqué es donde tengo un... ese es
+mi recordatorio para terminar aqué.
+
+00:39:20.650 --> 00:39:25.190
+Aqué es donde tengo otra
+sección con algunas imágenes decorativas.
+
+00:39:25.190 --> 00:39:29.160
+Estas imágenes, no tengo ningún
+texto alternativo, porque no quiero
+
+00:39:29.160 --> 00:39:33.840
+para describir
+una imagen en espiral de color naranja y azul.
+
+00:39:33.840 --> 00:39:37.710
+No le agrega ningún valor a
+nadie, pero esto es un H2.
+
+00:39:37.710 --> 00:39:39.430
+porque es una sección que tengo.
+
+00:39:39.430 --> 00:39:42.840
+Este es un formulario que he creado
+usando, en este caso particular,
+
+00:39:42.840 --> 00:39:45.730
+el formulario WS ligero, formulario enchufable.
+
+00:39:45.730 --> 00:39:49.100
+Hay muchos
+complementos de formas geniales, formas de gravedad,
+
+00:39:49.100 --> 00:39:53.560
+formas fluidas que uso que han prestado mucha
+atención a la accesibilidad.
+
+00:39:53.560 --> 00:39:55.700
+Te dan pistas
+a medida que construyes.
+
+00:39:55.700 --> 00:39:59.510
+WordPress te da pistas mientras
+construyes, este color en la parte superior
+
+00:39:59.510 --> 00:40:01.600
+de ese color,
+probablemente no funcione.
+
+00:40:01.600 --> 00:40:06.060
+Así que tener esas pistas es
+una herramienta fantástica y excelente.
+
+00:40:06.060 --> 00:40:08.360
+Entonces, nuevamente, comencemos con
+algunas de las cosas correctas.
+
+00:40:08.360 --> 00:40:14.030
+En este caso, el complemento
+de formulario WS que utiliza la versión ligera
+
+00:40:14.030 --> 00:40:16.410
+del repositorio que es gratuito.
+
+00:40:16.410 --> 00:40:18.926
+Vale la pena optar por
+la versión paga,
+
+00:40:18.927 --> 00:40:20.990
+pero hoy vamos todos libres.
+
+00:40:22.960 --> 00:40:25.204
+Y en la forma, asegurándose
+
+00:40:25.205 --> 00:40:28.890
+que haya
+publicado correctamente sus etiquetas.
+
+00:40:28.890 --> 00:40:31.240
+No están confiando solo
+en un marcador de posición.
+
+00:40:32.700 --> 00:40:35.470
+Pueden concentrarte en
+cada pieza de contenido
+
+00:40:35.470 --> 00:40:40.770
+y ayudar claramente a alguien
+a saber que estoy en un formulario,
+
+00:40:40.770 --> 00:40:43.530
+aqué hay un campo para completar,
+el campo se llama.
+
+00:40:43.530 --> 00:40:47.610
+Muchas veces, cuando están probando
+un sitio y pasan por una
+
+00:40:47.610 --> 00:40:52.130
+de las herramientas de prueba,
+encontrará que los formularios son notorios
+
+00:40:52.130 --> 00:40:55.600
+para lanzar errores, pero es porque
+cuando la gente los diseńa,
+
+00:40:55.600 --> 00:40:57.280
+los están diseńando
+para una determinada estática
+
+00:40:57.280 --> 00:41:01.410
+sin necesariamente diseńarlos
+para su funcionalidad.
+
+00:41:01.410 --> 00:41:03.190
+Y eso es algo clave
+que estamos analizando
+
+00:41:03.190 --> 00:41:06.460
+cuando hablamos de construir
+algo con accesibilidad.
+
+00:41:06.460 --> 00:41:10.120
+Tambien me estoy moviendo un
+poco más hacia abajo.
+
+00:41:10.120 --> 00:41:14.480
+Estoy usando el
+bloque de íconos sociales, bloque central.
+
+00:41:14.480 --> 00:41:17.730
+Puse los bloques de íconos aqué.
+
+00:41:20.360 --> 00:41:24.680
+Una cosa que quiero mostrarles
+es que si tengo un bloqueo
+
+00:41:24.680 --> 00:41:29.160
+de texto aqué, y en un
+momento tuve varios textos,
+
+00:41:29.160 --> 00:41:34.190
+pero solo quiero mostrarles este
+texto aqué, hay un complemento genial,
+
+00:41:34.190 --> 00:41:37.470
+que compartí en la otra publicación.
+
+00:41:37.470 --> 00:41:40.980
+Tengo que recordar el
+título exacto, pero básicamente te permite
+
+00:41:40.980 --> 00:41:42.820
+para ocultar texto de un lector de pantalla.
+
+00:41:42.820 --> 00:41:47.300
+Déjenme subir aqué, como decir,
+no quería mostrar esta pieza
+
+00:41:47.300 --> 00:41:50.578
+de información a
+alguien que lo está leyendo,
+
+00:41:50.579 --> 00:41:52.690
+pero podría tener más sentido
+
+00:41:52.690 --> 00:41:54.890
+en un lector de pantalla,
+tal vez un poco de detalle adicional.
+
+00:41:54.890 --> 00:41:58.540
+Por ejemplo, podría decir, oye,
+hay muchos enlaces aqué
+
+00:41:58.540 --> 00:41:59.730
+sólo para tenerlo en cuenta.
+
+00:41:59.730 --> 00:42:01.810
+Alguien que pudiera verlo podría
+ver que hay muchos vínculos,
+
+00:42:01.810 --> 00:42:03.510
+pero quizás quieras compartir eso.
+
+00:42:03.510 --> 00:42:06.690
+Cuando
+instalas este complemento,
+
+00:42:06.690 --> 00:42:08.430
+solo obtienen un lector de pantalla.
+
+00:42:08.430 --> 00:42:11.030
+Es como formatearlo como lo
+harías con cualquiera de estos,
+
+00:42:11.030 --> 00:42:12.730
+donde lo resaltes, lo que sea.
+
+00:42:12.730 --> 00:42:15.440
+Pero ahora están diciendo,
+hagan que este sea solo lector de pantalla,
+
+00:42:15.440 --> 00:42:21.740
+y se vuelve invisible para las personas
+que simplemente están leyendo la pantalla.
+
+00:42:21.740 --> 00:42:25.610
+en lugar de usar un
+lector de pantalla, en realidad se ve visualmente
+
+00:42:25.610 --> 00:42:26.830
+en esa pantalla.
+
+00:42:26.830 --> 00:42:28.940
+Es un
+complemento muy útil para cuando quieras...
+
+00:42:28.940 --> 00:42:31.470
+para tener más información,
+nuevamente, para que sea útil
+
+00:42:31.470 --> 00:42:34.150
+mientras alguien está
+leyendo la pantalla.
+
+00:42:35.630 --> 00:42:43.630
+Lo bueno del
+bloque de texto de redes sociales es que pueden mostrar las etiquetas.
+
+00:42:44.610 --> 00:42:52.520
+En este caso particular, las etiquetas
+son un poco excesivas en cuanto a diseño.
+
+00:42:52.520 --> 00:42:56.880
+Además, nos encontramos con
+algunos problemas de contraste.
+
+00:42:56.880 --> 00:42:59.880
+con estos dos colores aqué, el
+azul claro y el blanco, el verde claro
+
+00:42:59.880 --> 00:43:00.850
+y blanco.
+
+00:43:00.850 --> 00:43:04.670
+Pero lo que también les estoy mostrando
+es que el texto asociado
+
+00:43:04.670 --> 00:43:06.980
+y se lee
+en un lector de pantalla,
+
+00:43:06.980 --> 00:43:11.370
+lo que hace que esto vuelva a ser útil,
+porque ahora dice que el enlace es
+
+00:43:11.370 --> 00:43:16.150
+a Peter Ingersoll en WordPress.org,
+Peter Ingersoll en Facebook.
+
+00:43:16.150 --> 00:43:20.840
+Entonces, en lugar de ser solo un enlace, lee
+hacia dónde se dirige.
+
+00:43:20.840 --> 00:43:24.530
+De nuevo, herramientas que hacen que
+todo sea muy, muy útil.
+
+00:43:24.530 --> 00:43:27.820
+Estamos haciendo un gran trabajo con
+la herramienta de accesibilidad.
+
+00:43:29.650 --> 00:43:30.700
+Déjenme ver la página.
+
+00:43:32.940 --> 00:43:35.940
+Esto es lo que construimos
+o juntamos.
+
+00:43:37.000 --> 00:43:39.260
+Y luego,
+si tuviera que echar un vistazo a esto
+
+00:43:39.260 --> 00:43:46.370
+en una ventana de incógnito y
+pasarle una onda,
+
+00:43:47.400 --> 00:43:51.740
+como una de las herramientas...
+No obtengo ningún error.
+
+00:43:51.740 --> 00:43:53.250
+Voy a ver,
+pasando por esta herramienta,
+
+00:43:53.250 --> 00:43:57.230
+que si tengo errores de contraste
+y es lo que esperaba.
+
+00:43:57.230 --> 00:44:02.740
+Estos son mis dos enlaces aqué abajo.
+
+00:44:02.740 --> 00:44:06.330
+Por cierto, suele ser más fácil
+si desactivas los estilos,
+
+00:44:06.330 --> 00:44:07.830
+lo que también te da una idea
+, nuevamente,
+
+00:44:07.831 --> 00:44:09.030
+lo que lee un lector de pantalla
+
+00:44:09.030 --> 00:44:17.030
+y aqué es donde se muestran
+los errores de contraste muy específicos.
+
+00:44:17.740 --> 00:44:21.300
+Pero eso es una ronda relámpago
+de juntar dos sitios
+
+00:44:21.300 --> 00:44:24.750
+sin pasar por crear
+todos y cada uno de los bloques como lo hicimos nosotros.
+
+00:44:26.470 --> 00:44:31.370
+Y creo que estamos
+listos en este punto.
+
+00:44:31.370 --> 00:44:32.990
+LAURA: Gracias, Peter.
+
+00:44:33.700 --> 00:44:34.212
+PETER: Oye, entra
+
+00:44:34.213 --> 00:44:35.900
+LAURA: Eso fue increíble.
+
+00:44:35.900 --> 00:44:41.010
+Y por favor, si tienen alguna otra
+pregunta, ponla en la sección de preguntas y respuestas.
+
+00:44:41.010 --> 00:44:43.360
+Comenzaremos nuestro segmento de preguntas y respuestas.
+
+00:44:43.360 --> 00:44:45.070
+PETER: Fantástico.
+
+00:44:47.300 --> 00:44:48.150
+LAURA: Está bien.
+
+00:44:48.150 --> 00:44:49.950
+De hecho, tuve uno
+al principio.
+
+00:44:49.950 --> 00:44:57.950
+Entonces noto que al principio,
+cuando mostraste los títulos
+
+00:44:58.440 --> 00:45:04.430
+y demos en esa vista,
+estaba el título y luego el H2.
+
+00:45:04.430 --> 00:45:06.730
+¿Cual es la diferencia
+entre usar un título?
+
+00:45:06.730 --> 00:45:09.890
+¿en lugar de poner un H1?
+
+00:45:09.890 --> 00:45:10.690
+PEDRO: Correcto.
+
+00:45:10.690 --> 00:45:17.720
+Entonces, depende de factores, depende
+principalmente del tema, ¿verdad?
+
+00:45:17.720 --> 00:45:22.510
+Entonces, el tema es donde están
+decidiendo qué código se coloca allí.
+
+00:45:22.510 --> 00:45:28.460
+Lo que encontré es la mayoría de los
+temas a los que presto atención,
+
+00:45:28.460 --> 00:45:31.460
+¿Cuantas decenas
+de miles de temas hay?
+
+00:45:31.460 --> 00:45:39.460
+Y presto atención a solo seis,
+usa el título de la página como H1.
+
+00:45:41.970 --> 00:45:46.190
+Y cuando lo piensan,
+es como si todo estuviera ligado
+
+00:45:46.190 --> 00:45:48.400
+en el libro de su sitio web.
+
+00:45:49.720 --> 00:45:55.500
+El título de su documento es,
+nuevamente, el título del documento.
+
+00:45:55.500 --> 00:45:58.760
+Entonces tiene sentido que diga
+, esta página, esta publicación es
+
+00:45:58.760 --> 00:46:02.050
+sobre cómo crear una demostración de publicación accesible
+.
+
+00:46:02.050 --> 00:46:02.910
+Ese es mi H1.
+
+00:46:02.910 --> 00:46:05.610
+Eso es lo que define el documento.
+
+00:46:05.610 --> 00:46:08.010
+Y está usando H1 como título.
+
+00:46:08.010 --> 00:46:12.330
+Entonces esto es todo...
+Solo debe haber un H1 por página.
+
+00:46:12.330 --> 00:46:14.400
+He oído que hay
+ciertas excepciones,
+
+00:46:14.401 --> 00:46:16.440
+No he encontrado un momento
+en que lo necesite.
+
+00:46:16.440 --> 00:46:19.080
+Entonces, ¿eso respondió la pregunta?
+
+00:46:19.080 --> 00:46:19.895
+LAURA: Sí.
+
+00:46:19.896 --> 00:46:22.340
+PETER: En efecto,
+el H1 es equivalente.
+
+00:46:22.340 --> 00:46:24.820
+Si lo vióramos desde
+atrás, sería H1.
+
+00:46:24.820 --> 00:46:26.110
+LAURA: Suena bien.
+
+00:46:26.110 --> 00:46:30.280
+Sí, eso siempre fue
+algo confuso, especialmente para un principiante nuevo.
+
+00:46:30.280 --> 00:46:35.750
+de hacer la jerarquéa de
+los encabezados y esas cosas.
+
+00:46:35.750 --> 00:46:37.610
+PETER: Sí, adelante.
+
+00:46:38.467 --> 00:46:40.810
+LAURA: Un par de personas
+preguntaban sobre el sitio.
+
+00:46:40.810 --> 00:46:41.440
+que estabas usando.
+
+00:46:41.440 --> 00:46:43.770
+Así que lo pusimos
+en el chat nuevamente.
+
+00:46:45.320 --> 00:46:48.530
+Quería asegurarme
+de que la gente lo entendiera.
+
+00:46:48.530 --> 00:46:50.510
+PETER: ¿El sitio real
+en el que estoy trabajando aqué?
+
+00:46:50.510 --> 00:46:51.240
+LAURA: Sí.
+
+00:46:51.240 --> 00:46:52.140
+PEDRO: Sí.
+
+00:46:52.140 --> 00:46:53.210
+Quiero decir, siéntete libre.
+
+00:46:53.210 --> 00:46:54.600
+Esto es en vivo.
+
+00:46:54.600 --> 00:46:56.640
+Este es mi sitio.
+
+00:46:56.640 --> 00:46:58.070
+Esté lleno hasta los topes.
+
+00:46:58.070 --> 00:46:59.280
+Quiero decir, esta es la parte divertida.
+
+00:46:59.280 --> 00:47:03.640
+Entonces, los enlaces que tenía para ir a
+esta página está intencionalmente en blanco.
+
+00:47:03.640 --> 00:47:06.270
+porque no estoy construyendo
+todo el sitio.
+
+00:47:06.270 --> 00:47:08.690
+Pero espero animar
+a las personas que quieran ver esto.
+
+00:47:08.690 --> 00:47:14.030
+desde un enfoque práctico de bricolaje,
+una gran parte de lo que quiero
+
+00:47:14.030 --> 00:47:15.860
+hacer son experimentos.
+
+00:47:17.550 --> 00:47:20.550
+Cuando reviso y pruebo
+los encabezados y cómo funcionan,
+
+00:47:20.550 --> 00:47:23.960
+con diferentes bloques y
+lo que se lee y lo que no.
+
+00:47:23.960 --> 00:47:24.940
+y cosas así.
+
+00:47:24.940 --> 00:47:27.010
+Quiero hacer mucho de eso aqué.
+
+00:47:27.010 --> 00:47:31.210
+Pero en este momento,
+la razón principal para que esto exista es
+
+00:47:31.210 --> 00:47:34.580
+para esta presentación, razón
+por la cual estos son los enlaces principales.
+
+00:47:34.580 --> 00:47:37.570
+Ahora pueden ver que los
+enlaces de demostración son lo que creamos.
+
+00:47:37.570 --> 00:47:40.050
+El contenido de la fuente posterior es
+lo que estaba copiando,
+
+00:47:40.050 --> 00:47:43.040
+que debería ser más o menos
+lo mismo en este momento.
+
+00:47:43.040 --> 00:47:46.644
+LAURA: Alice estaba
+preguntando por Astra.
+
+00:47:46.645 --> 00:47:49.970
+y si es una plantilla accesible.
+
+00:47:49.970 --> 00:47:51.870
+¿Tiene algún conocimiento de Astra?
+
+00:47:51.870 --> 00:47:58.600
+PETER: Cuando usa Astra, era de
+los que tenían el paquete de por vida.
+
+00:48:00.070 --> 00:48:05.382
+Estaba en una de mis
+listas principales de temas para usar,
+
+00:48:05.383 --> 00:48:07.200
+y la accesibilidad fue clave.
+
+00:48:07.200 --> 00:48:11.720
+Seré honesto, no lo he usado
+hace muy poco y me enteré
+
+00:48:11.720 --> 00:48:14.070
+que hay un par de
+cosas a las que prestar atención.
+
+00:48:14.070 --> 00:48:18.690
+Creo que cualquier cosa que exista,
+la trabajarón y serén receptivos a ella.
+
+00:48:18.690 --> 00:48:23.290
+Entonces, si queremos
+y llegamos a tiempo,
+
+00:48:23.290 --> 00:48:26.070
+pero incluso podría cambiar el tema
+y podemos ver cómo se ve.
+
+00:48:27.240 --> 00:48:29.680
+LAURA: Tenemos varias
+preguntas, así que sigamos adelante.
+
+00:48:29.680 --> 00:48:30.570
+las preguntas primero.
+
+00:48:30.570 --> 00:48:31.090
+PETER: Sí
+
+00:48:31.090 --> 00:48:34.370
+LAURA: Anónimo ha
+preguntado, he oído que enlaces
+
+00:48:34.370 --> 00:48:39.510
+que ocurren inmediatamente antes de
+la puntuación, como contáctenos,
+
+00:48:39.510 --> 00:48:43.090
+por ejemplo, con las palabras
+que enlazan a una página de contacto
+
+00:48:43.090 --> 00:48:45.720
+debe incluir la
+puntuación en el enlace
+
+00:48:45.720 --> 00:48:53.720
+para que el lector de pantalla
+empareje la información correctamente
+
+00:48:54.990 --> 00:48:56.640
+y no lee la puntuación.
+
+00:48:56.640 --> 00:48:57.600
+¿Es esto exacto?
+
+00:48:58.867 --> 00:49:00.730
+PETER: Voy a ser muy honesto
+contigo, no lo sé.
+
+00:49:00.730 --> 00:49:03.720
+Nunca he incluido
+puntuación en el enlace.
+
+00:49:03.720 --> 00:49:08.020
+LAURA: Si alguien pudiera responder eso
+en el chat, sería genial.
+
+00:49:08.020 --> 00:49:10.730
+PETER: Sí,
+simplemente no había oído eso antes.
+
+00:49:13.080 --> 00:49:16.240
+Pero lo hermoso de
+esto es que se trata de,
+
+00:49:17.430 --> 00:49:20.060
+se aprende haciendo, enseñando.
+
+00:49:20.060 --> 00:49:22.047
+Laura, té y yo estamos haciendo eso,
+
+00:49:22.048 --> 00:49:24.530
+donde es un gran
+enfoque para las cosas.
+
+00:49:24.530 --> 00:49:29.150
+Mucho de esto surgió
+porque,
+
+00:49:29.150 --> 00:49:32.150
+La propia Amber Hinds estaba
+haciendo una pregunta sobre tablas
+
+00:49:32.150 --> 00:49:33.480
+y tablas accesibles.
+
+00:49:33.480 --> 00:49:36.770
+Y en otra presentación que hice,
+pasí por un proceso
+
+00:49:36.770 --> 00:49:41.340
+de cómo hacer
+accesible la tabla principal de WordPress.
+
+00:49:41.340 --> 00:49:43.950
+El único problema fue que alguien
+me llamó la atención por el hecho de que, sí,
+
+00:49:43.950 --> 00:49:45.460
+pero no funciona
+en un teléfono móvil.
+
+00:49:45.460 --> 00:49:49.010
+En otras palabras, las tablas no
+se ven bien en un teléfono móvil,
+
+00:49:49.010 --> 00:49:50.950
+y habría que
+seguir todo un proceso para eso,
+
+00:49:50.950 --> 00:49:52.210
+lo que muestran es visible o no.
+
+00:49:52.210 --> 00:49:53.530
+Así que no hay tiempo para eso.
+
+00:49:53.530 --> 00:49:56.290
+Esa podría ser su propia presentación completa
+, que probablemente hará
+
+00:49:56.290 --> 00:49:57.740
+en algún momento.
+
+00:49:57.740 --> 00:50:00.310
+LAURA: Sherry estaba preguntando
+y creo que respondiste esto,
+
+00:50:00.310 --> 00:50:05.210
+Si se escribe una imagen,
+¿el lector de pantalla no la verá?
+
+00:50:05.210 --> 00:50:09.660
+Si tuvieran la imagen de la
+accesibilidad de WordPress,
+
+00:50:09.660 --> 00:50:13.830
+y tenían las palabras
+en el texto alternativo.
+
+00:50:13.830 --> 00:50:14.590
+PETER: Correcto, sí.
+
+00:50:14.590 --> 00:50:19.150
+Entonces debes asegurarte de que,
+en este caso particular,
+
+00:50:19.150 --> 00:50:27.150
+esto tiene accesibilidad, aboga
+por la igualdad de acceso y ustedes quieren
+
+00:50:27.870 --> 00:50:29.760
+incluirlo en su texto alternativo.
+
+00:50:29.760 --> 00:50:32.613
+Nuevamente,
+si puedo leerlo en la pantalla,
+
+00:50:32.614 --> 00:50:34.880
+porque es parte de una imagen,
+
+00:50:34.880 --> 00:50:36.500
+entonces debería ser
+parte del texto alternativo.
+
+00:50:40.533 --> 00:50:43.120
+LAURA: A ver,
+esto es de anónimo.
+
+00:50:43.120 --> 00:50:46.490
+¿El salto al contenido es
+parte del tema de cadencia?
+
+00:50:46.490 --> 00:50:47.880
+PETER: Sí.
+
+00:50:47.880 --> 00:50:51.580
+LAURA: ¿Cómo agregarías
+eso si no está incluido?
+
+00:50:51.580 --> 00:50:56.350 
+PETER: El complemento
+de Joel Dolson , WP Accessibility.
+
+00:50:57.870 --> 00:51:00.850
+Tiene un complemento muy bueno.
+
+00:51:00.850 --> 00:51:03.180
+Iba a incluirlo en la
+lista, simplemente no lo necesitaba
+
+00:51:03.180 --> 00:51:04.350
+por lo que estábamos haciendo hoy.
+
+00:51:04.350 --> 00:51:07.720
+Así que no quería incluirlo
+, pero él sí.
+
+00:51:07.720 --> 00:51:12.490
+Incorporada está la
+capacidad de saltar al contenido.
+
+00:51:13.433 --> 00:51:15.490
+LAURA: Esté bien,
+bueno, ese es nuestro momento.
+
+00:51:15.490 --> 00:51:17.270
+Gracias por asistir.
+
+00:51:17.270 --> 00:51:18.610
+Gracias, Peter.
+
+00:51:18.610 --> 00:51:19.260
+PETER: De nada.
+
+00:51:20.633 --> 00:51:23.990
+LAURA: Pueden continuar
+la conversación en el chat.
+
+00:51:23.990 --> 00:51:31.990
+o en las redes sociales usando
+#WPA11yday y #WPAD2023.
+
+00:51:33.710 --> 00:51:39.340
+Tambien les agradeceríamos que visitaran
+2023.wpaccessibility.day/feedback
+
+00:51:40.840 --> 00:51:46.930
+para proporcionar comentarios anónimos a
+nuestros oradores sobre su presentación
+
+00:51:46.930 --> 00:51:50.110
+y podran participar para ganar una
+camiseta mientras están allí.
+
+00:51:50.110 --> 00:51:54.610
+Si se perdieron ese enlace,
+estaré en el siguiente conjunto de diapositivas.
+
+00:51:54.610 --> 00:51:56.380
+como nuestro intermedio.
+
+00:51:56.380 --> 00:52:00.700
+Estén atentos para saber cómo abordar
+la accesibilidad y la privacidad.
+
+00:52:00.700 --> 00:52:03.560
+para ayudar a evitar multas y demandas.
+
+00:52:03.560 --> 00:52:11.030
+Se me ocurren Donata y
+Hans, a quienes también conozco,
+
+00:52:11.030 --> 00:52:17.230
+así que es emocionante, a las 22:00 hora
+UTC, 6 p. m. hora del este, 5 p. m. hora central.
+
+00:52:17.230 --> 00:52:20.550
+Y mientras esperan, no
+olviden visitar la página de nuestros patrocinadores.
+
+00:52:20.550 --> 00:52:24.760
+para obtener obsequios virtuales y participar para
+tener la oportunidad de ganar grandes premios.
+
+00:52:24.760 --> 00:52:26.820
+Nos vemos aqué después del salto.
+
+00:52:26.820 --> 00:52:27.130
+Gracias.
+
+00:52:27.130 --> 00:52:28.330
+PETER: Gracias.
+
+00:52:30.300 --> 00:52:30.660
+AMBER HINDS: Gracias
+
+00:52:30.661 --> 00:52:35.040
+a
+los patrocinadores del Día de la Accesibilidad de WordPress 2023.
+
+00:52:35.040 --> 00:52:37.890
+Patrocinador Platino:
+Equalize Digital.
+
+00:52:37.890 --> 00:52:40.640
+Complemento de verificación de accesibilidad
+de Equalize Digital
+
+00:52:40.640 --> 00:52:43.390
+es una
+herramienta automatizada de escaneo de accesibilidad
+
+00:52:43.390 --> 00:52:46.590
+que ayuda a que los sitios web de WordPress
+sean y permanezcan accesibles.
+
+00:52:47.850 --> 00:52:50.690
+Patrocinador Platino: Gravity Forms.
+
+00:52:50.690 --> 00:52:54.320
+Gravity Forms es el
+creador de formularios profesional que necesitas
+
+00:52:54.320 --> 00:52:59.030
+para crear
+formas hermosas, poderosas y accesibles.
+
+00:52:59.030 --> 00:53:06.040
+Patrocinadores Gold: 29, DQ,
+Empire Caption Solutions, Pressable,
+
+00:53:06.040 --> 00:53:07.110
+y WP Engine.
+
+00:53:08.690 --> 00:53:15.560
+Patrocinadores Plata: Code Geek, Drake
+Cooper, GoDaddy, LoneRock Point,
+
+00:53:15.560 --> 00:53:20.770
+NerdPress, sitio web de la noche a la mañana de
+Kinetic Iris, Rihola Networks,
+
+00:53:22.060 --> 00:53:25.060
+A11Y Collective y The Blogsmith.
+
+00:53:26.930 --> 00:53:32.310
+Patrocinadores de bronce: ExcessaCart,
+Green Geeks Web Hosting,
+
+00:53:32.310 --> 00:53:43.700
+Consultoría SEO de análisis Hall,
+HDC, ITX, Ivy Cat, Metabots,
+
+00:53:44.110 --> 00:53:47.267
+Chefs de péxeles,
+simplemente programen citas,
+
+00:53:47.267 --> 00:53:50.640
+SiteGround, Termagedon,
+
+00:53:50.640 --> 00:53:54.220
+Subrepresentado en
+Tech, Weglot y Yoast.

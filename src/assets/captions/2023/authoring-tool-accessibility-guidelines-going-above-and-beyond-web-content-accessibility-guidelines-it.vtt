@@ -1,0 +1,2732 @@
+﻿WEBVTT
+
+00:00:01.008 --> 00:00:04.600
+AMBER HINDS:
+WordPress Accessibility Days 2023:
+
+00:00:04.600 --> 00:00:07.170 
+Linee guida per l'accessibilità
+degli strumenti di creazione
+
+00:00:07.170 --> 00:00:11.770
+Andare oltre
+le linee guida per l'accessibilità dei contenuti Web,
+
+00:00:11.770 --> 00:00:13.620
+con la relatrice Helen Burge.
+
+00:00:13.620 --> 00:00:17.620
+Direttrice 
+dell’Accessibilità digitale, Testlio.
+
+00:00:17.620 --> 00:00:21.830
+Questa presentazione è stata
+registrata il 28 settembre 2023.
+
+00:00:23.151 --> 00:00:24.310
+JOOST DE VALK: Ehi, ciao.
+
+00:00:24.310 --> 00:00:26.070
+E ciao a tutti.
+
+00:00:26.070 --> 00:00:29.070
+Benvenuti al WordPress
+Accessibility Day 2023.
+
+00:00:29.070 --> 00:00:32.690
+Di nuovo, probabilmente per molti di voi...
+ma per me è una novità.
+
+00:00:32.690 --> 00:00:34.150
+Mi chiamo Joost de Valk.
+
+00:00:34.150 --> 00:00:36.000
+Sono partner di Emilia Capital.
+
+00:00:36.000 --> 00:00:38.650
+Tra le altre cose,
+sono il CTO di Post Status,
+tra le altre cose.
+
+00:00:38.650 --> 00:00:42.550
+Ma la cosa più importante è che sarò il
+vostro presentatore per le prossime ore.
+
+00:00:45.650 --> 00:00:49.870
+Sono davvero lieto di presentarvi
+la nostra prossima relatrice, Helen Burge,
+
+00:00:49.870 --> 00:00:54.130
+che ci parlerà delle
+linee guida per l'accessibilità degli strumenti di creazione.
+
+00:00:54.130 --> 00:00:57.700
+Helen attualmente ricopre il ruolo
+di Direttrice dell'Accessibilità Digitale
+
+00:00:57.700 --> 00:01:00.570
+presso Testlio,
+e ha una brillante carriera
+
+00:01:00.570 --> 00:01:04.310
+fin da quando ha completato gli studi universitari
+alla Bournemouth University.
+
+00:01:04.310 --> 00:01:09.120
+Ha un focus specializzato 
+sull’Accessibilità,
+
+00:01:09.120 --> 00:01:13.500
+e si è battuta instancabilmente
+per migliorare l'esperienza utente.
+
+00:01:13.500 --> 00:01:16.170
+Ha collaborato
+strettamente con gli sviluppatori.
+
+00:01:16.170 --> 00:01:18.560
+Io stesso sono uno sviluppatore,
+quindi apprezzo molto questo aspetto
+
+00:01:18.560 --> 00:01:21.970
+quando le persone collaborano effettivamente
+con gli sviluppatori per identificare
+
+00:01:21.970 --> 00:01:26.040
+e affrontare i problemi di accessibilità,
+stabilendo le migliori pratiche
+
+00:01:26.040 --> 00:01:27.210
+durante il percorso.
+
+00:01:27.210 --> 00:01:30.700
+Helen ha lavorato con diverse
+aziende, da Deque,
+
+00:01:30.700 --> 00:01:35.150
+AbilityNet, Tenen, per citarne solo 
+alcune, lasciando un segno indelebile
+
+00:01:35.150 --> 00:01:38.340
+con la sua competenza in materia
+di accessibilità digitale.
+
+00:01:38.340 --> 00:01:42.170
+Impegnata nell'apprendimento continuo,
+continua ad affinare le sue competenze
+
+00:01:42.170 --> 00:01:43.310
+e conoscenze.
+
+00:01:43.310 --> 00:01:47.800
+Mira sempre a garantire un'esperienza ottimale
+per ogni utente, indipendentemente
+
+00:01:47.800 --> 00:01:49.090
+dal suo background.
+
+00:01:49.090 --> 00:01:53.240
+Vi prego unirvi a me nel dare un
+caloroso benvenuto a Helen Burge.
+
+00:01:53.240 --> 00:01:54.420
+Passo a te, Helen.
+
+00:01:55.620 --> 00:01:56.970
+HELEN BURGE: Grazie.
+
+00:01:56.970 --> 00:01:59.070
+Spero di essere all'altezza di
+questa presentazione.
+
+00:02:00.760 --> 00:02:04.470
+Grazie per essere qui.
+
+00:02:05.840 --> 00:02:10.240
+Questo intervento è un po’ 
+orientato verso l’audit
+
+00:02:10.240 --> 00:02:12.500
+dato che parleremo di 
+di linee guida.
+
+00:02:12.500 --> 00:02:16.370
+E quando si tratta di
+WordPress, c'è qualcosa in più
+
+00:02:16.370 --> 00:02:19.070
+rispetto alle linee guida 
+per l'accessibilità dei contenuti web.
+
+00:02:19.070 --> 00:02:22.400
+Quindi ho pensato che sarebbe stato
+utile darvi una panoramica
+
+00:02:22.400 --> 00:02:25.710
+delle linee guida per l'accessibilità 
+degli strumenti di creazione, ovvero le ATAG.
+
+00:02:27.100 --> 00:02:29.720
+E, come potete notare,
+cerco di mettere in pratica ciò che predico
+
+00:02:29.720 --> 00:02:33.760
+riguardo all’accessibilità utilizzando il
+termine per esteso piuttosto che un'abbreviazione,
+
+00:02:33.760 --> 00:02:36.370
+perché in quel caso
+il mio titolo sarebbe molto più corto.
+
+00:02:36.370 --> 00:02:41.930
+Quello che intendo trattare oggi
+è la storia, il pubblico,
+
+00:02:41.930 --> 00:02:48.340
+Cioè chi ha bisogno delle ATAG,
+da dove iniziare, una rapida checklist
+
+00:02:48.340 --> 00:02:55.810
+di cosa potete utilizzare per verificare
+quali plugin state per
+
+00:02:55.810 --> 00:03:02.400
+usare con il vostro sito WordPress
+o altri strumenti, per così dire.
+
+00:03:02.400 --> 00:03:06.430
+E poi passerò a spiegare
+la parte A, a cosa viene trattato
+
+00:03:06.430 --> 00:03:11.600
+nella parte A delle ATAG, e ne parlerò
+anche attraverso le slide,
+
+00:03:11.600 --> 00:03:15.500
+della parte B, per poi concludere con un riepilogo.
+
+00:03:17.600 --> 00:03:21.100
+Cerco di non svelarvi troppo
+perché affronto la maggior parte
+
+00:03:21.100 --> 00:03:23.740
+di ciò che significa tutto questo
+man mano che procedo.
+
+00:03:23.740 --> 00:03:29.520
+Per quanto riguarda la storia,
+le ATAG sono state pubblicate
+
+00:03:29.520 --> 00:03:36.240
+nel 2015 dopo il rilascio delle WCAG 2.
+
+00:03:36.240 --> 00:03:44.240
+E si accompagna alle
+linee guida
+
+00:03:44.310 --> 00:03:48.340
+per l’accessibilità Web,
+perché abbiamo tre elementi.
+
+00:03:48.340 --> 00:03:50.440
+Abbiamo
+le Linee guida per l'accessibilità dei contenuti Web,
+
+00:03:50.440 --> 00:03:52.660
+Abbiamo
+le linee guida per l'accessibilità degli strumenti di creazione,
+
+00:03:52.660 --> 00:03:55.420
+e Linee guida per l'accessibilità dei Browser.
+
+00:03:55.420 --> 00:03:59.150
+Sono tutti in un certo senso
+intrecciati, e sia l’ATAG,
+
+00:03:59.150 --> 00:04:03.990
+sia il nuovo UAAG, che a volte chiamo ‘Ugg’ 
+
+00:04:03.990 --> 00:04:08.710
+incorporano entrambi le
+WCAG nelle  loro verifiche.
+
+00:04:08.710 --> 00:04:12.660
+Non dicono siamo cose
+indipendenti e ripetute.
+
+00:04:12.660 --> 00:04:14.580
+Riutilizzano, e questo è sempre
+un aspetto positivo, non è vero?
+
+00:04:14.580 --> 00:04:17.660
+Quando riutilizziamo gli elementi degli altri.
+
+00:04:17.660 --> 00:04:19.720
+Ma hanno controlli aggiuntivi.
+
+00:04:19.720 --> 00:04:25.700
+Gli strumenti di creazione sono per esempio
+WordPress, che ti permette
+
+00:04:25.700 --> 00:04:27.670
+di creare qualcosa
+che poi mettete online.
+
+00:04:29.500 --> 00:04:32.710
+Altri strumenti potrebbero essere,
+per esempio, un elaboratore di testi.
+
+00:04:32.710 --> 00:04:35.610
+Cerco di non citare 
+nomi di aziende quando ne parlo,
+
+00:04:37.370 --> 00:04:45.210
+o talvolta strumenti più complessi
+per realizzare un sito web.
+
+00:04:45.210 --> 00:04:48.930
+E di nuovo, cerco di non menzionare
+Dreamweaver perché sappiamo tutti
+
+00:04:48.930 --> 00:04:52.880
+che a volte gli strumenti non
+sempre realizzano un buon sito web
+
+00:04:52.880 --> 00:04:55.550
+se l'autore non
+comprende appieno ciò che sta facendo.
+
+00:04:55.550 --> 00:04:57.013
+Ed è per questo che sono state introdotte
+
+00:04:57.014 --> 00:04:59.110 
+le linee guida per l'accessibilità 
+per gli strumenti di creazione,
+
+00:04:59.110 --> 00:05:02.140
+per aiutarvi a scegliere gli strumenti
+che vi consentiranno di creare
+
+00:05:02.140 --> 00:05:03.140
+contenuti accessibili.
+
+00:05:04.430 --> 00:05:06.310
+E le linee guida per l'accessibilità dei Browser,
+
+00:05:06.310 --> 00:05:11.020
+che si riferiscono ai browser
+e a ciò che visualizza il contenuto.
+
+00:05:11.020 --> 00:05:13.170
+Non ne parleremo
+troppo oggi, ma voglio che voi
+
+00:05:13.170 --> 00:05:15.090
+sappiate che esiste
+qualcosa a riguardo.
+
+00:05:15.090 --> 00:05:20.150
+Alcuni dicono che non sia più necessario
+perché quando arriverà WCAG3
+
+00:05:20.150 --> 00:05:25.470
+e sì, la parte ‘WC’ rimarrà,
+ma l’acronimo diverrà W3C
+
+00:05:25.470 --> 00:05:28.330
+anziché ‘web content’
+perché AG indicherà
+
+00:05:28.330 --> 00:05:34.660
+‘linee guida di accessibilità’
+di tutti questi elementi.
+
+00:05:34.660 --> 00:05:36.560
+Comunque, questo è qualcosa che riguarda ancora il futuro.
+
+00:05:36.560 --> 00:05:43.270
+Quindi per ora abbiamo tre
+insiemi diversi che sono rilevanti in base
+
+00:05:43.270 --> 00:05:46.150
+a ciò che state utilizzando.
+
+00:05:46.150 --> 00:05:52.190
+E sì,
+ho copiato un'immagine dal W3C,
+
+00:05:52.190 --> 00:05:55.850
+ed è per questo che l'ho accreditata, affinché
+sappiate da dove proviene.
+
+00:05:58.440 --> 00:06:04.680
+Comunque, il pubblico a cui sono destinate le ATAG.
+
+00:06:07.150 --> 00:06:09.360
+Se non riuscite a rendere
+accessibile il vostro sito web,
+
+00:06:09.360 --> 00:06:12.740
+potreste escludere gran parte
+del vostro potenziale pubblico.
+
+00:06:12.740 --> 00:06:15.530
+Non dare mai per scontato le esigenze degli
+utenti quando create un sito web.
+
+00:06:17.540 --> 00:06:21.190
+Quindi il pubblico delle ATAG è destinato
+a gli utenti che creano contenuti
+
+00:06:21.190 --> 00:06:23.130
+per il web.
+
+00:06:23.130 --> 00:06:26.240
+E spero davvero che molti di voi
+ne siano già a conoscenza,
+
+00:06:26.240 --> 00:06:28.610
+ma se non lo siete,
+questo è un ottimo punto di partenza.
+
+00:06:28.610 --> 00:06:35.150
+E come ho già detto, viene usato
+con le WCAG se si tratta di contenuti web.
+
+00:06:35.150 --> 00:06:39.960
+Se avete qualcosa che è
+un'applicazione che non ha bisogno
+
+00:06:39.960 --> 00:06:44.020
+di andare online,
+allora le WCAG non sono rilevanti.
+
+00:06:46.230 --> 00:06:48.420
+Ma dovete comunque assicurarvi
+che sia accessibile.
+
+00:06:48.420 --> 00:06:50.130
+Ed è diviso in due parti.
+
+00:06:50.130 --> 00:06:53.680
+Parte A: lo strumento
+stesso è accessibile?
+
+00:06:53.680 --> 00:06:57.220
+Se utilizzo, ad esempio, uno screen
+reader, riesco a comprendere le parti
+
+00:06:57.220 --> 00:07:01.750
+dello strumento, come per esempio,
+quel pulsante è etichettato come pulsante?
+
+00:07:01.750 --> 00:07:07.430
+Parte B: riguarda maggiormente
+lo strumento in quanto
+
+00:07:07.430 --> 00:07:11.350
+quando scegliete lo strumento,
+vi consente di creare contenuti accessibili?
+
+00:07:12.410 --> 00:07:17.320
+E la ragione per cui entrambe sono
+importanti è che volete
+
+00:07:17.320 --> 00:07:21.480
+utilizzare plugin che non vi impediscano
+di rendere accessibili i vostri contenuti.
+
+00:07:21.480 --> 00:07:27.420
+Se avete qualcosa che non
+vi permette di aggiungere alt tag alle immagini,
+
+00:07:27.420 --> 00:07:28.910
+come vi semplificherà
+la vita?
+
+00:07:28.910 --> 00:07:32.290
+Aggiungerete una didascalia
+sotto nella speranza che
+
+00:07:32.290 --> 00:07:33.740
+che verrà utilizzata?
+
+00:07:33.740 --> 00:07:38.320
+Oppure utilizzerà l'intelligenza artificiale e
+genererà automaticamente testo alternativo
+
+00:07:38.320 --> 00:07:40.470
+che non significherà nulla per l'utente?
+
+00:07:40.470 --> 00:07:44.930
+Quindi è davvero importante assicurarsi
+che scegliendo un plugin
+
+00:07:44.930 --> 00:07:51.660
+per costruire il sito, possiate
+essere voi l'autore
+
+00:07:51.660 --> 00:07:54.690
+del contenuto senza lasciare che qualcun
+altro prenda decisioni per voi.
+
+00:07:55.700 --> 00:07:59.210
+Perché come tutti sappiamo,
+quando si tratta di accessibilità,
+
+00:07:59.210 --> 00:08:06.240
+non esiste una soluzione valida per tutti
+e tutti abbiamo momenti...
+
+00:08:06.240 --> 00:08:08.160
+Li chiamo sempre momenti
+perché ne ho davvero tanti.
+
+00:08:08.160 --> 00:08:12.130
+Non ho bevuto abbastanza caffè oggi,
+non ho dormito a sufficienza oggi,
+
+00:08:12.130 --> 00:08:16.780
+in realtà vanno di pari passo,
+o non indosso gli occhiali,
+
+00:08:16.780 --> 00:08:23.750
+oppure il mio bambino piccolo mi tira il
+braccio e non riesco a scrivere con una mano sola.
+
+00:08:23.750 --> 00:08:27.540
+Ci sono momenti in cui ho bisogno
+che il contenuto sia più accessibili,
+
+00:08:27.540 --> 00:08:31.640
+ed è per questo che, come tutti sappiamo,
+è importante assicurarci
+
+00:08:31.640 --> 00:08:36.050
+che ciò che creiamo non permetta
+a nessuno di essere bloccato
+
+00:08:36.050 --> 00:08:37.060
+da ciò che forniamo.
+
+00:08:38.820 --> 00:08:39.830
+Quindi da dove cominciare?
+
+00:08:39.830 --> 00:08:41.613
+Ho trovato questa immagine e ho pensato:
+
+00:08:41.614 --> 00:08:43.710
+“Questa sono io che cerco
+di preparare questo intervento.
+
+00:08:45.304 --> 00:08:49.010
+Quindi stavo facendo delle
+ricerche per questo talk
+
+00:08:49.010 --> 00:08:55.710
+sui plugin di accessibilità 
+di WordPress, e condividerò un po'
+
+00:08:55.710 --> 00:09:00.680
+dei miei risultati dopo, ma quando iniziamo,
+
+00:09:00.680 --> 00:09:02.240
+autorizzate il contenuto?
+
+00:09:02.240 --> 00:09:06.630
+In caso contrario, le ATAG potrebbero
+non essere così rilevante per te.
+
+00:09:07.860 --> 00:09:14.900
+Ma, voi create i contenuti
+o avete un sito WordPress?
+
+00:09:14.900 --> 00:09:17.200
+in cui qualcun altro
+scrive i contenuti?
+
+00:09:17.200 --> 00:09:19.790
+Anche questo è qualcosa
+a cui prestare attenzione.
+
+00:09:19.790 --> 00:09:24.755
+Assicurati che qualunque
+plugin stiate utilizzando 
+
+00:09:24.756 --> 00:09:26.560
+soddisfi le ATAG.
+
+00:09:28.630 --> 00:09:29.150
+Oh, sì.
+
+00:09:29.150 --> 00:09:30.890
+Siete voi a
+scegliere i plugin?
+
+00:09:30.890 --> 00:09:31.910
+Questo è sempre importante.
+
+00:09:31.910 --> 00:09:34.830
+In caso contrario, potete sempre
+segnalare alla persona che è
+
+00:09:34.830 --> 00:09:40.690
+responsabile della selezione dei
+plugin, qualsiasi problema tu abbia rilevato,
+
+00:09:40.690 --> 00:09:42.120
+con quelli che usate.
+
+00:09:43.480 --> 00:09:47.370
+E li testate per verificare se
+vi permettono di aggiungere contenuti accessibili?
+
+00:09:47.370 --> 00:09:50.890
+Ho già menzionato il più
+ovvio, il testo alternativo.
+
+00:09:52.640 --> 00:09:58.710
+Ma ce ne sono anche altri, come
+il testo dei link o l'aggiunta di descrizioni,
+
+00:09:58.710 --> 00:10:01.350
+o suggerimenti per elementi che
+potrebbero non essere intuitivi.
+
+00:10:03.330 --> 00:10:05.070
+Ci sono così tante varianti.
+
+00:10:05.070 --> 00:10:06.530
+E vi guidano?
+
+00:10:06.530 --> 00:10:12.310
+Vi dicono che hanno già
+fatto il lavoro per voi?
+
+00:10:12.310 --> 00:10:16.120
+Oppure evidenziano ciò che
+andrebbe sistemato e vi aiutano?
+
+00:10:16.120 --> 00:10:18.740
+E credete a chi
+sostiene di fare il lavoro al posto vostro?
+
+00:10:18.740 --> 00:10:23.140
+Perché ora vi mostrerò
+questo sito web.
+
+00:10:23.140 --> 00:10:26.350
+Quando stavo esaminando
+la cosa, stavo esaminando
+
+00:10:26.350 --> 00:10:33.020
+nei plugin di accessibilità
+di WordPress e ho navigato il sito.
+
+00:10:33.020 --> 00:10:33.590
+Ero molto entusiasta.
+
+00:10:33.590 --> 00:10:35.760
+Ho pensato: "Oh,
+ci sono tantissimi articoli".
+
+00:10:35.760 --> 00:10:37.430
+E ho iniziato a navigare tutto questo materiale.
+
+00:10:37.430 --> 00:10:41.750
+E ho iniziato a scorrere,
+natando che gli autori
+
+00:10:41.750 --> 00:10:47.840
+che usano il modo, Accessor B,
+ci sono molti plugin che affermano
+
+00:10:47.840 --> 00:10:49.220
+di fare il lavoro per voi.
+
+00:10:49.220 --> 00:10:57.220
+Quello che stanno facendo è... Sì,
+quell’articolo mi ha davvero infastidito
+
+00:10:58.660 --> 00:11:04.140
+perché dicevano, “oh, ho
+un plug-in che risolverà il problema
+
+00:11:04.140 --> 00:11:05.230
+per te.
+
+00:11:05.230 --> 00:11:09.030
+E non vi aiutano
+a prendere decisioni
+
+00:11:09.030 --> 00:11:14.380
+su quali modifiche apportare.
+
+00:11:14.380 --> 00:11:16.050
+Si sovrappone semplicemente.
+
+00:11:16.050 --> 00:11:20.390
+E sappiamo tutti che
+Gli overlay di accessibilità sono un’illusione.
+
+00:11:20.390 --> 00:11:23.280
+Promettono di sistemare le cose,
+ma in realtà non lo fanno
+
+00:11:23.280 --> 00:11:25.280
+e possono risultare
+frustranti per gli utenti.
+
+00:11:25.280 --> 00:11:28.210 
+L'altro giorno stavo guardando 
+un sito web.
+
+00:11:28.210 --> 00:11:36.210
+Stavo ordinando alcuni articoli per mio
+figlio autistico, alcuni giocattoli luminosi
+
+00:11:36.820 --> 00:11:39.070
+perché è affascinato dalle luci.
+
+00:11:39.070 --> 00:11:41.510
+E avevano un
+plug-in di accessibilità sovrapposto al sito
+
+00:11:41.510 --> 00:11:44.390
+E sul mio dispositivo mobile,
+bloccava la visualizzazione di una parte
+
+00:11:44.390 --> 00:11:47.060
+del sito perché semplicemente non
+si chiudeva, non si poteva disattivare.
+
+00:11:47.060 --> 00:11:49.980
+E io pensavo: “In che modo ciò
+mi semplifica la vita?
+
+00:11:51.400 --> 00:11:52.210
+Non ne ho bisogno.
+
+00:11:52.210 --> 00:11:54.100
+Non lo voglio.
+
+00:11:54.100 --> 00:11:54.730
+Sparisci.
+
+00:11:54.730 --> 00:11:55.640
+E ho mandato loro un'e-mail.
+
+00:11:55.640 --> 00:11:56.730
+Non ho ricevuto risposta.
+
+00:11:56.730 --> 00:11:59.870
+Gli ho semplicemente chiesto di rimuoverlo,
+non sta funzionando.
+
+00:12:01.040 --> 00:12:04.420
+Quindi sì, sembra proprio così,
+anche se l'articolo
+
+00:12:04.420 --> 00:12:09.310
+consiglia il plug-in di Joe Dolsen,
+che in realtà analizza gli elementi
+
+00:12:09.310 --> 00:12:12.270
+e li corregge per renderli
+accessibili sin dall'inizio,
+
+00:12:13.360 --> 00:12:15.040
+fate attenzione a ciò che promettono.
+
+00:12:15.040 --> 00:12:19.980
+Se fanno il lavoro pesante per
+te, potreste finire
+
+00:12:19.980 --> 00:12:25.160
+con qualcosa che 
+frustrerà e infastidirà il vostro pubblico.
+
+00:12:25.160 --> 00:12:30.310
+Quindi nella scelta
+dei plugin, optate per quelli affidabili
+
+00:12:30.310 --> 00:12:34.770
+e assicuratevi anche che
+vi consentano di apportare modifiche,
+
+00:12:34.770 --> 00:12:37.660
+che non
+vi privino del controllo.
+
+00:12:37.660 --> 00:12:42.950
+E credo che abbiate già condiviso i
+link, non è vero?
+
+00:12:42.950 --> 00:12:49.110
+E c'è anche un bellissimo
+documento informativo sugli overlay che Karl Groves ha scritto
+
+00:12:49.110 --> 00:12:50.930
+e sviluppato in collaborazione.
+
+00:12:50.930 --> 00:12:54.760
+E io l'ho firmato,
+penso che molti di noi probabilmente l'abbiano fatto.
+
+00:12:54.760 --> 00:12:56.840
+Se non l'avete ancora fatto, vi consiglio
+di firmarlo.
+
+00:12:56.840 --> 00:12:59.870
+Perché le sovrapposizioni sono solo...
+Comunque,
+
+00:12:59.870 --> 00:13:02.370
+questo è stato il mio piccolo
+momento di sfogo, mi scuso.
+
+00:13:03.390 --> 00:13:06.310
+E sì,
+quella era la mia frustrazione,
+
+00:13:07.500 --> 00:13:13.010
+questa persona con le mani
+sulla testa mentre guarda lo schermo,
+
+00:13:13.010 --> 00:13:15.930
+quando stavo esaminando questi
+plugin e ho trovato questo articolo.
+
+00:13:18.280 --> 00:13:25.060
+Quindi ora passiamo alla parte Parte B,
+ovvero quando stai provando
+
+00:13:25.060 --> 00:13:30.730
+a scegliere il plugin più adatto
+a te, ecco una rapida checklist.
+
+00:13:30.730 --> 00:13:32.340
+Esiste un
+verificatore dell'accessibilità?
+
+00:13:32.340 --> 00:13:36.050
+Lo uso sempre,
+lo applico anche alle mie slide.
+
+00:13:36.050 --> 00:13:39.010
+Ed è piuttosto intelligente oggigiorno
+perché rileva
+
+00:13:39.010 --> 00:13:42.600
+se è stato
+generato un testo alternativo, e ti chiede,
+
+00:13:42.600 --> 00:13:43.600
+“Sei sicuro di volere questo?”
+
+00:13:44.660 --> 00:13:47.520
+Il che è positivo perché a volte
+quello generato,
+
+00:13:47.520 --> 00:13:49.000
+non corrisponde affatto all'immagine stessa.
+
+00:13:50.170 --> 00:13:53.600
+E oh sì, ho dimenticato di dire
+che c'è un'immagine di un laptop
+
+00:13:55.720 --> 00:13:57.350
+con un sito WordPress.
+
+00:13:57.350 --> 00:14:02.370
+Ero piuttosto soddisfatta quando ho trovato
+l'immagine di un sito WordPress.
+
+00:14:02.370 --> 00:14:07.810
+Una volta avevo un sito, ma
+ora non ce l'ho più, quindi mi scuso.
+
+00:14:08.950 --> 00:14:11.720
+Comunque, esiste un
+verificatore di accessibilità... C'è qualcosa
+
+00:14:11.720 --> 00:14:19.720
+che controlla il mio contenuto e segnala
+qualsiasi cosa che potrebbe aver bisogno di essere sistemata,
+
+00:14:19.940 --> 00:14:23.210
+come il contrasto dei colori
+o segnala
+
+00:14:23.210 --> 00:14:28.680
+se manca un testo alternativo
+oppure... È sempre utile averne uno.
+
+00:14:28.680 --> 00:14:30.590
+Se manca,
+non è la fine del mondo
+
+00:14:30.590 --> 00:14:32.770
+ma è sempre meglio averlo.
+
+00:14:33.850 --> 00:14:35.780
+Quali indicazioni sono disponibili?
+
+00:14:35.780 --> 00:14:39.670
+Come tutti sappiamo, WordPress ha una
+grande comunità per l'accessibilità.
+
+00:14:39.670 --> 00:14:41.340
+Quindi ci sono molte
+indicazioni in giro.
+
+00:14:41.340 --> 00:14:47.610
+Potete andare sul forum Slack,
+potete andare sul forum stesso
+
+00:14:47.610 --> 00:14:51.170
+e porre domande e trovare
+persone gentili che vi aiuteranno
+
+00:14:51.170 --> 00:14:54.010
+a risolvere eventuali problemi di accessibilità.
+
+00:14:54.010 --> 00:14:57.250
+Ecco perché raccomando
+WordPress.
+
+00:14:57.250 --> 00:14:59.640
+Non solo perché
+mi hanno invitato a parlare,
+
+00:14:59.640 --> 00:15:04.600
+ma perché in realtà sostengono
+ciò che predicano.
+
+00:15:04.600 --> 00:15:07.010
+Quindi, quali indicazioni sono disponibili?
+
+00:15:08.550 --> 00:15:10.690
+Possono anche essere solo file di aiuto.
+
+00:15:10.690 --> 00:15:13.690
+Ad esempio, se volessi sapere
+come fare qualcosa,
+
+00:15:13.690 --> 00:15:19.160
+se non riesco a trovare facilmente la
+risposta, allora non va bene.
+
+00:15:19.160 --> 00:15:22.310
+Voglio sapere come
+fare le cose da solo,
+
+00:15:22.310 --> 00:15:25.760
+e se non riesco a trovare la risposta
+facilmente e non è intuitiva,
+
+00:15:25.760 --> 00:15:26.910
+allora è una cosa da evitare.
+
+00:15:28.390 --> 00:15:29.760
+E sì, lo ripeto,
+
+00:15:29.761 --> 00:15:31.770
+è possibile aggiungere un testo alternativo
+a un'immagine?
+
+00:15:33.680 --> 00:15:38.630
+Ho avuto esperienza
+con uno strumento di creazione
+
+00:15:38.630 --> 00:15:42.240
+dove c'era un'immagine di copertina
+e non era possibile
+
+00:15:42.240 --> 00:15:45.130
+aggiungere alcun testo alternativo.
+
+00:15:45.130 --> 00:15:48.970
+E la gente continuava a mettere molte
+immagini significative
+
+00:15:48.970 --> 00:15:50.080
+senza descrizione.
+
+00:15:50.080 --> 00:15:51.700
+E dissi che l'unico
+modo per aggirare il problema,
+
+00:15:51.700 --> 00:15:53.700
+perché non avevo
+scelta, non mi era permesso
+
+00:15:53.700 --> 00:15:56.010
+di scegliere i plugin o
+lo strumento che stavamo utilizzando.
+
+00:15:57.550 --> 00:16:01.570
+Quello che ho fatto è stato
+aggiungere una didascalia all'immagine,
+
+00:16:02.980 --> 00:16:04.510
+perché era l'unica
+cosa che mi veniva in mente
+
+00:16:04.510 --> 00:16:09.060
+per fornire un'alternativa testuale
+all'immagine.
+
+00:16:09.060 --> 00:16:10.970
+Era un trucco, non era elegante.
+
+00:16:13.010 --> 00:16:18.480
+E penso che quando si
+tratta di questi trucchi,
+
+00:16:18.480 --> 00:16:23.260
+sono un modo ben intenzionato per aggirare
+le cose, ma non dovrebbero essere necessari.
+
+00:16:27.570 --> 00:16:30.480
+I nostri link adesso usano
+più di semplici colori e linee.
+
+00:16:30.480 --> 00:16:36.800
+Un altro esempio: a volte
+un link in grassetto non è sufficiente per me.
+
+00:16:36.800 --> 00:16:38.320
+Preferisco che sia sottolineato.
+
+00:16:38.320 --> 00:16:39.200
+Io sono della vecchia scuola.
+
+00:16:39.200 --> 00:16:43.540
+Se vedo un cambio di colore e
+una sottolineatura, so che si tratta di un link.
+
+00:16:43.540 --> 00:16:47.210
+Ma il solo testo in grassetto è un
+minimo elemento distintivo.
+
+00:16:47.210 --> 00:16:54.940
+Ma tuttavia, se lo stile dei link è fisso
+e non potete cambiare il formato
+
+00:16:54.940 --> 00:16:58.260
+per soddisfare le vostre preferenze,
+dovete renderlo semplice da comprendere per gli utenti
+
+00:16:58.260 --> 00:17:00.900
+Questo è un altro aspetto a cui fare attenzione.
+
+00:17:03.050 --> 00:17:05.760
+È possibile spostare il focus della tastiera
+su tutti gli elementi interattivi?
+
+00:17:05.760 --> 00:17:06.360
+Sì.
+
+00:17:06.360 --> 00:17:10.590
+Hanno elementi div in cui
+inseriscono alcuni elementi per voi?
+
+00:17:10.590 --> 00:17:12.430
+Torniamo di nuovo alle
+persone che offrono soluzioni illusorie.
+
+00:17:14.240 --> 00:17:19.410
+Se aggiungono molti div o
+div nidificati... Si può fare
+
+00:17:19.410 --> 00:17:24.650
+a causa dell'inserimento di JavaScript,
+come quando si usano framework come React
+
+00:17:24.650 --> 00:17:29.450
+in cui i div vengono incorporati
+nei link il che significa che
+
+00:17:29.450 --> 00:17:32.560
+che gli elementi dell'elenco non vengono più
+riconosciuti dallo screen reader.
+
+00:17:32.560 --> 00:17:37.520
+Ma può anche far sì che cose
+come i pulsanti non siano riconosciuti come pulsanti.
+
+00:17:37.520 --> 00:17:39.130
+La tastiera non riesce a focalizzarli.
+
+00:17:40.190 --> 00:17:43.980
+E un altro
+punto da aggiungere.
+
+00:17:43.980 --> 00:17:46.500
+Se è selezionato,
+posso vedere che è selezionato?
+
+00:17:48.250 --> 00:17:50.290
+Quindi è possibile selezionare l’elemento e
+vedere la selezione?
+
+00:17:50.290 --> 00:17:51.760
+Questo è un aspetto importante da controllare.
+
+00:17:53.170 --> 00:17:57.930
+E se copi contenuti accessibili,
+come nel caso di un'immagine
+
+00:17:57.930 --> 00:18:01.600
+con un testo alternativo eccellente
+e la copi e la incolli,
+
+00:18:01.600 --> 00:18:04.150
+anche il testo alternativo viene
+copiato insieme, oppure devo
+
+00:18:04.150 --> 00:18:07.950
+copiare e incollare il
+testo alternativo nella mia immagine dopo averla copiata
+
+00:18:07.950 --> 00:18:08.950
+e incollata?
+
+00:18:10.390 --> 00:18:15.020
+So che sembra
+una cosa di poco conto,
+
+00:18:15.020 --> 00:18:19.150
+ma se state
+creando grandi quantità di contenuti,
+
+00:18:19.150 --> 00:18:23.750
+può causare una sorta di RSI (Repetitive Strain Injury, in acronimo RSI), un infortunio da sforzo ripetitivo.
+
+00:18:23.750 --> 00:18:29.900
+Ciò serve a facilitarti, per
+non dover fare un passaggio extra
+
+00:18:29.900 --> 00:18:31.320
+per incorporare l'accessibilità.
+
+00:18:35.390 --> 00:18:43.390
+Quindi, passiamo alla parte A. La parte A dell'ATAG riguarda
+la possibilità di utilizzare lo strumento stesso.
+
+00:18:44.850 --> 00:18:49.610
+Questo è importante se all’interno
+del tuo team di creazione di contenuti,
+
+00:18:49.610 --> 00:18:52.720
+c'è qualcuno che potrebbe
+fare affidamento sulle tecnologie assistive
+
+00:18:53.760 --> 00:18:57.360
+o utilizzare
+quotidianamente tecnologie assistive.
+
+00:18:57.360 --> 00:19:02.440
+Quindi, io mi chiedo sempre,
+“Potrei capirlo
+
+00:19:02.440 --> 00:19:04.390
+se non avessi preso il caffè?”
+
+00:19:04.390 --> 00:19:10.220
+Ma per la parte A, abbiamo A1,
+l'interfaccia utente dello strumento di creazione
+
+00:19:10.220 --> 00:19:12.620
+segue le linee guida di accessibilità applicabili?
+
+00:19:13.780 --> 00:19:19.360
+In altre parole, se è
+basato sul web, segue le WCAG?
+
+00:19:19.360 --> 00:19:22.810
+Rispetta i
+check point delle WCAG? Sì o no?
+
+00:19:22.810 --> 00:19:26.400
+Quella è la parte più rilevante
+delle ATAG, assicurarsi
+
+00:19:26.400 --> 00:19:28.490
+che le WCAG siano rispettate.
+
+00:19:28.490 --> 00:19:30.609
+Ma anche applicate...
+
+00:19:30.610 --> 00:19:35.520
+Ha una sezione per
+le funzionalità non basate sul web.
+
+00:19:35.520 --> 00:19:40.360
+Quindi se avete un'applicazione,
+si applica un principio simile a WCAG,
+
+00:19:40.360 --> 00:19:42.350
+ma si tratta di un'applicazione autonoma.
+
+00:19:43.890 --> 00:19:46.770
+Quindi fondamentalmente non è basata su HTML, fondamentalmente
+
+00:19:46.770 --> 00:19:48.890
+Si tratta di assicurarsi che i pulsanti
+siano dichiarati pulsanti.
+
+00:19:48.890 --> 00:19:50.990
+Quando li sistemate,
+interagiscono con la tastiera?
+
+00:19:50.990 --> 00:19:51.990
+È lo stesso concetto.
+
+00:19:52.660 --> 00:19:56.040
+Se sto utilizzando uno strumento,
+posso utilizzarlo tramite uno screen reader?
+
+00:19:56.040 --> 00:19:57.730
+Posso usarlo solo con una tastiera?
+
+00:19:57.730 --> 00:19:59.790
+Posso ingrandire?
+
+00:19:59.790 --> 00:20:01.290
+Posso cambiare i colori?
+
+00:20:01.290 --> 00:20:04.900
+I colori sono facilmente
+distinguibili fin dall'inizio?
+
+00:20:04.900 --> 00:20:06.910
+Posso modificarli?
+
+00:20:06.910 --> 00:20:12.130
+Sono tutte cose che dovrebbero essere
+prese in considerazione per verificare l’accessibilità.
+
+00:20:13.870 --> 00:20:17.020
+E poi, le modifiche di visualizzazione
+sono percepibili?
+
+00:20:17.020 --> 00:20:25.020
+Quindi se sto modificando un contenuto, riesco
+ad accedere a tutti i diversi elementi?
+
+00:20:25.310 --> 00:20:28.200
+Ho capito cosa
+sto inserendo e dove?
+
+00:20:30.370 --> 00:20:35.260
+Dovete assicurarvi che ci
+siano contenuti alternativi disponibili
+
+00:20:35.260 --> 00:20:37.330
+per gli autori, se necessario.
+
+00:20:37.330 --> 00:20:40.130
+Ad esempio, se si tratta di un sistema drag e drop,
+la tastiera può gestirlo?
+
+00:20:41.760 --> 00:20:44.340
+E deve essere
+determinabile a livello di programmazione.
+
+00:20:46.150 --> 00:20:48.200
+E poi sono utilizzabili?
+
+00:20:48.200 --> 00:20:50.750
+C'è qualcuno come Paul che interviene qui.
+
+00:20:50.750 --> 00:20:52.510
+Quindi le modifiche di visualizzazione
+sono utilizzabili?
+
+00:20:52.510 --> 00:20:53.780
+Posso usare una tastiera?
+
+00:20:53.780 --> 00:20:55.050
+Devo usare un mouse?
+
+00:20:55.050 --> 00:21:01.460
+Posso usare un altro strumento per modificare
+gli elementi nelle modifiche di visualizzazione?
+
+00:21:03.290 --> 00:21:04.730
+E sono comprensibili?
+
+00:21:04.730 --> 00:21:07.710
+Di nuovo, il linguaggio è semplice?
+
+00:21:07.710 --> 00:21:13.920
+E ha senso in relazione
+i ruoli assegnati e così via?
+
+00:21:15.870 --> 00:21:17.510
+Perché non sono “robusti”.
+
+00:21:17.510 --> 00:21:24.270
+Perché fondamentalmente quando si tratta
+di modifiche di visualizzazione, abbiamo le ATAG
+
+00:21:24.270 --> 00:21:26.960
+a colpo d'occhio, che penso
+siano un ottimo punto di partenza
+
+00:21:26.960 --> 00:21:30.570
+per chiunque si avvicini
+a queste linee guida.
+
+00:21:30.570 --> 00:21:31.590
+Ma non abbiamo la robustezza.
+
+00:21:31.590 --> 00:21:35.490
+Perché ‘robusto’ si riferisce ai contenuti
+che crei tu stesso.
+
+00:21:35.490 --> 00:21:40.760
+Qui si tratta piuttosto di verificare che lo
+strumento funzioni come dovrebbe.
+
+00:21:40.760 --> 00:21:44.630
+E come tutti sappiamo,
+4.1.1 [Inudibile 21:42]
+
+00:21:44.630 --> 00:21:47.060
+non viene più testato.
+
+00:21:47.060 --> 00:21:52.180
+Beh,
+direi che è più ritenuto opportuno da testare.
+
+00:21:54.730 --> 00:21:56.080
+Ma sono comunque entusiasta.
+
+00:21:56.080 --> 00:21:59.490
+La 4.1.1 uno è sempre stata
+un po' lunga e complessa
+
+00:21:59.490 --> 00:22:02.180
+con checkpoint che riguardano problemi 
+di bassa gravità.
+
+00:22:02.180 --> 00:22:03.580
+Comunque.
+
+00:22:03.580 --> 00:22:07.020
+Ma la robustezza non è inclusa
+perché si tratta di aspetti
+
+00:22:07.020 --> 00:22:15.020
+che sono coperti in parte dalle
+WCAG e dalle modifiche di visualizzazione.
+
+00:22:15.340 --> 00:22:17.840
+Non verificate che
+siano stati costruiti correttamente.
+
+00:22:17.840 --> 00:22:22.040
+Verificate che
+l'utente non abbia problemi a interagire
+
+00:22:22.040 --> 00:22:23.040
+con loro.
+
+00:22:25.390 --> 00:22:29.260
+Passiamo ora alla parte B. Questa è la
+parte più importante 
+
+00:22:29.260 --> 00:22:33.130
+quando scegliete il plugin;
+assicuratevi che vi supporti 
+
+00:22:33.130 --> 00:22:35.480
+nella produzione di
+contenuti accessibili.
+
+00:22:37.160 --> 00:22:45.000
+Quindi abbiamo la parte B, sezione B1:
+processo completamente automatico
+
+00:22:45.000 --> 00:22:46.830
+per produrre contenuti accessibili. 
+
+00:22:46.830 --> 00:22:51.170
+Questo non fa il lavoro al posto vostro,
+non riguarda gli overlay,
+
+00:22:51.170 --> 00:22:56.120
+È più una questione di capire se ha una
+procedura guidata che identifica dove sia necessario
+
+00:22:56.120 --> 00:22:57.340
+apportare modifiche?
+
+00:22:58.440 --> 00:23:02.900
+Segnala per esempio: “Oh
+mio Dio, non puoi pubblicarlo,
+
+00:23:02.900 --> 00:23:05.140
+non hai aggiunto un tag alt”.
+
+00:23:05.140 --> 00:23:06.930
+Non sto dicendo che dovrebbe
+avere un alert del genere
+
+00:23:06.930 --> 00:23:08.390
+ma sarebbe davvero
+bello se lo facesse,
+
+00:23:08.390 --> 00:23:12.250
+perché personalmente a volte
+dimentico o ho fretta,
+
+00:23:12.250 --> 00:23:16.310
+e sarebbe davvero
+utile se ci fosse un avviso
+
+00:23:16.310 --> 00:23:18.600
+che a volte è
+necessario fare un controllo.
+
+00:23:18.600 --> 00:23:24.240
+So che in Word compare
+una piccola icona in basso
+
+00:23:24.240 --> 00:23:26.840
+per farmi sapere che ci sono
+problemi di accessibilità.
+
+00:23:28.390 --> 00:23:36.390
+Quindi c'è qualcosa che aiuterà
+a fare parte del lavoro sporco,
+
+00:23:38.250 --> 00:23:41.040
+lo attivo, per controllare tutto
+per assicurarmi che...
+
+00:23:42.310 --> 00:23:45.570
+Non fa tutto il lavoro
+perché non si assicura che,
+
+00:23:45.570 --> 00:23:48.170
+Diciamo, che il
+testo alternativo sia significativo.
+
+00:23:49.500 --> 00:23:53.680
+Si limita piuttosto a verificare se gli
+elementi programmabili sono presenti, sì o no?
+
+00:23:56.440 --> 00:24:02.050
+E la sezione B2, a completamento di B1, come ho detto
+prima, deve prevedere dei processi
+
+00:24:02.050 --> 00:24:06.050
+per aiutarvi a produrre contenuti,
+ma B2 prevede il supporto dell'autore
+
+00:24:06.050 --> 00:24:07.550
+nella creazione di contenuti accessibili.
+
+00:24:07.550 --> 00:24:10.710
+Non lo fa per
+voi, vi supporta.
+
+00:24:10.710 --> 00:24:13.690
+Quindi si assicura di
+fornirvi indicazioni.
+
+00:24:13.690 --> 00:24:17.470
+Ti aiuterà con
+modelli accessibili,
+
+00:24:17.470 --> 00:24:21.460
+e so che WordPress
+offre molti contenuti accessibili
+
+00:24:21.460 --> 00:24:23.790
+e template.
+
+00:24:23.790 --> 00:24:26.020
+Non credeteci sempre,
+solo perché lo dice lui.
+
+00:24:26.020 --> 00:24:30.390
+Consiglio sempre di verificarlo velocemente,
+perché come tutti sappiamo,
+
+00:24:30.390 --> 00:24:35.900
+Potrei dire di essere tedesca,
+per esempio, ma con il mio accento,
+
+00:24:35.900 --> 00:24:39.310
+potreste dire: “Non sono sicuro
+che tu stia dicendo la verità, Helen.”
+
+00:24:39.310 --> 00:24:41.440
+Quindi il solo fatto che io dica
+qualcosa non la rende vera.
+
+00:24:41.440 --> 00:24:44.330
+Quindi solo perché qualcosa dice
+di essere accessibile, non significa che lo sia
+
+00:24:44.330 --> 00:24:45.820
+al 100%.
+
+00:24:45.820 --> 00:24:50.680
+Quindi sì, è ottimo che producano
+contenuti e modelli accessibili,
+
+00:24:52.440 --> 00:24:55.910
+ma dovete anche assicurarvi
+che possiate cambiare i modelli
+
+00:24:55.910 --> 00:24:59.240
+per adattarli alle vostre esigenze e
+a quelle del vostro pubblico, a seconda delle necessità.
+
+00:24:59.240 --> 00:25:05.070
+E inoltre, aiuteranno gli autori
+con contenuti pre-creati e accessibili?
+
+00:25:06.340 --> 00:25:09.200
+Di nuovo, questo aiuta
+ad assicurarsi che
+
+00:25:09.200 --> 00:25:13.940
+se non sei molto
+esperto di tecnologia, alcune di queste cose ti sembreranno
+
+00:25:13.940 --> 00:25:16.610
+un po' troppo per cominciare.
+
+00:25:16.610 --> 00:25:20.400
+Quindi ti consiglio se hai
+una grande comunità di supporto
+
+00:25:21.470 --> 00:25:24.490
+questo aiuterà,
+questo fa una differenza enorme
+
+00:25:24.490 --> 00:25:27.070
+per aiuitare a creare
+contenuti accessibili.
+
+00:25:27.070 --> 00:25:32.010
+E sì, gli autori vengono supportati
+nel migliorare l'accessibilità.
+
+00:25:32.010 --> 00:25:36.460
+Quindi, di nuovo, è un po' come
+la parte della funzione guidata.
+
+00:25:36.460 --> 00:25:40.760
+Quando dico funzione guidata, non mi riferisco alla
+graffetta, ma a qualcosa del genere.
+
+00:25:42.010 --> 00:25:46.480
+E fondamentalmente a volte
+Quando non sono sicura di muovermi
+
+00:25:46.480 --> 00:25:50.270
+tra le opzioni di accessibilità,
+potrei non essere in grado di ottenere
+
+00:25:50.270 --> 00:25:52.600
+riorganizzare il contenuto.
+
+00:25:52.600 --> 00:25:55.380
+Come nelle slide,
+a volte si va avanti,
+
+00:25:55.380 --> 00:25:57.980
+a volte indietro con la leggibilità.
+
+00:25:57.980 --> 00:26:00.040
+Dipende tutto da cosa
+faceva la mia prima slide.
+
+00:26:00.040 --> 00:26:06.270
+E poi ho la possibilità di
+cliccare per andare all'opzione di riordino
+
+00:26:06.270 --> 00:26:09.350
+perché lo trovo facilmente
+nelle opzioni del menu.
+
+00:26:09.350 --> 00:26:13.710
+Ed è bello che ti dia
+un rapido accesso allo strumento di cui hai bisogno
+
+00:26:13.710 --> 00:26:15.400
+per poter correggere gli elementi.
+
+00:26:15.400 --> 00:26:17.860
+Quindi quando parlo di “wizard”,
+intendo qualcosa
+
+00:26:17.860 --> 00:26:22.500
+che ti fornisce alcune scorciatoie per
+ciò di cui hai chiaramente bisogno di aiuto.
+
+00:26:22.500 --> 00:26:27.680
+E li chiamo maghi
+perché è un'arte oscura
+
+00:26:27.680 --> 00:26:32.490
+a volte mi legge nel pensiero,
+ma sembra che funzioni piuttosto bene.
+
+00:26:32.490 --> 00:26:34.500
+Quindi dev'essere magico.
+
+00:26:34.500 --> 00:26:39.130
+Comunque, assistono gli autori 
+con i problemi di accessibilità?
+
+00:26:39.130 --> 00:26:41.010
+Di nuovo, si esegue un controllo di accessibilità.
+
+00:26:42.380 --> 00:26:44.650
+E aiutano a riparare eventuali errori?
+
+00:26:47.220 --> 00:26:51.360
+E promuovono e integrano
+le loro funzionalità di accessibilità?
+
+00:26:54.440 --> 00:26:56.290
+In altre parole,
+dovete cercarlo voi stessi?
+
+00:26:56.290 --> 00:26:59.930
+Dovete davvero cercare di capire come
+fare qualcosa, oppure lo strumento
+
+00:26:59.930 --> 00:27:03.170
+Tenta di farlo per te e
+poi ti avvisa che l’operazione è stata completata?
+
+00:27:03.170 --> 00:27:10.880
+Non sto cercando di dire 
+di non usare affatto certi strumenti,
+
+00:27:10.880 --> 00:27:14.620
+ma noterai che c'è
+un'agenda nascosta in questo discorso
+
+00:27:14.620 --> 00:27:17.400
+perché in parte [Inudibile 27:17].
+
+00:27:17.400 --> 00:27:21.200
+In ogni caso, assicuratevi che gli
+strumenti di creazione promuovano
+
+00:27:21.200 --> 00:27:23.980
+e integrino le loro
+funzionalità di accessibilità, ma vi permettano di sapere
+
+00:27:23.980 --> 00:27:28.360
+cosa stanno facendo, e che possiate
+modificarlo se necessario.
+
+00:27:28.360 --> 00:27:31.500
+E di nuovo, do un'occhiata.
+
+00:27:34.140 --> 00:27:37.550
+Quindi insomma, quando si crea un contenuto,
+è necessario renderlo accessibile.
+
+00:27:38.730 --> 00:27:39.860
+Questo è scontato.
+
+00:27:39.860 --> 00:27:42.520
+Siete arrivati a questa giornata di
+interventi dove tante
+
+00:27:42.520 --> 00:27:46.110
+persone, appassionate,
+vi danno innumerevoli suggerimenti e consigli,
+
+00:27:46.110 --> 00:27:49.290
+e io con il mio piccolo sfogo
+dico “non usatee gli overlays
+
+00:27:49.290 --> 00:27:50.290
+perché sono cattiva.
+
+00:27:51.870 --> 00:27:54.730
+Ma dovete assicurarvi
+che sia accessibile.
+
+00:27:54.730 --> 00:27:55.440
+La responsabilità è vostra.
+
+00:27:55.440 --> 00:27:57.110
+Nessun altro può portarvelo via.
+
+00:27:57.110 --> 00:28:01.690
+Qualcuno può farvi un audit e
+dirvi cosa fare, ma è vostra responsabilità.
+
+00:28:01.690 --> 00:28:03.690
+Voi siete quelli che
+creano il contenuto.
+
+00:28:03.690 --> 00:28:08.860
+Quindi è una responsabilità piuttosto grande
+perché allora otterrai meno sarcasmo
+
+00:28:08.860 --> 00:28:12.550
+da parte mia, se per caso ti conoscessi.
+
+00:28:12.550 --> 00:28:16.890
+Comunque, le ATAG aiutano, perché
+vi indicano su cosa concentrarvi.
+
+00:28:16.890 --> 00:28:18.820
+Ha alcune linee guida.
+
+00:28:18.820 --> 00:28:22.720
+Alcune possono essere leggermente fraintese,
+come i processi automatici,
+
+00:28:22.720 --> 00:28:27.140
+ma vi permettono di comprendere
+su cosa focalizzarvi.
+
+00:28:27.140 --> 00:28:30.490
+Posso apportare le
+modifiche? Sono supportato?
+
+00:28:30.490 --> 00:28:34.260
+Non si tratta di lasciarvi a cercare
+di capire cosa fare da soli.
+
+00:28:36.660 --> 00:28:40.548
+Ed è spesso meglio
+usarlo con questa checklist
+
+00:28:40.549 --> 00:28:44.170
+prima di effettuare qualsiasi test WCAG
+sul vostro sito web.
+
+00:28:44.170 --> 00:28:47.810
+Perché se conoscete
+come risolvere gli errori
+
+00:28:47.810 --> 00:28:51.810
+e l'hai fatto,
+se avete seguito la parte ATAG
+
+00:28:51.810 --> 00:28:57.230
+per assicurarti che i plugin
+vi permettano di apportare modificare, quindi
+
+00:28:57.230 --> 00:29:01.950
+quando effettuerai un audit 
+del sito web di cui sei l'autore,
+
+00:29:01.950 --> 00:29:04.930
+Immagino che sia un sito web
+che documenti o qualcosa del genere...
+
+00:29:04.930 --> 00:29:07.740
+Ma se hai fatto la
+parte ATAG e ti sei assicurato di
+
+00:29:07.740 --> 00:29:11.890
+aver applicato tutti questi elementi
+al contenuto che stai offrendo,
+
+00:29:11.890 --> 00:29:14.582
+quindi quando si arriva a fare un audit,
+
+00:29:14.583 --> 00:29:17.750
+gli elementi trovati saranno
+i casi limite
+
+00:29:17.750 --> 00:29:21.300
+e non il... non so,
+un altro tag alt del logo
+
+00:29:21.300 --> 00:29:23.850
+quando non è nemmeno un logo.
+
+00:29:25.190 --> 00:29:27.420
+E se i plugin o
+gli strumenti non vi permettono
+
+00:29:27.420 --> 00:29:30.790
+di creare contenuti accessibili,
+ce ne sono disponibili altri.
+
+00:29:30.790 --> 00:29:33.620
+Sono come i motori di ricerca,
+ce ne sono sempre altri disponibili.
+
+00:29:33.620 --> 00:29:37.370
+E se non ce n'è uno che soddisfa
+le vostre esigenze, chiedete alla community,
+
+00:29:37.370 --> 00:29:45.370
+perché sono sicura che
+sapranno consigliarvi
+
+00:29:45.410 --> 00:29:48.220
+su ciò che raccomandano,
+incluso Joe,
+
+00:29:48.220 --> 00:29:49.860
+che potrebbe averne
+creato uno lui stesso.
+
+00:29:51.290 --> 00:29:53.010
+Bene, domande?
+
+00:29:56.196 --> 00:29:58.170
+JOOST: Abbiamo
+una domanda in sospeso,
+
+00:29:58.170 --> 00:30:01.270
+e in realtà ho
+anche alcune domande, ma iniziamo
+
+00:30:01.270 --> 00:30:04.010
+con una domanda di
+Yohann del reparto Vendite.
+
+00:30:04.010 --> 00:30:06.600
+Immagino che sia olandese,
+spero di non sbagliare il nome.
+
+00:30:08.480 --> 00:30:13.760
+Questa intelligenza artificiale o machine learning
+può ora occuparsi dell'accessibilità per noi?
+
+00:30:13.760 --> 00:30:15.250
+Arriveremo a quel punto?
+
+00:30:15.250 --> 00:30:21.650
+Se interrompi la condivisione dello schermo,
+potremo vederti un po' meglio.
+
+00:30:21.650 --> 00:30:23.970
+HELEN: Sei sicuro di volerlo fare?
+
+00:30:23.970 --> 00:30:24.740
+Non lo so.
+
+00:30:25.820 --> 00:30:26.740
+JOOST: Sì, ne sono sicuro.
+
+00:30:26.740 --> 00:30:30.960
+HELEN: Ma comunque, AI,
+penso che dovrei parlarne
+
+00:30:30.960 --> 00:30:32.390
+a Chris Land a proposito di questo.
+
+00:30:32.390 --> 00:30:38.210
+Ma per quanto riguarda l’IA,
+sta migliorando, ma è solo
+
+00:30:38.210 --> 00:30:40.060
+tanto intelligente quanto le persone
+che la programmano.
+
+00:30:40.060 --> 00:30:45.670
+Quando Facebook
+ha introdotto per la prima volta l'intelligenza artificiale per le immagini,
+
+00:30:45.670 --> 00:30:49.270
+io postavo una foto di mio figlio
+con l'elmo da cavaliere,
+
+00:30:49.270 --> 00:30:54.060
+e il testo alternativo elaborato
+diventava persona, al chiuso,
+
+00:30:54.060 --> 00:30:55.620
+magari che indossa le scarpe.
+
+00:30:55.620 --> 00:30:57.180
+E io pensavo, “Aspetta, c'è un casco?”
+
+00:30:57.180 --> 00:30:57.860
+Cosa?
+
+00:30:57.860 --> 00:31:03.600
+E mi rendo conto che
+quando si tratta di intelligenza artificiale,
+
+00:31:05.990 --> 00:31:10.910
+può essere incredibilmente intelligente,
+ma sta acquisendo questa conoscenza
+
+00:31:10.910 --> 00:31:12.290
+da quello che gli stiamo dicendo.
+
+00:31:13.340 --> 00:31:15.660
+Quindi se non forniamo
+un testo alternativo significativo
+
+00:31:15.660 --> 00:31:20.760
+quando sbaglia,
+non sarà in grado di imparare.
+
+00:31:20.760 --> 00:31:24.180
+Quindi ovviamente,
+sto sempre correggendo l'IA,
+
+00:31:24.180 --> 00:31:28.650
+perché mio figlio indossa sempre
+le scarpe... beh, a volte no.
+
+00:31:28.650 --> 00:31:30.190
+Oh cielo, sì, comunque.
+
+00:31:31.210 --> 00:31:34.910
+Ma forse indossare le scarpe mi ha colpito
+perché mi chiedevo, tipo,
+
+00:31:34.910 --> 00:31:38.500
+quanto l'IA sia addestrata
+da persone ossessionate dalle scarpe?
+
+00:31:40.900 --> 00:31:48.460
+Ma usando il testo alternativo,
+penso che, se lo modifichiamo,
+
+00:31:48.460 --> 00:31:51.040
+e se l’IA interviene,
+so che Facebook molto spesso
+
+00:31:51.040 --> 00:31:53.870
+rivenderà i miei dati alle
+macchina che stanno apprendendo
+
+00:31:53.870 --> 00:31:56.460
+in background perché
+sappiamo tutti che esistono per fare soldi.
+
+00:31:57.650 --> 00:32:00.090
+Ricevete qualcosa gratis,
+quindi devono fare soldi
+
+00:32:00.090 --> 00:32:01.400
+grazie a voi in qualche modo.
+
+00:32:01.400 --> 00:32:05.090
+Sembro così cupa, vero?
+
+00:32:05.090 --> 00:32:10.660
+Ma comunque, per quanto riguarda l’IA,
+sì, potrebbe occuparsi di accessibilità
+
+00:32:10.660 --> 00:32:12.280
+al posto vostro fino a un certo punto.
+
+00:32:14.020 --> 00:32:18.940
+Ed è qui che dobbiamo
+essere in grado di intervenire da soli.
+
+00:32:18.940 --> 00:32:21.910
+Ecco perché trovo
+pericolosi gli overlays.
+
+00:32:21.910 --> 00:32:25.830
+Perché stanno usando una forma di
+IA che inserisce JavaScript
+
+00:32:25.830 --> 00:32:29.040
+nel vostro sito e a volte
+lo rendono meno accessibile
+
+00:32:29.040 --> 00:32:32.770
+in primo luogo, a causa 
+degli elementi che hanno aggiunto.
+
+00:32:32.770 --> 00:32:35.390
+E fanno in modo che
+non possiate modificarlo voi stessi.
+
+00:32:39.320 --> 00:32:40.390
+In che modo questo può aiutare qualcuno?
+
+00:32:40.390 --> 00:32:44.600
+Come imparano dagli
+errori che commettono?
+
+00:32:44.600 --> 00:32:48.342
+La vera intelligenza artificiale fornirà
+suggerimenti e poi imparerà
+
+00:32:48.343 --> 00:32:50.670
+dal feedback che fornite.
+
+00:32:50.670 --> 00:32:56.090
+Lo so perché Christopher
+Land tiene molti talk sull'IA,
+
+00:32:56.090 --> 00:32:59.930
+ed è molto
+divertente parlarne.
+
+00:32:59.930 --> 00:33:03.870
+E una delle cose che ho notato
+è che, quando ne parla,
+
+00:33:03.870 --> 00:33:08.080
+fa esempi di Dall-E, dove
+l'arte viene creata partendo da suggerimenti.
+
+00:33:09.100 --> 00:33:15.850
+E come punto di vista, se qualcuno lo dice
+a Dall-E... Ora non ricordo, ma comunque
+
+00:33:15.850 --> 00:33:16.570
+JOOST: Dall-E.
+
+00:33:16.570 --> 00:33:20.290
+HELEN: Ora mi viene in mente la
+pecora Dolly, non è vero?
+
+00:33:20.290 --> 00:33:27.440
+Sì, comunque, ma se tutti dicessero
+a Dall-E che un'auto è un aereo,
+
+00:33:29.220 --> 00:33:34.380
+quando deve creare un’immagine di
+un'auto e mostra un aereo,
+
+00:33:34.380 --> 00:33:36.580
+non è sbagliato, si
+basa semplicemente su ciò che le è stato detto.
+
+00:33:37.690 --> 00:33:41.090
+Quindi se non istruiremo
+l'IA o non la “nutriremo”...
+
+00:33:41.090 --> 00:33:44.220
+Ricordo che
+una volta qualcuno mi ha detto che
+l'IA è come un bambino piccolo,
+
+00:33:44.220 --> 00:33:46.800
+e siccome ho un bambino piccolo,
+so come funziona.
+
+00:33:46.800 --> 00:33:49.860
+Devi educarli affinché
+apprenda il giusto dallo sbagliato.
+
+00:33:49.860 --> 00:33:52.910
+Ma devi anche sopportare
+un sacco di capricci,
+
+00:33:52.910 --> 00:33:54.970
+e pasticci lungo il cammino.
+
+00:33:54.970 --> 00:33:58.140
+È un processo
+di apprendimento per tutti.
+
+00:33:58.140 --> 00:34:06.140
+E se non insegniamo all'IA, speriamo
+che la vita umana valga la pena di essere salvata...
+
+00:34:06.650 --> 00:34:08.150
+lo dico e basta.
+
+00:34:08.150 --> 00:34:13.290
+Ma se non insegniamo all'IA
+empatia e comprensione,
+
+00:34:13.290 --> 00:34:15.540
+come farà ad occuparsi bene dell'accessibilità?
+
+00:34:15.540 --> 00:34:23.540
+Quindi non ci siamo ancora, ma credo
+che ci arriveremo se,
+
+00:34:24.420 --> 00:34:29.250
+ma solo se, la aiutiamo
+a imparare qualcosa.
+
+00:34:29.250 --> 00:34:32.380
+E sì, Yohan, è divertente,
+non è vero, avere figli
+
+00:34:32.380 --> 00:34:35.080
+a cui non piace dormire
+a certi orari?
+
+00:34:35.080 --> 00:34:37.350
+JOOST: Lo capisco.
+
+00:34:37.350 --> 00:34:42.400
+Ho quattro figli che fortunatamente
+ora sono leggermente più grandi dell'età dei bambini piccoli,
+
+00:34:42.400 --> 00:34:43.860
+quindi finalmente posso dormire.
+
+00:34:43.860 --> 00:34:47.200
+HELEN: Oh, no, allora resti
+sveglio a chiederti dove sono
+
+00:34:47.200 --> 00:34:48.390
+se non tornano a casa in orario.
+
+00:34:49.225 --> 00:34:51.360
+JOOST: Oh, sì,
+non farmi iniziare.
+
+00:34:51.360 --> 00:34:53.680
+HELEN: Sì, comunque.
+
+00:34:53.680 --> 00:34:57.940
+JOOST: Vedo una domanda
+di Joe tramite Estella.
+
+00:34:57.940 --> 00:35:01.690
+Puoi fornire un
+esempio concreto di contenuto automatizzato?
+
+00:35:01.690 --> 00:35:05.110
+Qual è uno scenario pratico che
+le persone potrebbero incontrare
+
+00:35:05.110 --> 00:35:07.530 
+in cui vengono creati
+contenuti automatizzati?
+
+00:35:11.081 --> 00:35:12.206
+ELENCA: OK.
+
+00:35:13.770 --> 00:35:18.780
+Se usate Word e
+incollate un'immagine,
+
+00:35:19.930 --> 00:35:23.690
+verrà generato
+un testo alternativo e 
+
+00:35:23.690 --> 00:35:29.000
+sotto ci sarà una frase che
+dice: “contenuto generato automaticamente.”
+
+00:35:29.000 --> 00:35:31.930
+E questo viene segnalato
+dal verificatore di accessibilità
+
+00:35:31.930 --> 00:35:34.470
+perché è una frase
+che cerca per assicurarsi
+
+00:35:34.470 --> 00:35:39.040
+che abbiate verificato che il
+testo alternativo sia corretto.
+
+00:35:39.040 --> 00:35:43.500
+È ottino perché non
+solo vi dice cosa fa,
+
+00:35:43.500 --> 00:35:50.420
+che ha generato il
+testo alternativo, ma anche che sta tentando di farlo.
+
+00:35:50.420 --> 00:35:55.240
+Quindi questo è il
+contenuto automatizzato che viene creato.
+
+00:35:57.210 --> 00:36:01.220
+E come Facebook, ancora una volta,
+dice: “potrebbe esserlo”.
+
+00:36:01.220 --> 00:36:02.390
+Non affermai mai che lo sia con certezza.
+
+00:36:02.390 --> 00:36:06.530
+Dirà: “Potrebbe essere questo”,
+perché sa che potrebbe sbagliarsi.
+
+00:36:06.530 --> 00:36:11.590
+Ma non tutti sapranno che
+qualcosa è stato automatizzato
+
+00:36:11.590 --> 00:36:16.130
+perché non tutti gli strumenti lo mostrano
+in un modo evidente.
+
+00:36:17.180 --> 00:36:21.180
+Quindi se avete uno strumento che
+genera testo alternativo
+
+00:36:21.180 --> 00:36:24.950
+che non avete creato voi, non deriva
+dal file sorgente originale,
+
+00:36:24.950 --> 00:36:29.380
+e risulta sbagliato, allora
+vi farà sembrare un po'
+
+00:36:29.380 --> 00:36:33.080
+di un [Inudibile 36:30]
+
+00:36:33.080 --> 00:36:35.750
+per non aver inserito il termine corretto
+nel testo alternativo.
+
+00:36:35.750 --> 00:36:39.880
+Quindi, questa è una cosa che vi
+consiglio di controllare nei vostri plugin.
+
+00:36:39.880 --> 00:36:45.060
+Se lo fanno con l’IA,
+vi rendono facile
+
+00:36:45.060 --> 00:36:46.050
+capire che l'hanno fatto?
+
+00:36:48.140 --> 00:36:49.280
+JOOST: Chiaro.
+
+00:36:49.280 --> 00:36:54.370
+Quindi per tutti coloro che ascoltano e
+guardano, c'è un pulsante Q e A
+
+00:36:54.370 --> 00:36:58.590
+nella parte inferiore della schermata Zoom,
+dove potete aggiungere le vostre domande.
+
+00:36:58.590 --> 00:37:01.860
+Abbiamo un'altra domanda
+da Gina Sheldrake.
+
+00:37:01.860 --> 00:37:06.350
+chiede, per quanto riguarda i plugin o i temi,
+se ci sono risorse 
+
+00:37:06.350 --> 00:37:10.440
+per aiutarci a capire
+chi è affidabile e chi no
+
+00:37:10.440 --> 00:37:12.460 
+nei loro plugin e temi
+accessibili?
+
+00:37:15.120 --> 00:37:18.540
+Mi scuso se rispondo a
+nome tuo, Helen, ma so
+
+00:37:18.540 --> 00:37:22.410
+dalla chat che Joe
+Dolson ha appena condiviso un link
+
+00:37:22.410 --> 00:37:28.510
+alla lista dei plugin del team di accessibilità
+di WordPress,
+
+00:37:28.510 --> 00:37:32.410
+che ti aiutano a migliorare effettivamente
+il sito e che non sono overlay,
+
+00:37:32.410 --> 00:37:37.760
+come quelli che Helen
+ha gentilmente illustrato.
+
+00:37:39.580 --> 00:37:43.970
+Bene, sì, quindi c'è una lista,
+ma ci sono altre cose
+
+00:37:43.970 --> 00:37:46.530
+che vorresti aggiungere, Helen?
+
+00:37:46.530 --> 00:37:50.270
+Altre risorse a cui
+fare riferimento?
+
+00:37:51.280 --> 00:37:54.690 
+HELEN: Per prima cosa,
+chiedete alla community.
+
+00:37:54.690 --> 00:38:00.980
+E controllate anche l'azienda che
+lo produce, perché io ho capito subito
+
+00:38:00.980 --> 00:38:06.360
+quando vedo un Accessaby o
+esaminando l'elenco ora
+
+00:38:06.360 --> 00:38:09.280
+che ho aperto qui.
+
+00:38:09.280 --> 00:38:12.150
+Quindi quando scorri 
+l'elenco e vedi il nome di un'azienda
+
+00:38:12.150 --> 00:38:16.340
+che sai essere un
+fornitore di overlay, come Userway,
+
+00:38:16.340 --> 00:38:21.160
+che mi dice di non usarlo,
+verrà applicato
+
+00:38:21.160 --> 00:38:27.540
+ciò che ritiene giusto,
+o che è programmato debba essere fatto.
+
+00:38:27.540 --> 00:38:32.380
+Non dovrei mai incolpare lo
+strumento in sé perché è solo
+
+00:38:32.380 --> 00:38:35.760
+buono quanto il programma che
+lo fa con le sue migliori intenzioni,
+
+00:38:35.760 --> 00:38:37.710
+ma sì comunque.
+
+00:38:39.560 --> 00:38:41.850
+Ma anche,
+quando scorro le descrizioni,
+
+00:38:41.850 --> 00:38:49.850
+se vedo qualcosa come “bisogna pagare,
+per modificherò gli elementi per te.”
+
+00:38:50.910 --> 00:38:53.710
+Non dovete fare alcun lavoro
+voi stessi.
+
+00:38:54.730 --> 00:38:58.410
+Questa è un po' un’illusione,
+è un po' quello che tutti vogliono
+
+00:38:58.410 --> 00:39:05.500
+perché ti indica
+esattamente la strada più facile.
+
+00:39:05.500 --> 00:39:11.570
+Se è troppo facile, allora
+non sarete in grado di cambiarlo da soli,
+
+00:39:11.570 --> 00:39:14.110
+e questo vuol dire che potreste
+finire per produrre completamente
+
+00:39:15.490 --> 00:39:18.960
+inserisci qui parole volgari,
+invece di qualcosa che 
+
+00:39:18.960 --> 00:39:20.020
+aiuti il vostro pubblico.
+
+00:39:21.900 --> 00:39:25.780
+JOOST: Sì, se sembra troppo
+bello per essere vero, spesso lo è,
+
+00:39:25.780 --> 00:39:29.260
+come ha già detto Jonathan
+nella chat.
+
+00:39:29.260 --> 00:39:32.060
+Ma penso che se state cercando
+risorse, siete
+
+00:39:32.060 --> 00:39:32.930
+nel posto giusto.
+
+00:39:32.930 --> 00:39:34.970
+Insomma,
+siete qui ad ascoltare questo talk,
+
+00:39:34.970 --> 00:39:37.680
+partecipate al
+gruppo Slack dedicato al WordPress Accessibility Day.
+
+00:39:37.680 --> 00:39:41.840
+Troverete un sacco di persone disposte
+ad aiutarvi a trovare i plug-in giusti
+
+00:39:41.840 --> 00:39:45.190
+e risorse per
+ogni esigenza.
+
+00:39:45.190 --> 00:39:48.090
+Ora, anch'io ho una domanda,
+Helen.
+
+00:39:48.090 --> 00:39:52.180
+Quanto lavoro extra è
+necessario per aggiungere un check ATAG
+
+00:39:52.180 --> 00:39:54.257
+al vostro controllo di accessibilità,
+
+00:39:54.258 --> 00:39:57.520
+e dove
+lo inserite nel processo?
+
+00:40:01.100 --> 00:40:06.960
+HELEN: Integra le
+WCAG, se è solo per me
+
+00:40:06.960 --> 00:40:12.110
+e per il mio uso personale,
+faccio la parte B sugli elementi che utilizzo
+
+00:40:12.110 --> 00:40:15.510
+per assicurarmi che, quando
+produco contenuti, sono in grado
+
+00:40:15.510 --> 00:40:20.740
+di non essere bloccata. E lo stesso quando me
+lo impongono, l'azienda dice che devo
+
+00:40:20.740 --> 00:40:25.050
+utilizzare questo prodotto e poi
+non posso creare grafici per i miei report
+
+00:40:25.050 --> 00:40:26.050
+che siano accessibili.
+
+00:40:26.960 --> 00:40:28.300
+È così frustrante.
+
+00:40:28.300 --> 00:40:32.380
+Ed è questo tipo di problema,
+assicurarsi di poter fare ciò di cui ho bisogno
+
+00:40:32.380 --> 00:40:34.260
+senza frustrazione.
+
+00:40:35.380 --> 00:40:36.610
+Quindi non richiede molto lavoro in più.
+
+00:40:36.610 --> 00:40:38.500
+E questa è solo una
+cosa di buon senso.
+
+00:40:38.500 --> 00:40:43.500
+Ma per quanto riguarda l'audit
+in sé, non ci vuole molto di più
+
+00:40:43.500 --> 00:40:46.590
+rispetto alle WCAG perché
+molto spesso
+
+00:40:46.590 --> 00:40:50.100
+dall'esecuzione dei
+controlli delle linee guida sull'accessibilità dei contenuti web,
+
+00:40:50.100 --> 00:40:52.350
+noterete il
+testo alternativo,
+
+00:40:52.350 --> 00:40:56.370
+noterete la navigabilità 
+da tastiera e così via,
+
+00:40:56.370 --> 00:40:58.290
+perché ne fanno già parte.
+
+00:40:59.380 --> 00:41:02.110
+Ma ricordate che se stai usando
+un'applicazione non funzionerà
+
+00:41:02.110 --> 00:41:04.410
+come i siti web in cui hai
+
+00:41:04.410 --> 00:41:07.050
+le stesse scorciatoie da tastiera.
+
+00:41:07.050 --> 00:41:14.030
+Quindi una cosa che consiglio quando
+si tratta di ATAG è di assicurarsi
+
+00:41:14.030 --> 00:41:16.040
+innanzitutto
+che si tratta di uno strumento di creazione.
+
+00:41:16.040 --> 00:41:18.740
+Se non è uno strumento di creazione,
+non stai creando contenuti.
+
+00:41:18.740 --> 00:41:20.310
+Se è davvero facile,
+non farlo affatto.
+
+00:41:21.450 --> 00:41:25.590
+Ma quando si tratta di creare
+contenuti, è importante sia a livello personale
+
+00:41:25.590 --> 00:41:30.140
+sia in un modalità audit
+perché fa degli extra.
+
+00:41:30.140 --> 00:41:33.460
+Guarda il supporto, 
+guarda l'aiuto.
+
+00:41:33.460 --> 00:41:35.060
+E non
+ci vuole poi così tanto tempo.
+
+00:41:35.060 --> 00:41:39.450
+Se ci mette molto tempo per fare
+quella parte, non è accessibile.
+
+00:41:39.450 --> 00:41:40.640
+È sempre un grande segnale.
+
+00:41:41.790 --> 00:41:42.560
+Quindi sì.
+
+00:41:42.560 --> 00:41:43.830
+Scusa, la risposta è un po' lunga.
+
+00:41:44.820 --> 00:41:46.380
+JOOST: Nessun problema.
+
+00:41:46.380 --> 00:41:50.730
+Quindi ci stavi
+già accennando un po', ma come faccio a saperlo?
+
+00:41:50.730 --> 00:41:53.210
+se devo controllare
+le linee guida ATAG?
+
+00:41:55.540 --> 00:41:56.570
+HELEN: Quando ti frustra.
+
+00:41:56.570 --> 00:41:58.140
+[Ride]
+
+00:41:58.140 --> 00:42:00.560
+Quando cerchi
+di creare contenuti,
+
+00:42:01.730 --> 00:42:03.890
+se si tratta di qualcosa che sta
+visualizzando i tuoi contenuti,
+
+00:42:03.890 --> 00:42:06.120
+allora si tratta delle
+le linee guida per l'accessibilità dei browser.
+
+00:42:07.450 --> 00:42:10.180
+So che quando ho
+iniziato a fare test sui dispositivi mobili,
+
+00:42:10.181 --> 00:42:12.044
+tutti dicevano: “Oh,
+WC, non conta.”
+
+00:42:12.045 --> 00:42:13.430
+Io rispondevo, “beh, in realtà conta.”
+
+00:42:13.430 --> 00:42:19.690
+Perché la tua app mobile è 
+lo user agent che riproduce il contenuto.
+
+00:42:19.690 --> 00:42:24.090
+Quindi è disponibile online, ma
+non in un browser riconosciuto.
+
+00:42:25.520 --> 00:42:29.308
+Quindi sì, non è sempre
+una soluzione unica per tutti,
+
+00:42:29.309 --> 00:42:31.950
+ma capendo che sei
+
+00:42:31.950 --> 00:42:36.090
+dal lato dello sviluppatore, che sei il
+creatore e gli strumenti di cui hai bisogno,
+
+00:42:36.090 --> 00:42:36.670
+avete bisogno delle ATAG.
+
+00:42:38.380 --> 00:42:39.780
+JOOST: Perfetto.
+
+00:42:39.780 --> 00:42:44.550
+Bene, con questo, siamo giunti alla
+fine della nostra sessione di domande,
+
+00:42:44.550 --> 00:42:47.830
+e con ciò anche alla
+fine di questa sessione.
+
+00:42:47.830 --> 00:42:49.880
+Grazie a tutti per aver partecipato.
+
+00:42:49.880 --> 00:42:53.260
+Grazie, Helen,
+per la tua eccellente presentazione.
+
+00:42:53.260 --> 00:42:55.420
+Potete continuare la
+conversazione in chat
+
+00:42:55.420 --> 00:42:58.161
+o sui social media
+utilizzando gli hashtag,
+
+00:42:58.162 --> 00:43:01.420
+che sono estremamente difficili
+da pronunciare.
+
+00:43:01.420 --> 00:43:03.230
+Non so perché lo facciano.
+
+00:43:03.230 --> 00:43:07.006
+#WPA11YDay è come,
+come lo pronuncio,
+
+00:43:07.007 --> 00:43:09.440
+WordPress Accessibility Day?
+
+00:43:09.440 --> 00:43:15.110
+OK, ho capito, ma
+quello è l'hashtag, ovvero #WPAD2023.
+
+00:43:15.110 --> 00:43:16.920
+Apprezziamo molto anche
+se andate
+
+00:43:16.920 --> 00:43:24.470
+su 2023.wpeaccessibility.day/feedback
+per fornire feedback anonimi
+
+00:43:24.470 --> 00:43:26.228
+per i nostri relatori sulle
+loro presentazioni
+
+00:43:26.229 --> 00:43:28.780
+in modo che possano migliorarle
+per la prossima volta.
+
+00:43:28.780 --> 00:43:31.720
+E mentre ci siete,
+potete anche partecipare all’estrazione di una T-shirt.
+
+00:43:32.970 --> 00:43:35.440
+Restate sintonizzati per la prossima
+sessione, in programma tra un'ora.
+
+00:43:35.440 --> 00:43:36.800
+Alle 10:00 UTC.
+
+00:43:36.800 --> 00:43:39.214
+Parleremo delle
+insidie dell'accessibilità
+
+00:43:39.215 --> 00:43:41.170
+dei menu di WordPress
+con Deneb Pulsifer.
+
+00:43:42.310 --> 00:43:46.050
+Mentre aspettate, non
+dimenticate di visitare le nostre pagine degli sponsor
+
+00:43:46.050 --> 00:43:48.210
+per ottenere un po' di gadget virtuale.
+
+00:43:48.210 --> 00:43:51.030
+Partecipate per avere la possibilità di
+vincere fantastici premi
+
+00:43:51.030 --> 00:43:52.830
+e ci vediamo subito dopo la pausa.
+
+00:43:52.830 --> 00:43:53.490
+Grazie a tutti.
+
+00:43:54.700 --> 00:43:55.860
+HELEN: Grazie per essere venuti.
+
+00:43:55.860 --> 00:43:56.860
+Evviva.
+
+00:43:57.750 --> 00:44:01.070
+Oh, e se siete un'azienda di overlay,
+non voglio feedback.
+
+00:44:01.070 --> 00:44:02.290
+[Ride]
+
+00:44:02.290 --> 00:44:03.290
+Per dire.
+
+00:44:05.900 --> 00:44:10.510
+AMBER: Grazie agli
+sponsor del WordPress Accessibility Day 2023.
+
+00:44:10.510 --> 00:44:13.340
+Sponsor Platinum -
+Equalize Digital.
+
+00:44:13.340 --> 00:44:16.120 
+Plug-in di controllo dell'accessibilità
+di Equalize Digital
+
+00:44:16.120 --> 00:44:18.870
+è uno
+strumento di scansione automatizzato dell'accessibilità
+
+00:44:18.870 --> 00:44:22.070
+che aiuta i siti web WordPress
+a diventare e rimanere accessibili.
+
+00:44:23.310 --> 00:44:26.170
+Sponsor Platinum – Gravity Forms.
+
+00:44:26.170 --> 00:44:29.790
+Gravity Forms è il
+costruttore di form professionali di cui avete bisogno
+
+00:44:29.790 --> 00:44:34.510
+per creare moduli
+belli, efficienti e accessibili.
+
+00:44:34.510 --> 00:44:41.520
+Sponsor Gold - 20i, Deque,
+Empire Caption Solutions, Pressable,
+
+00:44:41.520 --> 00:44:42.600
+e WP Engine.
+
+00:44:44.160 --> 00:44:51.040
+Sponsor Silver - Code Geek, Drake
+Cooper, GoDaddy, LoneRock Point,
+
+00:44:51.040 --> 00:44:56.260
+NerdPress, Overnight website di
+Kinetic Iris, Raiola Networks,
+
+00:44:57.530 --> 00:45:00.550
+A11Y Collective e The Blogsmith.
+
+00:45:02.420 --> 00:45:07.810
+Sponsor Bronzo - ExcessaCart,
+GreenGeeks Web Hosting,
+
+00:45:07.810 --> 00:45:19.539
+Hall Analysis SEO Consulting,
+HDC, ITX, Ivy Cat, Medabots,
+
+00:45:19.540 --> 00:45:24.475
+Pixel Chefs, Simply Schedule
+Appointments, SiteGround,
+
+00:45:24.476 --> 00:45:29.710
+Termageddon, Underrepresented
+in Tech, Weglot e Yoast.
