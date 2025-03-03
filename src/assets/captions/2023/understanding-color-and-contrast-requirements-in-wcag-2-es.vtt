@@ -1,0 +1,3716 @@
+﻿WEBVTT
+
+00:00:01.273 --> 00:00:04.600
+AMBER HINDS:
+Día de la Accesibilidad de WordPress 2023.
+
+00:00:04.600 --> 00:00:08.560
+Comprensión de los requisitos de color y
+contraste de la WCAG 2,
+
+00:00:08.560 --> 00:00:12.990
+con el orador Jonathan Whiting,
+Director de Capacitación, WebAIM.
+
+00:00:12.990 --> 00:00:15.790
+Grabado el 28 de septiembre de 2023.
+
+00:00:19.224 --> 00:00:19.790
+JASON FERREIRA: Bueno.
+
+00:00:19.790 --> 00:00:20.940
+Estamos en la hora exacta.
+
+00:00:23.000 --> 00:00:27.090
+Bienvenidos a todos los
+nuevos aquí para esta sesión;
+
+00:00:27.090 --> 00:00:30.260
+o si han estado
+aquí, bienvenidos de nuevo.
+
+00:00:30.260 --> 00:00:34.210
+Este es
+el Día de la Accesibilidad de WordPress 2023.
+
+00:00:34.210 --> 00:00:36.380
+Mi nombre es Jason Ferreira.
+
+00:00:36.380 --> 00:00:39.990
+En mi trabajo diario, soy el
+líder de accesibilidad para productos de consumo.
+
+00:00:39.990 --> 00:00:44.090
+en Dow Jones, pero por
+hoy seré su anfitrión.
+
+00:00:44.090 --> 00:00:47.380
+Gracias a todos por acompañarnos
+en Comprensión de los requisitos
+
+00:00:47.380 --> 00:00:51.030
+De color y  contraste de la WCAG
+2, con Jonathan Whiting.
+
+00:00:51.030 --> 00:00:53.170
+Un poco de historia sobre Jon.
+
+00:00:53.170 --> 00:00:56.820
+Jon es el Director
+de Capacitación en WebAIM.
+
+00:00:56.820 --> 00:00:59.180
+Su principal pasión es
+ayudar a otros a aprender.
+
+00:00:59.180 --> 00:01:02.980
+para hacer la web más accesible
+para las personas con discapacidad.
+
+00:01:02.980 --> 00:01:04.239
+Con una maestría
+
+00:01:04.240 --> 00:01:06.700
+en
+Tecnología Educativa y 20 años
+
+00:01:06.700 --> 00:01:10.170
+de experiencia en el campo
+de la accesibilidad web,
+
+00:01:10.170 --> 00:01:13.090
+Jonathan ha publicado docenas
+de artículos, tutoriales,
+
+00:01:13.090 --> 00:01:15.890
+y otros recursos instructivos.
+
+00:01:15.890 --> 00:01:19.490
+Ha viajado mucho para
+capacitar a miles de desarrolladores web,
+
+00:01:19.490 --> 00:01:23.640
+y otros profesionales que
+desarrollan o mantienen contenido web.
+
+00:01:23.640 --> 00:01:27.740
+Antes de darte paso,
+Jon, unos últimos anuncios.
+
+00:01:27.740 --> 00:01:30.480
+Asistentes, no duden
+en agregar sus preguntas.
+
+00:01:30.480 --> 00:01:33.900
+en la sección de preguntas y respuestas de Zoom,
+y las responderemos al final.
+
+00:01:33.900 --> 00:01:35.590
+de la sesión de hoy.
+
+00:01:35.590 --> 00:01:38.120
+Utilicen el chat para
+conectarse con otros asistentes.
+
+00:01:38.120 --> 00:01:42.290
+para conversar entre ustedes
+y usar la sección de preguntas y respuestas para cualquier pregunta.
+
+00:01:42.290 --> 00:01:45.760
+que les gustaría que Jon
+abordara al final aquí.
+
+00:01:45.760 --> 00:01:48.050
+Sin más preámbulos,
+te cedo la palabra, Jonathan,
+
+00:01:48.050 --> 00:01:49.160
+y comenzaremos.
+
+00:01:51.260 --> 00:01:52.390
+JONATHAN WHITING: Genial.
+
+00:01:52.390 --> 00:01:54.150
+Gracias, Jason,
+por tu introducción. Voy
+
+00:01:54.150 --> 00:01:55.550
+a compartirles mi pantalla.
+
+00:02:04.386 --> 00:02:06.079
+Muchas gracias por esa introducción.
+
+00:02:06.080 --> 00:02:07.759
+Voy a sumergirme de lleno 
+
+00:02:07.760 --> 00:02:09.370
+porque tenemos
+mucho de qué hablar.
+
+00:02:09.370 --> 00:02:12.420
+No sé en qué estaba
+pensando al intentar cubrir todo esto.
+
+00:02:12.420 --> 00:02:17.210
+en 40 minutos, pero haré
+lo mejor que pueda.
+
+00:02:17.210 --> 00:02:21.640
+Justo al principio, de hecho,
+Jacqueline puso un enlace en el chat.
+
+00:02:21.640 --> 00:02:25.130
+a una página con recursos
+relacionados con esto.
+
+00:02:25.130 --> 00:02:27.220
+Ahora, no voy a
+compartir las diapositivas,
+
+00:02:27.220 --> 00:02:29.370
+esto podría tener más
+sentido a medida que avancemos.
+
+00:02:29.370 --> 00:02:31.080
+Estas no son realmente
+diapositivas para compartir.
+
+00:02:31.080 --> 00:02:33.360
+Hay muchos
+problemas de accesibilidad que deben explicarse
+
+00:02:33.360 --> 00:02:34.760
+y lo hablaremos.
+
+00:02:34.760 --> 00:02:39.080
+Pero lo que sí quiero compartir es una
+página con varios recursos relacionados.
+
+00:02:39.080 --> 00:02:44.960
+Entonces, son artículos acerca de
+hacer que el contenido sea más accesible,
+
+00:02:44.960 --> 00:02:47.620
+artículos sobre lo que vamos
+a hablar realmente y algunas herramientas
+
+00:02:47.620 --> 00:02:48.840
+que también
+vamos a utilizar.
+
+00:02:48.840 --> 00:02:52.700
+Creo que esta será una
+página más útil para consultar más adelante,
+
+00:02:52.700 --> 00:02:56.080
+a diferencia de mis diapositivas que
+son solo puntos de conversación
+
+00:02:56.080 --> 00:02:57.190
+y muchas imágenes.
+
+00:02:59.470 --> 00:03:03.620
+quiero comenzar diciendo
+, en un nivel muy elevado,
+
+00:03:03.620 --> 00:03:06.290
+vamos a hablar,
+primordialmente, de dos principios.
+
+00:03:06.290 --> 00:03:09.270
+Voy a hablar sobre cómo
+asegurarse de tener un buen contraste.
+
+00:03:09.270 --> 00:03:11.360
+en las cosas que creen; y hablaré
+más sobre lo que quiero transmitir
+
+00:03:11.360 --> 00:03:12.090
+Y así
+
+00:03:12.090 --> 00:03:14.050
+no depender del color.
+
+00:03:14.050 --> 00:03:17.930
+Estos son los dos principios fundamentales
+de los que vamos a hablar.
+
+00:03:17.930 --> 00:03:20.570
+Y para hablar de todo
+eso, voy a intentar,
+
+00:03:20.570 --> 00:03:23.060
+en mayor medida,
+darles un ejemplo.
+
+00:03:23.060 --> 00:03:25.120
+Si tienen una pregunta
+no duden en escribirla en el chat.
+
+00:03:26.750 --> 00:03:29.800
+Voy a
+describirlo un poco.
+
+00:03:29.800 --> 00:03:30.760
+Tenemos una casilla de verificación.
+
+00:03:30.760 --> 00:03:32.450
+Es una casilla de verificación personalizada.
+
+00:03:32.450 --> 00:03:34.350
+Tengo una etiqueta
+con un enlace.
+
+00:03:34.350 --> 00:03:36.910
+Entonces, las etiquetas, las leí y
+acepté los términos de uso.
+
+00:03:36.910 --> 00:03:39.040
+Los términos de uso son el enlace.
+
+00:03:39.040 --> 00:03:40.680
+No está subrayado.
+
+00:03:40.680 --> 00:03:43.870
+Y tal vez alguien
+adivine cuántos colores
+
+00:03:43.870 --> 00:03:47.330
+y las comprobaciones de contraste que tendría
+para este ejemplo aquí,
+
+00:03:47.330 --> 00:03:49.440
+si evaluaran
+esto en una de sus páginas.
+
+00:03:52.160 --> 00:03:55.120
+Está bien, bien.
+
+00:03:55.120 --> 00:03:57.560
+Entonces tenemos tres, cinco.
+
+00:03:57.560 --> 00:03:59.480
+Esto es genial.
+
+00:03:59.480 --> 00:04:00.750
+Realmente aprecio esto.
+
+00:04:02.720 --> 00:04:05.590
+Daré sólo un segundo más
+para un par de conjeturas más.
+
+00:04:05.590 --> 00:04:06.220
+Excelente.
+
+00:04:06.220 --> 00:04:08.510
+Hay tres, cuatro, perfecto, OK.
+
+00:04:08.510 --> 00:04:10.150
+Eso es más o menos el promedio.
+
+00:04:10.150 --> 00:04:12.760
+La mayoría de la gente dice de tres a cinco.
+
+00:04:12.760 --> 00:04:15.610
+La realidad es que son 15 o más.
+
+00:04:15.610 --> 00:04:17.230
+Y ustedes dicen: Espera, ¿qué?
+
+00:04:17.230 --> 00:04:19.580 
+¿En serio 15 o más?
+les explicaré por qué.
+
+00:04:19.580 --> 00:04:20.910
+Pero sí, son muchos.
+
+00:04:20.910 --> 00:04:22.070
+son muchos controles.
+
+00:04:22.070 --> 00:04:24.360
+Muchas veces cuando estoy
+evaluando una página...
+
+00:04:24.360 --> 00:04:25.870
+Y eso es parte del trabajo que hago.
+
+00:04:25.870 --> 00:04:27.940
+Yo, principalmente en WebAIM,
+me centro en la capacitación,
+
+00:04:27.940 --> 00:04:29.880
+pero también hago trabajo de evaluación.
+
+00:04:29.880 --> 00:04:33.060
+Y hay veces
+en las que gasto casi la mitad
+
+00:04:33.060 --> 00:04:37.410
+de mi tiempo de evaluación simplemente
+catalogando cuestiones relacionadas con el color
+
+00:04:37.410 --> 00:04:38.470
+y contraste.
+
+00:04:38.470 --> 00:04:41.220
+Entonces hay un enlace en esa
+página de recursos a una publicación de blog.
+
+00:04:41.220 --> 00:04:42.930
+que enumera esos 15.
+
+00:04:42.930 --> 00:04:45.420
+De hecho, vamos a ir
+más allá de eso, si el tiempo lo permite,
+
+00:04:45.420 --> 00:04:46.780
+para hablar de por qué.
+
+00:04:46.780 --> 00:04:49.790
+Y por qué ese número tan alto tendrá
+sentido, con suerte, muy pronto.
+
+00:04:51.000 --> 00:04:54.560
+No voy a
+hablar demasiado sobre
+
+00:04:54.560 --> 00:04:58.250
+las Pautas de Accesibilidad al Contenido Web
+como un conjunto de pautas.
+
+00:04:58.250 --> 00:05:02.380
+Dentro de las pautas,
+hay estos requisitos numerados
+
+00:05:02.380 --> 00:05:04.400
+llamado Criterio de Éxito.
+
+00:05:04.400 --> 00:05:06.400
+Y hay algunos de los que
+voy a hablar;
+
+00:05:06.400 --> 00:05:09.950
+tres con cierto detalle y puedo
+tocar brevemente un cuarto.
+
+00:05:09.950 --> 00:05:12.890
+Ahora voy a comenzar con el
+requisito relacionado con el contraste.
+
+00:05:12.890 --> 00:05:13.860
+Ahora hay niveles.
+
+00:05:13.860 --> 00:05:16.810
+Si está familiarizado con los
+criterios de éxito, tienen niveles
+
+00:05:16.810 --> 00:05:19.670
+de clase A simple, doble
+o triple que se les asigne.
+
+00:05:19.670 --> 00:05:21.396
+Entonces este primero
+con contraste mínimo
+
+00:05:21.397 --> 00:05:22.820
+es un requisito de nivel doble A.
+
+00:05:23.990 --> 00:05:27.700
+Un poco
+sobre ese requisito.
+
+00:05:27.700 --> 00:05:30.400
+Hay una frase
+que se usa mucho,
+
+00:05:30.400 --> 00:05:32.030
+y ni siquiera es
+una frase incorrecta.
+
+00:05:32.030 --> 00:05:34.310
+La gente habla del contraste de color.
+
+00:05:34.310 --> 00:05:38.640
+Y es cierto, el color es un aspecto
+del contraste tal como lo percibimos.
+
+00:05:38.640 --> 00:05:44.060
+Diferentes combinaciones de colores pueden
+afectar solo el contraste percibido
+
+00:05:44.060 --> 00:05:44.630
+de colores.
+
+00:05:44.630 --> 00:05:46.260
+Algunas cosas son más legibles.
+
+00:05:46.260 --> 00:05:49.910
+Inviértalos y tal vez uno u
+otro sea más legible.
+
+00:05:49.910 --> 00:05:50.680
+para ti.
+
+00:05:50.680 --> 00:05:53.880
+Sin embargo, la realidad
+está en estas pautas,
+
+00:05:53.880 --> 00:05:55.950
+en las
+Pautas de accesibilidad al contenido web,
+
+00:05:57.580 --> 00:06:02.570
+En realidad no hablan
+del contraste de color.
+
+00:06:02.570 --> 00:06:06.030
+De lo que hablan en
+WCAG es del contraste de luminancia.
+
+00:06:06.030 --> 00:06:08.310
+Y lo que eso significa es que no se
+trata de los colores que elijan;
+
+00:06:08.310 --> 00:06:13.190
+se trata de la
+diferencia de brillo entre estos colores.
+
+00:06:13.190 --> 00:06:15.260
+El término completo que se
+utiliza en estas pautas
+
+00:06:15.260 --> 00:06:17.320
+es Contraste de luminancia relativa.
+
+00:06:17.320 --> 00:06:18.360
+Entonces, ¿qué significa eso?
+
+00:06:18.360 --> 00:06:20.950
+Lo que significa es que
+la forma en que funcionan nuestras pantallas,
+
+00:06:20.950 --> 00:06:23.540
+realmente estamos viendo tres colores.
+
+00:06:23.540 --> 00:06:27.030
+Tienen el negro y luego tienen
+tres colores que se presentan en rojo,
+
+00:06:27.030 --> 00:06:28.510
+verde y azul.
+
+00:06:28.510 --> 00:06:30.139
+Y el rojo puro es bastante difícil de leer.
+
+00:06:30.140 --> 00:06:32.000
+cuando se utiliza sobre
+un fondo blanco.
+
+00:06:32.000 --> 00:06:34.460
+El verde puro también es
+bastante difícil de leer.
+
+00:06:34.460 --> 00:06:37.280
+Quizás incluso más brillante y
+más difícil de leer que el azul.
+
+00:06:37.280 --> 00:06:39.060
+De hecho, agregué
+un pequeño esquema.
+
+00:06:39.060 --> 00:06:42.430
+Es solo que estoy tratando de
+hacer mis imágenes inaccesibles
+
+00:06:42.430 --> 00:06:46.900
+un poco más accesibles con algunas
+pequeñas técnicas aquí y allá.
+
+00:06:46.900 --> 00:06:50.710
+Pero ese rojo y verde son
+difíciles de ver.
+
+00:06:50.710 --> 00:06:53.823
+Y entonces, ¿qué se encuentra
+dentro de estas pautas?
+
+00:06:53.824 --> 00:06:57.630
+es una fórmula bastante compleja para intentar
+ponderar estos diferentes colores.
+
+00:06:57.630 --> 00:06:59.560
+No se preocupen por la fórmula;
+es solo una diapositiva para decir,
+
+00:06:59.560 --> 00:07:03.040
+Mira toda esta matemática es
+más o menos lo que está pasando.
+
+00:07:03.040 --> 00:07:05.520
+Pero lo que hace es
+pesar el rojo y el verde.
+
+00:07:05.520 --> 00:07:08.970
+y el azul que se usa y simplemente
+se ve el brillo
+
+00:07:08.970 --> 00:07:12.710
+de esos, y crea una
+proporción entre dos colores.
+
+00:07:12.710 --> 00:07:18.060
+Entonces, la relación más alta que puede ser es
+21 a 1, y eso es blanco y negro.
+
+00:07:18.060 --> 00:07:20.570
+No importa si es negro
+sobre blanco o blanco sobre negro,
+
+00:07:20.570 --> 00:07:26.220
+es la misma proporción, y ese es
+el caso con todo esto.
+
+00:07:26.220 --> 00:07:29.070
+Si intercambias esos colores,
+la proporción sigue siendo la misma.
+
+00:07:30.210 --> 00:07:35.650
+Ahora bien, hay mucho contraste,
+y lo más alto no siempre es lo mejor.
+
+00:07:35.650 --> 00:07:38.060
+Mucho blanco y negro
+puede resultar un poco desconcertante.
+
+00:07:39.240 --> 00:07:43.390
+Entonces, lo que hay dentro de las WCAG dentro de
+estas pautas es un nivel mínimo
+
+00:07:43.390 --> 00:07:44.390
+de contraste.
+
+00:07:45.270 --> 00:07:48.580
+Y es 4,5 a uno
+según esa fórmula.
+
+00:07:48.580 --> 00:07:51.520
+Entonces, las primeras comprobaciones que
+tendrás que hacer,
+
+00:07:51.520 --> 00:07:56.900
+uno es para el texto principal de He
+leído y acepté el...
+
+00:07:56.900 --> 00:08:01.560
+Entonces, la parte sin enlace
+, solo el texto de la etiqueta.
+
+00:08:01.560 --> 00:08:05.460
+Y eso necesitaría un
+contraste de 4,5 a 1 con su fondo,
+
+00:08:05.460 --> 00:08:07.570
+que en este caso es
+un fondo blanco.
+
+00:08:07.570 --> 00:08:11.300
+La segunda verificación será
+el texto del enlace.
+
+00:08:11.300 --> 00:08:18.160
+Entonces eso también necesita un
+contraste de 4.5 a 1 con su fondo.
+
+00:08:18.160 --> 00:08:19.370
+Una vez más,
+tenemos mucho de qué hablar.
+
+00:08:19.370 --> 00:08:22.850
+Realmente voy a hacer una demostración
+de algunas cosas con bastante rapidez.
+
+00:08:22.850 --> 00:08:24.709
+Pero voy a
+hablar de algunas herramientas.
+
+00:08:24.710 --> 00:08:26.250
+para ayudar con la prueba de contraste.
+
+00:08:26.250 --> 00:08:29.040
+Ahora, hay muchas
+herramientas de contraste excelentes,
+
+00:08:29.040 --> 00:08:31.460
+pero voy a hablar de
+los que tenemos en WebAIM.
+
+00:08:31.460 --> 00:08:32.500
+Están disponibles de forma gratuita.
+
+00:08:32.500 --> 00:08:35.800
+Pero voy a señalar
+un par de herramientas WebAIM,
+
+00:08:37.080 --> 00:08:40.350
+y el primero será
+una herramienta llamada WAVE.
+
+00:08:40.350 --> 00:08:42.680
+WAVE es una herramienta de evaluación gratuita.
+
+00:08:42.680 --> 00:08:46.360
+Está disponible en Wave.webaim.org
+y hay un enlace a eso.
+
+00:08:46.360 --> 00:08:49.980
+dentro de la
+sección de herramientas de evaluación.
+
+00:08:49.980 --> 00:08:53.930
+Voy a mostrar lo que
+hace WAVE en solo un segundo.
+
+00:08:53.930 --> 00:08:56.900
+Pero también tenemos
+extensiones de navegador que les permiten
+
+00:08:56.900 --> 00:09:00.480
+para instalar esta herramienta de evaluación
+en Chrome, Firefox y Edge.
+
+00:09:00.480 --> 00:09:03.230
+Eso es lo que voy a usar.
+
+00:09:03.230 --> 00:09:08.960
+Cuando demuestre esto,
+voy a llegar a este color
+
+00:09:08.960 --> 00:09:12.740
+y
+enlace de práctica de contraste en esta página.
+
+00:09:13.800 --> 00:09:16.950
+Me aseguraré de
+volver a ponerlo en su tamaño predeterminado normal,
+
+00:09:16.950 --> 00:09:18.120
+y luego usaré WAVE.
+
+00:09:18.120 --> 00:09:21.740
+Ahora que tengo
+este complemento instalado,
+
+00:09:21.740 --> 00:09:25.570
+y tengo este pequeño
+ícono WAVE, W en la esquina superior derecha
+
+00:09:25.570 --> 00:09:28.150
+de la ventana de mi navegador aquí,
+así que voy a usar eso.
+
+00:09:29.470 --> 00:09:32.910
+WAVE me brinda mucha información
+sobre muchas cuestiones de accesibilidad,
+
+00:09:32.910 --> 00:09:37.820
+errores, alertas, funciones, solo cosas
+que quiere que tenga en cuenta
+
+00:09:37.820 --> 00:09:40.350
+y probar un poco más profundamente.
+
+00:09:40.350 --> 00:09:42.850
+Pero no tengo tiempo para
+hablar de la mayor parte de WAVE.
+
+00:09:42.850 --> 00:09:45.510
+Sólo me voy a centrar en
+una cosa que hará:
+
+00:09:45.510 --> 00:09:47.830
+y eso es lo que
+informará errores de contraste.
+
+00:09:48.960 --> 00:09:56.360
+En esta barra lateral de Wave,
+puedo hacer clic en la pestaña de contraste,
+
+00:09:56.360 --> 00:09:59.320
+y hay un par de estos
+íconos que me dicen que hay algo de texto
+
+00:09:59.320 --> 00:10:00.840
+con muy bajo contraste.
+
+00:10:00.840 --> 00:10:05.460
+Hay un gran blanco que
+tiene poco menos de 4,7 a uno.
+
+00:10:05.460 --> 00:10:10.470
+También hay este texto de botón,
+como un botón gris sobre gris más claro,
+
+00:10:10.470 --> 00:10:12.760
+también con bajo contraste.
+
+00:10:12.760 --> 00:10:17.160
+Ahora, este texto en el medio
+entre estos dos íconos, que es,
+
+00:10:17.160 --> 00:10:19.100
+es este texto más grande para
+tener suficiente contraste.
+
+00:10:20.170 --> 00:10:28.170
+En realidad tiene el mismo nivel de
+contraste, pero no aparece.
+
+00:10:35.810 --> 00:10:38.950
+Entonces, la razón por la que no
+aparece con un ícono es...
+
+00:10:38.950 --> 00:10:40.950
+porque hay
+otra regla a tener en cuenta.
+
+00:10:40.950 --> 00:10:42.050
+Déjame decirlo un poco diferente.
+
+00:10:42.050 --> 00:10:43.690
+No hay ningún error.
+
+00:10:43.690 --> 00:10:47.040
+Mismo color, pero este
+texto es más grande y no hay ícono de error.
+
+00:10:47.040 --> 00:10:53.180
+Es porque hay otra
+regla a tener en cuenta en las WCAG,
+
+00:10:53.180 --> 00:10:56.610
+y ese es el contraste del texto grande.
+
+00:10:56.610 --> 00:10:59.780
+Entonces, si tiene texto de
+cierto tamaño o mayor,
+
+00:10:59.780 --> 00:11:01.900
+el requisito disminuye.
+
+00:11:01.900 --> 00:11:06.270
+El contraste baja de 4,5 a 1
+a tres a uno.
+
+00:11:06.270 --> 00:11:07.930
+Entonces es más grande en la pantalla.
+
+00:11:07.930 --> 00:11:08.950
+Simplemente tienen más para leer.
+
+00:11:08.950 --> 00:11:12.180
+No necesita tanto
+contraste para ser perceptible.
+
+00:11:12.180 --> 00:11:17.490
+Entonces, el requisito para ese 3 a 1
+comienza con un texto de 18 puntos.
+
+00:11:17.490 --> 00:11:20.820
+Ahora, en píxeles, en la web,
+serán 24 píxeles.
+
+00:11:20.820 --> 00:11:26.230
+Si ese texto está en negrita, 14 puntos
+o 18 y dos tercios píxeles.
+
+00:11:26.230 --> 00:11:28.410
+Ese es el requisito de contraste de 3 a 1
+.
+
+00:11:32.300 --> 00:11:35.120
+Por eso, usar
+esta herramienta en WAVE...
+
+00:11:35.120 --> 00:11:37.540
+Y hay algunas otras
+herramientas de las que hablaremos.
+
+00:11:37.540 --> 00:11:40.520
+Por eso no hay ningún error aquí,
+porque aunque este texto
+
+00:11:40.520 --> 00:11:46.270
+tiene el mismo color,
+porque es lo suficientemente grande, cumple
+
+00:11:46.270 --> 00:11:48.500
+al menos un requisito de contraste de 3 a 1,
+por lo que no es una falla de WCAG.
+
+00:11:48.500 --> 00:11:50.080
+Y Wave detecta eso.
+
+00:11:50.080 --> 00:11:53.780
+Para ello,
+se tiene en cuenta el tamaño y
+el peso del texto.
+
+00:11:53.780 --> 00:11:55.610
+Aunque no va
+a detectar todo.
+
+00:11:55.610 --> 00:11:58.540
+Por ejemplo, tengo un texto
+que está sobre un fondo degradado.
+
+00:11:58.540 --> 00:12:00.340
+Entonces está esta imagen.
+
+00:12:00.340 --> 00:12:01.970 
+Creo que
+también es una imagen de fondo.
+
+00:12:01.970 --> 00:12:02.740
+No lo recuerdo.
+
+00:12:02.740 --> 00:12:04.360
+Creo que usé una
+imagen de fondo aquí.
+
+00:12:04.360 --> 00:12:09.510
+O tal vez sea solo un degradado de color,
+pero aún así WAVE no es tan inteligente.
+
+00:12:09.510 --> 00:12:13.190
+Y luego hablaremos sobre
+otras formas de probar el contraste,
+
+00:12:13.190 --> 00:12:15.810
+pero esos son los
+primeros controles.
+
+00:12:15.810 --> 00:12:18.770
+Será el texto de la etiqueta
+y luego el texto del enlace.
+
+00:12:19.870 --> 00:12:24.350
+Bien, entonces son uno y dos.
+
+00:12:24.350 --> 00:12:28.320
+El número tres tiene que ver
+con el contraste sin texto.
+
+00:12:28.320 --> 00:12:32.670
+Entonces hay un requisito;
+el número es 1.4.11.
+
+00:12:32.670 --> 00:12:36.650
+Pero este requisito llamado
+contraste no textual, también nivel AA,
+
+00:12:36.650 --> 00:12:43.510
+trata de cosas
+que no son texto.
+
+00:12:45.000 --> 00:12:48.640
+En este caso, debido a que se trata
+de una casilla de verificación personalizada... entonces,
+
+00:12:48.640 --> 00:12:55.130
+si me hubiera quedado con la casilla de verificación nativa incorporada
+del navegador,
+
+00:12:55.130 --> 00:12:58.220
+sin personalización,
+no necesitaría verificar esto.
+
+00:12:58.220 --> 00:13:01.120
+Pero como se trata de una
+casilla de verificación personalizada, también necesitaría
+
+00:13:01.120 --> 00:13:07.620
+para comprobar que la
+casilla de verificación tenga al menos un contraste de 3 a 1.
+
+00:13:07.620 --> 00:13:08.930
+entonces, ¿qué partes de la casilla de verificación?
+
+00:13:08.930 --> 00:13:11.720
+Ahora mismo nos estamos centrando en esa
+frontera, porque esa es la parte
+
+00:13:11.720 --> 00:13:15.630
+que necesito poder ver
+para saber dónde puse mi mouse
+
+00:13:15.630 --> 00:13:17.530
+o donde necesito
+navegar hasta el teclado.
+
+00:13:19.680 --> 00:13:23.490
+Aquí dentro, puedes comprobar
+esto, y eso es lo que necesita
+
+00:13:23.490 --> 00:13:25.050
+para tener al menos un contraste de 3 a 1.
+
+00:13:26.100 --> 00:13:28.810
+Ese es el tercer
+requisito aquí.
+
+00:13:28.810 --> 00:13:32.010
+Y hablaremos de un
+par de cosas más relacionadas
+
+00:13:32.010 --> 00:13:36.740
+para contrastar sin texto más adelante
+, pero son tres.
+
+00:13:36.740 --> 00:13:44.110
+Voy a pasar directamente
+a este uso del color,
+
+00:13:44.110 --> 00:13:46.600
+lo que me dará
+mi cuarto control ahora mismo.
+
+00:13:46.600 --> 00:13:50.330
+Otro requisito,
+y el número para esto es 1.4.1.
+
+00:13:50.330 --> 00:13:53.160
+Y para realizar un seguimiento,
+es el nivel simple A,
+
+00:13:53.160 --> 00:13:56.000
+pero este requisito
+se llama uso del color.
+
+00:13:56.000 --> 00:13:59.580
+Entonces, hay dos
+cosas importantes relacionadas con esto.
+
+00:13:59.580 --> 00:14:01.730
+Muchas veces lo que viene a
+la mente cuando la gente habla sobre el uso
+
+00:14:01.730 --> 00:14:05.640
+del color no confíe en colores
+como el rojo y el verde para aprobar
+
+00:14:05.640 --> 00:14:07.200
+y fallar y cosas así.
+
+00:14:07.200 --> 00:14:10.460
+Eso es cierto, y volveremos
+a eso más adelante.
+
+00:14:10.460 --> 00:14:15.980
+Sin embargo, hay otra
+forma importante en la que se puede utilizar el color.
+
+00:14:15.980 --> 00:14:20.540
+A veces se requiere que alguien
+pueda distinguir un determinado color.
+
+00:14:20.540 --> 00:14:21.840
+Puedo ver rojo.
+
+00:14:21.840 --> 00:14:23.260
+Puedo ver verde.
+
+00:14:23.260 --> 00:14:27.130
+Pero a veces se usa el color
+para distinguir un elemento.
+
+00:14:27.130 --> 00:14:30.160
+para diferenciarlo
+de otra cosa.
+
+00:14:30.160 --> 00:14:32.960
+Y no es tanto el
+color que están usando;
+
+00:14:32.960 --> 00:14:37.040
+es la diferencia entre colores
+la que les da información.
+
+00:14:37.040 --> 00:14:38.930
+Un ejemplo común de esto es un enlace.
+
+00:14:40.140 --> 00:14:41.970
+Tenemos este enlace aquí
+en la captura de pantalla.
+
+00:14:41.970 --> 00:14:45.690
+Y he intentado añadir algunos
+bordes y algunas cosas solo para...
+
+00:14:45.690 --> 00:14:50.760
+No quiero que mis propias diapositivas
+tengan problemas de accesibilidad.
+
+00:14:50.760 --> 00:14:53.120
+No quiero depender del
+color en mis propias diapositivas,
+
+00:14:53.120 --> 00:14:55.970
+así que intenté poner
+orden en torno a esto.
+
+00:14:55.970 --> 00:15:01.770
+Pero estos términos de uso,
+como no están subrayados,
+
+00:15:01.770 --> 00:15:05.220
+porque es solo una diferencia de color,
+eso se usa para decirme
+
+00:15:05.220 --> 00:15:06.230
+ese es un enlace.
+
+00:15:06.230 --> 00:15:07.750
+Esto no cumpliría ese requisito.
+
+00:15:07.750 --> 00:15:09.780
+Una de las cosas que dice
+que no puedes hacer usando
+
+00:15:09.780 --> 00:15:11.900
+solo el color es que
+no puedes confiar en el color
+
+00:15:11.900 --> 00:15:14.460
+para distinguir
+un elemento visual.
+
+00:15:14.460 --> 00:15:17.860
+En otras palabras, esto no es
+texto del cuerpo; este es un enlace,
+
+00:15:17.860 --> 00:15:19.850
+y no puedes confiar solo en
+una diferencia de color para eso.
+
+00:15:21.340 --> 00:15:24.770
+Voy a hablar
+un poco más sobre ese requisito,
+
+00:15:24.770 --> 00:15:28.100
+simplemente centrándose en la
+diferencia entre este texto de enlace
+
+00:15:28.100 --> 00:15:29.140
+y el texto de la etiqueta aquí.
+
+00:15:30.370 --> 00:15:34.140
+Por cierto,
+estos colores que voy a utilizar,
+
+00:15:34.140 --> 00:15:37.110
+estos son colores que se
+extraen exactamente de, como,
+
+00:15:37.110 --> 00:15:39.880
+una empresa Fortune 100
+con la que trabajamos,
+
+00:15:39.880 --> 00:15:42.120
+y estos son los colores que
+usaban para sus enlaces.
+
+00:15:42.120 --> 00:15:47.020
+Este es el proceso por el que pasamos
+hablando de esto con ellos.
+
+00:15:47.020 --> 00:15:49.240
+En primer lugar,
+podrías pensar: Oh, no,
+
+00:15:49.240 --> 00:15:51.080
+esos colores son bastante diferentes.
+
+00:15:51.080 --> 00:15:54.170
+En realidad no lo son.
+
+00:15:54.170 --> 00:15:57.030
+Vale, los colores son diferentes,
+pero la diferencia de brillo...
+
+00:15:57.030 --> 00:16:00.050
+entre los dos
+en realidad no hay mucho.
+
+00:16:00.050 --> 00:16:03.900
+La diferencia de contraste,
+son casi iguales.
+
+00:16:03.900 --> 00:16:07.570
+Algunas personas tienen dificultades
+para distinguir el texto gris y azul.
+
+00:16:07.570 --> 00:16:10.350
+Hablé con un par de
+personas que me dijeron eso
+
+00:16:10.350 --> 00:16:12.210
+y compartí esa experiencia.
+
+00:16:12.210 --> 00:16:16.340
+Y entonces, si alguien tiene dificultad
+para distinguir el gris y el azul,
+
+00:16:16.340 --> 00:16:21.740
+Esta es una diapositiva que intenta
+simular cómo podría ser.
+
+00:16:21.740 --> 00:16:22.420
+para esa persona.
+
+00:16:22.420 --> 00:16:26.260
+En términos de uso, aunque es
+ligeramente diferente, es realmente difícil
+
+00:16:26.260 --> 00:16:27.260
+para distinguir eso.
+
+00:16:28.260 --> 00:16:31.610
+De hecho, si solo estuvieran
+leyendo líneas de texto,
+
+00:16:31.610 --> 00:16:34.740
+incluso si tienen buena
+sensibilidad al contraste, creo que van a lograr
+
+00:16:34.740 --> 00:16:36.170
+tener dificultades para
+captar los enlaces.
+
+00:16:37.460 --> 00:16:42.850
+Esto sólo
+les da una idea de ese problema.
+
+00:16:42.850 --> 00:16:45.850
+cuando estábamos trabajando
+con este cliente, dijeron:
+
+00:16:45.850 --> 00:16:47.410
+Bueno, ¿qué pasa si pongo esto en negrita?
+
+00:16:47.410 --> 00:16:50.110
+¿Qué pasa si uso negrita para
+distinguir este enlace?
+
+00:16:50.110 --> 00:16:51.800
+Y entonces veamos si saco
+el color
+
+00:16:51.800 --> 00:16:54.530
+y simplemente miren la
+diferencia de contraste allí.
+
+00:16:54.530 --> 00:16:57.870
+Eso definitivamente funciona.
+
+00:16:57.870 --> 00:17:01.190
+Ahora ha distinguido sus
+enlaces usando algo más que color.
+
+00:17:02.450 --> 00:17:09.510
+Sin embargo, eso solo funciona si solo
+usas negrita para identificar enlaces,
+
+00:17:09.510 --> 00:17:11.170
+y ese casi nunca es el caso.
+
+00:17:11.170 --> 00:17:13.290
+Con este cliente y muchas
+otras personas con las que trabajamos
+
+00:17:13.290 --> 00:17:17.470
+en este tema, en algún momento
+usan negrita para enfatizar el texto.
+
+00:17:17.470 --> 00:17:20.680
+Entonces podría decir: Bueno, he leído
+y acepté los términos de uso,
+
+00:17:20.680 --> 00:17:24.690
+o, Deben hacer esto. O simplemente
+, en cualquier lugar del texto cercano,
+
+00:17:24.690 --> 00:17:27.380
+ponen algo en negrita para enfatizarlo
+, bueno, ahora están de vuelta.
+
+00:17:27.380 --> 00:17:31.550
+a confiar en el color, y ahora vuelves
+a fallar en este requisito.
+
+00:17:31.550 --> 00:17:39.550
+Esa es una solución alternativa que simplemente
+no funciona la mayor parte del tiempo.
+
+00:17:41.450 --> 00:17:44.150
+Hay una pregunta que sé
+que acaba de aparecer en Preguntas y respuestas.
+
+00:17:44.150 --> 00:17:47.320
+¿Cumple entonces este
+criterio de colores utilizados?
+
+00:17:47.320 --> 00:17:50.400
+Y el enlace está subrayado
+al pasar el mouse sobre él.
+
+00:17:50.400 --> 00:17:52.120
+Así que voy a llegar a eso.
+
+00:17:52.120 --> 00:17:56.820
+Antes de hacerlo, solo quiero
+decir que subrayemos nuestros vínculos.
+
+00:17:56.820 --> 00:17:59.090
+Creo que esa será
+la mejor práctica.
+
+00:17:59.090 --> 00:18:01.920
+No todos los enlaces, no todo el tiempo,
+pero sí donde aparecen a continuación.
+
+00:18:01.920 --> 00:18:04.800
+a otro texto no vinculado
+, texto del cuerpo.
+
+00:18:04.800 --> 00:18:08.570
+Simplemente los hace mejores,
+los hace, creo, más utilizables,
+
+00:18:08.570 --> 00:18:11.680
+más amigable con dispositivos móviles,
+más escaneable,
+
+00:18:11.680 --> 00:18:15.410
+es más fácil rastrear un enlace a través de
+saltos de línea y cosas así.
+
+00:18:15.410 --> 00:18:17.570
+Así que hay muchas buenas
+razones para subrayar sus enlaces.
+
+00:18:18.960 --> 00:18:19.850
+Entonces, ¿qué se requiere?
+
+00:18:19.850 --> 00:18:23.990
+Y esto, en realidad, creo que tiene que ver con
+la pregunta que hizo Beatrice:
+
+00:18:23.990 --> 00:18:28.890
+y es decir, no solo tienen
+el requisito de contraste,
+
+00:18:28.890 --> 00:18:32.730
+¿Pero qué pasa si el enlace está subrayado
+al pasar el ratón sobre él?
+
+00:18:32.730 --> 00:18:36.800
+De modo que por sí solo
+no cumple con este requisito,
+
+00:18:36.800 --> 00:18:40.020
+pero es parte del
+cumplimiento de este requisito.
+
+00:18:40.020 --> 00:18:46.160
+Entonces, si no están subrayando esos
+enlaces, hay dos requisitos.
+
+00:18:46.160 --> 00:18:50.810
+Una es que hay una
+relación de contraste de 3 a 1 entre el texto del enlace
+
+00:18:50.810 --> 00:18:53.170
+y el texto sin enlace.
+
+00:18:53.170 --> 00:18:56.250
+La idea con esto es que, si le das
+suficiente diferencia de contraste,
+
+00:18:56.250 --> 00:19:00.270
+ahora no dependes de que alguien
+pueda diferenciar colores;
+
+00:19:00.270 --> 00:19:03.430
+les están permitiendo simplemente
+diferenciar el contraste,
+
+00:19:03.430 --> 00:19:05.640
+y simplemente diga la diferencia
+entre, Bueno, este texto es más claro
+
+00:19:05.640 --> 00:19:08.420
+o más oscuro que este otro texto.
+
+00:19:08.420 --> 00:19:11.800
+Y vamos a utilizar una
+herramienta en un minuto para mostrar
+
+00:19:11.800 --> 00:19:12.800
+cómo puedes hacer eso.
+
+00:19:13.790 --> 00:19:17.380
+La segunda parte de esto,
+sin embargo, está relacionada de alguna manera
+
+00:19:17.380 --> 00:19:18.400
+a lo que se acaba de preguntar.
+
+00:19:18.400 --> 00:19:21.820
+El enlace debe presentar un
+cambio, una cola sin color.
+
+00:19:21.820 --> 00:19:23.870
+Entonces, más que un simple cambio de color.
+
+00:19:23.870 --> 00:19:25.880
+Y eso normalmente
+significa traer de vuelta
+
+00:19:25.880 --> 00:19:29.380
+que subrayan el foco del teclado.
+
+00:19:29.380 --> 00:19:33.620
+En realidad, no es necesario
+pasar el mouse por encima, porque la idea
+
+00:19:33.620 --> 00:19:35.650
+con el mouse, ya están
+pasando el mouse por encima,
+
+00:19:35.650 --> 00:19:37.930
+y ya tienen
+un puntero allí.
+
+00:19:37.930 --> 00:19:41.450
+Si es un enlace... Y esto,
+por cierto, es sólo para enlaces.
+
+00:19:41.450 --> 00:19:43.410
+No es para botones
+ni otras cosas.
+
+00:19:43.410 --> 00:19:46.430
+Este requisito solo
+menciona específicamente enlaces.
+
+00:19:46.430 --> 00:19:53.250
+Es un poco raro, pero lo hace...
+Cuando pasas el cursor sobre el enlace,
+
+00:19:53.250 --> 00:19:54.620
+también obtienen ese cambio de cursor.
+
+00:19:54.620 --> 00:19:56.390
+Cambia a ese dedo.
+
+00:19:56.390 --> 00:19:59.900
+Y técnicamente no es obligatorio,
+pero es una muy, muy buena idea.
+
+00:19:59.900 --> 00:20:03.180
+Si van a recuperar
+ese subrayado, tráiganlo de vuelta
+
+00:20:03.180 --> 00:20:04.180
+para el vuelo estacionario también.
+
+00:20:05.370 --> 00:20:08.160
+Entonces usemos este verificador de contraste.
+
+00:20:08.160 --> 00:20:12.020
+Voy a volver a esta página.
+
+00:20:12.020 --> 00:20:13.870
+Déjame actualizar esta página.
+
+00:20:13.870 --> 00:20:15.630
+De hecho, lo haré
+un poco más grande.
+
+00:20:15.630 --> 00:20:19.450
+Así que tenemos un enlace aquí,
+que se mueve hacia abajo en esta lista.
+
+00:20:19.450 --> 00:20:22.520
+Esto lo leí y acepté...
+Y esta vez, dice copyright
+
+00:20:22.520 --> 00:20:23.520
+en términos de uso.
+
+00:20:24.760 --> 00:20:28.890
+Estos son los mismos colores
+que se usaron en esa diapositiva.
+
+00:20:28.890 --> 00:20:32.870
+Ahora, si quiero probar esto,
+puedo usar un verificador de contraste de enlaces.
+
+00:20:35.200 --> 00:20:42.490
+Este verificador de contraste de enlaces lo que
+hace es agregar otra opción.
+
+00:20:42.490 --> 00:20:45.570
+Cuando usaba WAVE,
+tenía estas dos opciones de color.
+
+00:20:45.570 --> 00:20:49.120
+Tenía un control deslizante para el color del texto
+y un control deslizante para el fondo,
+
+00:20:49.120 --> 00:20:51.780
+u opciones para el
+color del texto y el color de fondo.
+
+00:20:51.780 --> 00:20:56.270
+Este tiene dos
+opciones de texto diferentes: enlace y cuerpo del texto.
+
+00:20:56.270 --> 00:21:01.220
+Entonces, con el enlace y el texto del cuerpo,
+he rellenado previamente esto
+
+00:21:01.220 --> 00:21:03.170
+con los dos colores
+que he estado usando.
+
+00:21:03.170 --> 00:21:07.440
+Entonces es un azul que
+tiene al menos 4,5 a uno.
+
+00:21:07.440 --> 00:21:09.930
+Tienen el cuerpo del texto que
+también tiene al menos 4,5 a uno.
+
+00:21:09.930 --> 00:21:12.726
+Entonces el enlace y el cuerpo del texto pasan
+
+00:21:12.727 --> 00:21:16.920
+por sí solos el
+requisito de contraste del texto.
+
+00:21:18.160 --> 00:21:21.720
+Sin embargo, como mencioné,
+casi no tienen diferencia de contraste.
+
+00:21:21.720 --> 00:21:22.660
+entre ellos.
+
+00:21:22.660 --> 00:21:25.150
+Entonces, si no quiero subrayar
+mis enlaces, tendré que...
+
+00:21:25.150 --> 00:21:26.690
+usar un color diferente.
+
+00:21:26.690 --> 00:21:32.100
+Ahora realmente no puedo aligerar
+porque si lo hago muy rápidamente,
+
+00:21:32.100 --> 00:21:35.820
+antes de encontrarme con esa
+diferencia de tres a uno entre el enlace
+
+00:21:35.820 --> 00:21:41.380
+y el texto del cuerpo, muy rápidamente,
+el texto tendrá un contraste demasiado bajo.
+
+00:21:41.380 --> 00:21:44.120
+Entonces, para tener
+una diferencia de 3 a 1 entre el azul y el gris,
+
+00:21:44.120 --> 00:21:48.720
+Tengo que hacerlo tan claro que
+solo tenga un contraste de 1,5 a uno.
+
+00:21:53.980 --> 00:21:56.670
+Así que la forma en que lo hice usando este
+verificador de contraste de enlaces, por cierto,
+
+00:21:56.670 --> 00:22:01.320
+y otros controles de contraste es
+que hay un control deslizante de luminosidad,
+
+00:22:01.320 --> 00:22:04.540
+y eso solo intenta cambiar
+la claridad y la oscuridad
+
+00:22:04.540 --> 00:22:07.530
+de ese mismo color de palabra clave.
+
+00:22:07.530 --> 00:22:08.530
+Entonces eso no va a funcionar.
+
+00:22:09.410 --> 00:22:11.590
+Tampoco es ir
+más claro con el gris.
+
+00:22:11.590 --> 00:22:14.030
+Lo que tienen que hacer es
+oscurecer uno de esos colores.
+
+00:22:14.030 --> 00:22:17.300
+Creo que probablemente tenga más
+sentido oscurecerse con ese gris.
+
+00:22:17.300 --> 00:22:20.130
+De lo contrario, básicamente parece que
+tienen enlaces negros, ya sabes,
+
+00:22:20.130 --> 00:22:22.090
+cuando esté lo suficientemente oscuro.
+
+00:22:22.090 --> 00:22:26.800
+Entonces, texto gris oscuro con el
+mismo color azul para los enlaces,
+
+00:22:26.800 --> 00:22:29.210
+esto ahora cumpliría
+ese requisito.
+
+00:22:30.360 --> 00:22:32.210
+Y eso es algo que puedo hacer.
+
+00:22:32.210 --> 00:22:34.170
+Mantendré abiertas las preguntas y respuestas.
+
+00:22:34.170 --> 00:22:36.230
+Voy a intentar responder
+algunas preguntas a medida que avance,
+
+00:22:36.230 --> 00:22:39.560
+y con suerte aún quedaré un
+par de minutos al final.
+
+00:22:39.560 --> 00:22:42.180
+Hubo una pregunta sobre
+agregar una etiqueta ARIA.
+
+00:22:42.180 --> 00:22:44.530
+Y voy a agrupar
+todo eso en una categoría
+
+00:22:44.530 --> 00:22:48.250
+de hacer esto accesible
+para los lectores de pantalla.
+
+00:22:48.250 --> 00:22:53.580
+Y no se trata de
+usuarios ciegos o usuarios de lectores de pantalla;
+
+00:22:53.580 --> 00:22:56.150
+Esto se trata de usuarios videntes.
+
+00:22:56.150 --> 00:22:58.550
+Entonces lo que pasa con la
+etiqueta ARIA es que
+
+00:22:58.550 --> 00:23:01.240
+y tal vez algunas otras
+técnicas puedan ayudarme
+
+00:23:01.240 --> 00:23:03.050
+si estoy usando un lector de pantalla.
+
+00:23:03.050 --> 00:23:05.039
+Pero
+en realidad ya está funcionando un lector de pantalla.
+
+00:23:05.040 --> 00:23:06.120
+para decirme que es una etiqueta.
+
+00:23:06.120 --> 00:23:08.270
+Entonces esto es algo puramente visual.
+
+00:23:08.270 --> 00:23:11.040
+En realidad se trata sólo de
+diferenciar colores.
+
+00:23:11.040 --> 00:23:13.390
+Y entonces, en este caso, el ARIA
+no podrá...
+
+00:23:13.390 --> 00:23:16.130
+para agregar cualquier cosa con etiquetas ARIA
+o cualquier otra cosa
+
+00:23:16.131 --> 00:23:17.500
+que abordaría esto.
+
+00:23:17.500 --> 00:23:19.650
+Realmente tendría que estar al
+nivel de los colores que elijas.
+
+00:23:21.310 --> 00:23:23.760
+Otra pregunta de Megan;
+una muy buena pregunta.
+
+00:23:23.760 --> 00:23:28.310
+Y si hay diferentes
+requisitos, el enlace es independiente.
+
+00:23:28.310 --> 00:23:33.500
+Entonces, Megan, en tu pregunta diste el ejemplo
+de la navegación.
+
+00:23:33.500 --> 00:23:36.200
+Entonces, en esta página con el
+verificador de contraste de enlaces,
+
+00:23:36.200 --> 00:23:40.350
+tenemos algunos enlaces de navegación en
+la parte superior a las cinco secciones principales
+
+00:23:40.350 --> 00:23:43.970
+en el sitio WebAIM
+y no están subrayados,
+
+00:23:43.970 --> 00:23:49.380
+porque se
+presentan claramente como enlaces.
+
+00:23:49.380 --> 00:23:51.960
+Nuevamente, se trata de
+la presentación visual.
+
+00:23:51.960 --> 00:23:57.790
+Y si no puedo percibir el color, todavía sabré
+que son enlaces.
+
+00:23:57.790 --> 00:24:04.130
+Independientemente de la percepción del color
+o la sensibilidad al contraste,
+
+00:24:04.130 --> 00:24:05.760
+Todavía podré saberlo.
+
+00:24:05.760 --> 00:24:07.510
+Entonces, sí, buena pregunta.
+
+00:24:07.510 --> 00:24:10.340
+No sería necesario
+subrayarlo.
+
+00:24:10.340 --> 00:24:12.300
+O si hay otro estilo.
+
+00:24:12.300 --> 00:24:14.820
+A veces hay enlaces
+que parecen botones.
+
+00:24:14.820 --> 00:24:17.600
+Son enlaces debajo del capó, y
+los has hecho parecer botones,
+
+00:24:17.600 --> 00:24:19.420
+y ya no
+tienen esos subrayados.
+
+00:24:19.420 --> 00:24:20.910
+Ese es otro ejemplo
+en la pregunta.
+
+00:24:20.910 --> 00:24:22.090
+Eso también está bien.
+
+00:24:22.090 --> 00:24:26.020
+En realidad, se trata de no
+depender del color como la única forma
+
+00:24:26.020 --> 00:24:27.020
+para presentar eso.
+
+00:24:28.000 --> 00:24:30.160
+Entonces sí,
+gracias por las preguntas.
+
+00:24:30.160 --> 00:24:31.510
+Siga haciendo esas preguntas.
+
+00:24:31.510 --> 00:24:34.870
+Algunas probablemente las dejaré
+para el final, pero otras,
+
+00:24:34.870 --> 00:24:38.000
+si les parece útil responderlas
+mientras voy,
+
+00:24:38.000 --> 00:24:39.000
+Haré eso en su lugar.
+
+00:24:40.730 --> 00:24:46.370
+Espero que esto me ayude
+a entender cómo puedo usar esta herramienta.
+
+00:24:46.370 --> 00:24:52.120
+para obtener el color necesario,
+o realmente contrastar las diferencias
+
+00:24:52.120 --> 00:24:53.120
+con estos colores.
+
+00:24:56.330 --> 00:24:59.220
+Está bien.
+
+00:25:00.330 --> 00:25:03.510
+Aquí hay una diapositiva que muestra
+cómo sería eso.
+
+00:25:03.510 --> 00:25:06.880
+Tenemos ese gris mucho más oscuro que se
+acerca mucho más al negro.
+
+00:25:06.880 --> 00:25:09.700
+Y luego tenemos ese
+contraste que les dará
+
+00:25:09.700 --> 00:25:11.140
+lo que necesitas nuevamente.
+
+00:25:11.140 --> 00:25:13.250
+Pero si lo subrayo,
+miren cuánto más obvio
+
+00:25:13.250 --> 00:25:18.640
+desde el principio se ve
+que es un vínculo.
+
+00:25:20.210 --> 00:25:24.740
+Bueno, eso es un poco
+más sobre esa idea.
+
+00:25:24.740 --> 00:25:32.050
+de confiar en el color y por qué es
+importante no solo hacerlo.
+
+00:25:32.050 --> 00:25:33.800
+Bien, entonces solo somos hasta cuatro.
+
+00:25:33.800 --> 00:25:35.570
+Estamos a la mitad de nuestro tiempo
+y solo nos quedan cuatro,
+
+00:25:35.570 --> 00:25:36.720
+¿Cómo es eso posible?
+
+00:25:36.720 --> 00:25:40.440
+Bueno, la razón por la que eso es posible
+es porque los números del cinco al quince,
+
+00:25:40.440 --> 00:25:43.170
+la mayoría de ellos caen
+en la misma categoría.
+
+00:25:43.170 --> 00:25:45.360
+Y es decir,
+tienen que interactuar con la cosa.
+
+00:25:46.570 --> 00:25:52.040
+Hay solo unas pocas cosas que
+puedes detectar a simple vista.
+
+00:25:52.040 --> 00:25:53.600
+o usando herramientas como WAVE.
+
+00:25:53.600 --> 00:25:56.550
+Mucho tiene que ver con
+la interacción que ocurre,
+
+00:25:56.550 --> 00:25:59.777
+porque hay que tener en cuenta
+el contraste de las cosas
+
+00:25:59.778 --> 00:26:01.080
+en diferentes estados.
+
+00:26:01.080 --> 00:26:03.690
+Entonces, si tengo esta
+casilla de verificación personalizada y paso el cursor sobre ella,
+
+00:26:03.690 --> 00:26:08.020
+y así cambia de gris a
+azul... O si tengo un enlace,
+
+00:26:08.020 --> 00:26:11.570
+y cuando paso el cursor sobre ese enlace,
+se vuelve más claro, por ejemplo,
+
+00:26:12.690 --> 00:26:16.710
+ahora esos son estados diferentes
+donde el contraste ha cambiado,
+
+00:26:16.710 --> 00:26:18.330
+y tendré que probarlo.
+
+00:26:18.330 --> 00:26:20.370
+Así que son muchos de estos.
+
+00:26:20.370 --> 00:26:22.890
+Cinco, seis, siete, ocho,
+todos son estados diferentes
+
+00:26:22.890 --> 00:26:24.450
+del borde de esa casilla de verificación.
+
+00:26:24.450 --> 00:26:26.800
+Flotar, enfocar, activo, marcado.
+
+00:26:26.800 --> 00:26:29.780
+Algunas de estas son
+simplemente pruebas súper rápidas.
+
+00:26:29.780 --> 00:26:33.090
+Si estoy moviendo el mouse
+y algo no cambia,
+
+00:26:33.090 --> 00:26:38.770
+o se vuelve más oscuro, bueno, no
+necesito profundizar más con eso.
+
+00:26:38.770 --> 00:26:40.800
+No necesito recurrir
+a otras herramientas o técnicas.
+
+00:26:41.960 --> 00:26:45.580
+Si tiene suficiente contraste y se
+vuelve más oscuro en el fondo,
+
+00:26:45.580 --> 00:26:47.990
+tendrá más contraste.
+
+00:26:47.990 --> 00:26:51.220
+Algunas de estas son como comprobaciones de un segundo
+, pero son importantes
+
+00:26:51.220 --> 00:26:51.890
+para hacer esto.
+
+00:26:51.890 --> 00:26:57.070
+Cuando interactúo con esta cosa, cuando
+la reviso, cuando sigo un enlace,
+
+00:26:57.070 --> 00:27:00.510
+¿Lo hace? Ya no hay tantos
+sitios con esto,
+
+00:27:00.510 --> 00:27:04.880
+pero si lo tiene, como...
+Lo siento, estoy pasando a los enlaces.
+
+00:27:04.880 --> 00:27:08.290
+Tiene como
+un estado visitado, ¿sabes?
+
+00:27:08.290 --> 00:27:10.510
+Está suspendido, enfocado, activo, visitado.
+
+00:27:10.510 --> 00:27:11.750
+Así que son un montón de estos.
+
+00:27:11.750 --> 00:27:15.187
+Nueve, diez, once,
+doce; flotar, enfocar, activo,
+
+00:27:15.188 --> 00:27:16.940
+y visité mi enlace.
+
+00:27:18.060 --> 00:27:20.680
+Así es como ese número
+se hace tan grande tan rápido.
+
+00:27:24.850 --> 00:27:27.550
+Bien, entonces hay una pregunta en
+la sección de recursos relacionados.
+
+00:27:27.550 --> 00:27:30.420
+Permítanme volver
+rápidamente a esta página, sólo para aclarar.
+
+00:27:30.420 --> 00:27:32.340
+Realmente buena pregunta
+y buen truco.
+
+00:27:32.340 --> 00:27:35.630
+Tengo unos pocos enlaces en esta
+página, y solo uno
+
+00:27:35.630 --> 00:27:39.740
+de estos ejemplos no está subrayado
+específicamente para esta actividad.
+
+00:27:39.740 --> 00:27:42.970
+Hay otros
+que están subrayados.
+
+00:27:42.970 --> 00:27:50.970
+Leigh Ann, en realidad no estoy segura de
+entender completamente la pregunta.
+
+00:27:51.140 --> 00:27:57.590
+Entonces, donde está claro que estos
+son enlaces... Oh, lo siento,
+
+00:27:57.590 --> 00:27:58.870
+En realidad,
+sé lo que están diciendo.
+
+00:27:58.870 --> 00:28:01.230
+Tenemos esta
+sección de recursos relacionados.
+
+00:28:01.230 --> 00:28:04.880
+Tenemos algunas cosas que se
+presentan muy claramente como enlaces.
+
+00:28:04.880 --> 00:28:09.280
+Entonces, ¿qué tal el texto sin enlace
+para algunos de estos?
+
+00:28:09.280 --> 00:28:13.330
+Para cada uno de los artículos,
+he añadido algunas palabras para describir
+
+00:28:13.330 --> 00:28:16.490
+lo que contiene ese artículo,
+y eso no es un enlace.
+
+00:28:16.490 --> 00:28:22.160
+Ahora, si por ejemplo, mis
+recursos relacionados, se acercan mucho más,
+
+00:28:22.160 --> 00:28:25.290
+pero incluso ahí tengo un
+par de enlaces separados...
+
+00:28:25.290 --> 00:28:28.590
+En la parte inferior, tengo un enlace al
+complemento de accesibilidad de WordPress,
+
+00:28:28.590 --> 00:28:31.020
+y eso es lo único que
+voy a decir sobre WordPress
+
+00:28:31.020 --> 00:28:33.200
+en este
+día de accesibilidad de WordPress.
+
+00:28:33.200 --> 00:28:37.070
+Pero tiene un enlace y luego
+un no enlace, y luego el nombre,
+
+00:28:37.070 --> 00:28:38.270
+y son dos enlaces separados.
+
+00:28:38.270 --> 00:28:42.510
+Y esa es
+la idea allí.
+
+00:28:42.510 --> 00:28:45.150
+Sí, gracias, Leigh Ann,
+finalmente encontré la respuesta a esa pregunta.
+
+00:28:45.150 --> 00:28:46.600
+Esa es una buena pregunta, gracias.
+
+00:28:48.500 --> 00:28:52.370
+Así que, en este caso,
+todavía tendrías que subrayar esos enlaces.
+
+00:28:52.370 --> 00:28:55.720
+Puede que haya lugares
+donde ese no sea el caso.
+
+00:28:55.720 --> 00:28:58.000
+Por ejemplo, puede haber
+algunas páginas donde tengamos una lista
+
+00:28:58.000 --> 00:28:59.490
+de recursos relacionados.
+
+00:28:59.490 --> 00:29:04.290
+Siempre son solo enlaces y
+se denominan recursos relacionados.
+
+00:29:04.290 --> 00:29:06.770
+Y tal vez se podría argumentar
+a favor de no subrayarlos.
+
+00:29:06.770 --> 00:29:09.820
+Y estoy hablando de una barra lateral
+que tenemos en un artículo.
+
+00:29:09.820 --> 00:29:11.040
+en el que acabo de hacer clic.
+
+00:29:11.040 --> 00:29:18.330
+Entonces sí, puede haber ocasiones
+en las que eso no sea necesario.
+
+00:29:27.360 --> 00:29:28.860
+Tengo una pregunta pendiente.
+
+00:29:28.860 --> 00:29:31.340
+Voy a posponer
+eso tal vez hasta más tarde.
+
+00:29:32.570 --> 00:29:36.570
+Entonces 13 y 14, ahora vamos a
+hablar no solo del color.
+
+00:29:36.570 --> 00:29:38.740
+de algo si
+cambia de color al enfocarse,
+
+00:29:38.740 --> 00:29:43.360
+pero cualquier indicación que tengas
+de que algo tiene foco en el teclado.
+
+00:29:43.360 --> 00:29:48.370
+Entonces, este indicador de enfoque, lo he
+usado como un contorno azul como ejemplo.
+
+00:29:48.370 --> 00:29:50.770
+donde si presiono la tecla de tabulación
+y navego hacia algo
+
+00:29:50.770 --> 00:29:53.840
+con el teclado,
+hay un contorno.
+
+00:29:53.840 --> 00:29:55.950
+Entonces ese será
+el número 13 para el enlace.
+
+00:29:55.950 --> 00:29:58.030
+El número 14 será
+para la casilla de verificación.
+
+00:30:01.220 --> 00:30:04.030
+Oh, sí, Joe lo mencionó en el chat.
+
+00:30:04.030 --> 00:30:08.210
+Un pequeño enchufe para eso, tiene
+una prueba de contraste, creo,
+
+00:30:08.210 --> 00:30:10.300
+integrado en ese complemento.
+
+00:30:10.300 --> 00:30:11.980
+Y Joe, puedes corregirme
+en eso si me equivoco.
+
+00:30:11.980 --> 00:30:15.500
+pero es un
+recurso de WordPress absolutamente útil.
+
+00:30:17.240 --> 00:30:22.760
+Así que un poco más de concentración.
+
+00:30:22.760 --> 00:30:26.660
+De todos estos estados diferentes,
+es por lejos el más complicado.
+
+00:30:26.660 --> 00:30:29.480
+Porque lo que
+distingue al foco del teclado
+
+00:30:29.480 --> 00:30:36.520
+de todos estos otros
+estados posibles es
+
+00:30:36.520 --> 00:30:41.500
+que el cambio en realidad
+te dirige a esa cosa.
+
+00:30:41.500 --> 00:30:45.430
+Cuando presiono la tecla de tabulación,
+cualquier cambio que haga se centrará,
+
+00:30:45.430 --> 00:30:48.260
+así es como sé
+que esa cosa tiene foco.
+
+00:30:48.260 --> 00:30:50.700
+Con un ratón,
+lo sé porque mi ratón está sobre él.
+
+00:30:50.700 --> 00:30:52.306
+Obtengo un cursor, obtengo un dedo,
+
+00:30:52.307 --> 00:30:54.430
+algo que me diga que
+mi mouse está sobre él.
+
+00:30:54.430 --> 00:30:57.320
+Bueno, con concentración,
+así es como lo sé.
+
+00:30:57.320 --> 00:31:01.070
+Y hay algunas
+cosas adicionales que debemos tener en cuenta aquí.
+
+00:31:01.070 --> 00:31:05.320
+Entonces, si simplemente cambiara el color
+entre estos diferentes estados...
+
+00:31:05.320 --> 00:31:10.400
+Tengo un gris predeterminado, un
+elemento flotante azul y un borde de enfoque verde.
+
+00:31:10.400 --> 00:31:12.130
+Ahora, no recomiendo
+estos colores.
+
+00:31:12.130 --> 00:31:14.130
+Son solo ejemplos.
+
+00:31:14.130 --> 00:31:17.170
+Pero si tuviera que hacer eso,
+el desplazamiento estaría bien
+
+00:31:17.170 --> 00:31:19.820
+porque aquí habría una
+diferencia de 3 a 1.
+
+00:31:19.820 --> 00:31:22.540
+Sin embargo, el enfoque
+sí que tendría un problema.
+
+00:31:23.700 --> 00:31:26.750
+Y probablemente sería
+un fracaso de WCAG.
+
+00:31:26.750 --> 00:31:29.690
+Ahora, esto se vuelve un poco
+técnico y complicado.
+
+00:31:29.690 --> 00:31:34.130
+En realidad, es una falla del
+requisito de color porque de nuevo paso a
+
+00:31:34.130 --> 00:31:35.840
+a depender del color.
+
+00:31:35.840 --> 00:31:39.470
+He vuelto a confiar en el color
+en un lugar donde, 
+
+00:31:39.470 --> 00:31:41.880
+si estoy usando un teclado,
+es solo una diferencia de color
+
+00:31:41.880 --> 00:31:44.880
+eso me indicaría que me han
+dirigido a esa cosa.
+
+00:31:44.880 --> 00:31:49.550
+Entonces ese es un requisito
+que deben abordar.
+
+00:31:49.550 --> 00:31:53.360
+Ahora, esta es probablemente una de
+las cosas más divertidas de las que
+
+00:31:53.360 --> 00:31:57.010
+quiero hablar, y espero poder
+explicarlo con el tiempo que tengo.
+
+00:31:57.010 --> 00:32:01.810
+Si agregan, digamos, un pequeño
+borde gris claro a una casilla de verificación
+
+00:32:03.970 --> 00:32:07.500
+entre los estados de desplazamiento y enfoque...
+Entonces tienen el valor predeterminado gris,
+
+00:32:07.500 --> 00:32:11.580
+azul flotante, y luego solo este
+pequeño brillo gris claro en el foco...
+
+00:32:11.580 --> 00:32:17.140
+En realidad, cumple todos los
+requisitos de WCAG en los niveles A.
+
+00:32:17.140 --> 00:32:21.330
+y doble A, hasta la versión 2.1,
+que es la versión actual.
+
+00:32:21.330 --> 00:32:24.290
+Hay una especie de
+brecha extraña en la que, en el contraste,
+
+00:32:24.290 --> 00:32:27.690
+dice, bueno, necesitas al menos
+un contraste de 3 a 1 para cada estado,
+
+00:32:27.690 --> 00:32:30.860
+pero no diferencias entre estados.
+
+00:32:30.860 --> 00:32:35.090
+Y en el de color, dice que
+no puedes confiar solo en el color,
+
+00:32:35.090 --> 00:32:37.400
+pero no tiene
+un contraste mínimo.
+
+00:32:37.400 --> 00:32:41.150
+Entonces hay este pequeño espacio extraño
+donde hay un pequeño brillo sutil,
+
+00:32:41.150 --> 00:32:44.160
+aunque es muy ligero y
+tiene menos de 3 a 1 de contraste,
+
+00:32:44.160 --> 00:32:47.490
+no fallaría nada
+en la versión 2.1.
+
+00:32:47.490 --> 00:32:49.560
+Entonces hay una versión 2.2.
+
+00:32:50.700 --> 00:32:53.360
+Y tengo el texto aquí, pero
+en realidad, por cuestiones de tiempo,
+
+00:32:53.360 --> 00:32:54.680
+No voy a leerlo todo.
+
+00:32:54.680 --> 00:32:56.430
+Se llama apariencia de enfoque.
+
+00:32:56.430 --> 00:33:00.720
+Y lo que básicamente dice
+es que no basta con...
+
+00:33:00.720 --> 00:33:02.010
+Llena ese vacío.
+
+00:33:03.920 --> 00:33:09.150
+Si tengo el cuadro gris como
+predeterminado, ese cuadro azul
+
+00:33:09.150 --> 00:33:12.120
+con el brillo gris claro
+es mi indicación de enfoque,
+
+00:33:12.120 --> 00:33:14.600
+que no cumplirían con este requisito.
+
+00:33:14.600 --> 00:33:16.870
+Porque la diferencia
+entre estos dos,
+
+00:33:16.870 --> 00:33:18.990
+es que no tiene
+contraste de 3 a 1.
+
+00:33:20.560 --> 00:33:23.010
+Otra cosa que
+fallaría es una frontera muy estrecha.
+
+00:33:23.010 --> 00:33:26.980
+Entonces, si solo tengo uno
+o menos de dos píxeles, digamos contorno
+
+00:33:26.980 --> 00:33:29.650
+o algo así...
+Si es muy, muy fino...
+
+00:33:29.650 --> 00:33:34.230
+Lo hice un poco más grande que un
+píxel para que todos puedan verlo.
+
+00:33:34.230 --> 00:33:38.170
+Pero también fallaría solo
+porque la indicación es muy pequeña
+
+00:33:38.170 --> 00:33:39.430
+que podría ser difícil de percibir.
+
+00:33:40.670 --> 00:33:43.934
+Aunque,
+si oscureciera la casilla de verificación,
+
+00:33:43.935 --> 00:33:46.300
+la casilla de verificación es mucho más oscura,
+
+00:33:46.300 --> 00:33:51.810
+y ahora la diferencia de color entre
+los bordes es al menos de 3 a 1,
+
+00:33:51.810 --> 00:33:52.940
+eso realmente pasaría.
+
+00:33:52.940 --> 00:33:55.920
+Porque ahora tengo este
+borde grande, al menos dos píxeles,
+
+00:33:55.920 --> 00:33:59.480
+y ese borde tiene al menos
+una diferencia de contraste de 3 a 1.
+
+00:33:59.480 --> 00:34:02.210
+El brillo, en realidad,
+ya ni siquiera es relevante.
+
+00:34:02.210 --> 00:34:05.860
+Es solo que es lo suficientemente grande
+y es lo suficientemente diferente.
+
+00:34:05.860 --> 00:34:07.650
+que cumpliría con
+este requisito.
+
+00:34:07.650 --> 00:34:10.800
+Ahora, mejor aún,
+dale un esquema de enfoque.
+
+00:34:10.800 --> 00:34:15.100
+Casi siempre agrega ese
+esquema de enfoque del teclado porque funciona
+
+00:34:15.100 --> 00:34:16.830
+con todos sus estados.
+
+00:34:16.830 --> 00:34:19.710
+A veces terminas llegando a lugares
+donde tienen más de un estado.
+
+00:34:19.710 --> 00:34:21.480
+al mismo tiempo.
+
+00:34:22.590 --> 00:34:23.740
+Ahora bien, este es
+un escenario un tanto extraño,
+
+00:34:23.740 --> 00:34:25.880
+pero tal vez he pasado
+el ratón por encima de algo
+
+00:34:25.880 --> 00:34:27.740
+mientras escribo con
+mi teclado, simplemente...
+
+00:34:27.740 --> 00:34:29.020
+de poner el mouse sobre algo.
+
+00:34:31.030 --> 00:34:35.230
+Le he dado un contorno, y
+ese contorno tiene al menos dos píxeles,
+
+00:34:35.230 --> 00:34:38.320
+y ese contorno tiene al menos
+un contraste de 3 a 1 con el fondo,
+
+00:34:38.320 --> 00:34:40.450
+entonces he cumplido todos
+estos requisitos.
+
+00:34:40.450 --> 00:34:42.120
+Y eso será
+lo mejor la mayor parte del tiempo.
+
+00:34:43.700 --> 00:34:47.280
+Vale, un pequeño descanso.
+
+00:34:50.600 --> 00:34:55.780
+Entonces, si tenemos que evaluar todos
+estos estados, y si son dos tercios
+
+00:34:55.780 --> 00:34:58.540
+de las cosas de las que he hablado
+en términos de números,
+
+00:34:59.610 --> 00:35:01.760
+¿Cómo puedo hacer eso?
+
+00:35:01.760 --> 00:35:04.810
+Bueno, hay varias
+maneras en que puedo hacer esto,
+
+00:35:04.810 --> 00:35:08.390
+pero uno está usando DevTools
+o Chrome Developer Tools.
+
+00:35:08.390 --> 00:35:11.550
+Hay herramientas de contraste similares
+en otros navegadores, pero voy a...
+
+00:35:11.550 --> 00:35:14.680
+para centrarnos en Chrome y
+sus herramientas de desarrollo.
+
+00:35:14.680 --> 00:35:16.960
+Hay un artículo que habla
+de esto, así que voy a...
+
+00:35:16.960 --> 00:35:18.590
+ir bastante rápido.
+
+00:35:18.590 --> 00:35:21.140
+Pero si quieres aprender
+más sobre cómo hacer esto,
+
+00:35:21.140 --> 00:35:25.220
+simplemente regrese al artículo
+que está vinculado a esa página de recursos.
+
+00:35:25.220 --> 00:35:29.700
+Ahora tengo un escenario
+donde hay un enlace de contacto.
+
+00:35:29.700 --> 00:35:32.260
+Y cuando llego a este
+enlace de contacto y paso el cursor sobre él
+
+00:35:32.260 --> 00:35:35.040
+con un ratón, o si navego
+hasta él con un teclado...
+
+00:35:36.350 --> 00:35:39.080
+En este caso,
+es solo el estado de desplazamiento.
+
+00:35:39.080 --> 00:35:40.000
+Hablé mal.
+
+00:35:40.000 --> 00:35:41.000
+Se vuelve más claro.
+
+00:35:42.350 --> 00:35:47.420
+Entonces ese texto más claro, no sé
+si tiene suficiente contraste.
+
+00:35:47.420 --> 00:35:50.160
+Entonces, con DevTools, hay
+algunas cosas interesantes que puedo hacer.
+
+00:35:50.160 --> 00:35:53.340
+Sólo para ahorrar tiempo,
+atajo de teclado que uso todo el tiempo
+
+00:35:53.340 --> 00:35:58.510
+es Control-Mayús C en Windows y
+Comando-Mayús o Comando-Opción.
+
+00:35:58.510 --> 00:36:00.190
+Creo que, tal vez, incluso ambos.
+
+00:36:00.190 --> 00:36:03.120
+Pero creo que es
+Command-Shift C en Mac,
+
+00:36:03.120 --> 00:36:05.110
+y se abrirán
+estas Herramientas para desarrolladores,
+
+00:36:05.110 --> 00:36:07.800
+y también abrirá
+este inspector del mouse.
+
+00:36:07.800 --> 00:36:10.330
+Ahora, esta herramienta
+solo funciona con el mouse, pero lo que puedo hacer es
+
+00:36:10.330 --> 00:36:12.450
+Puedo pasar el cursor sobre
+diferentes elementos.
+
+00:36:12.450 --> 00:36:15.080
+Una cosa que hará es
+decirme el contraste,
+
+00:36:15.080 --> 00:36:18.430
+que en este caso es 4,8 a 1.
+
+00:36:18.430 --> 00:36:22.430
+Por lo tanto, supera ese
+requisito de 4,5 a 1 en su estado predeterminado.
+
+00:36:22.430 --> 00:36:27.340
+Ahora, si quisiera probar ese
+estado de desplazamiento, en estas Herramientas de desarrollo,
+
+00:36:27.340 --> 00:36:30.170
+En la mitad inferior,
+tengo estas diferentes pestañas.
+
+00:36:30.170 --> 00:36:32.860
+El primero que se selecciona
+de forma predeterminada son los estilos.
+
+00:36:33.960 --> 00:36:36.900
+Justo debajo de la
+pestaña de estilos está este botón.
+
+00:36:36.900 --> 00:36:39.150
+HOB es lo que dice el botón.
+
+00:36:39.150 --> 00:36:41.870
+Se llama ToggleElementState.
+
+00:36:41.870 --> 00:36:44.590
+Y si entro en este
+ToggleElementState, lo expando
+
+00:36:44.590 --> 00:36:48.120
+haciendo clic en el botón,
+y verifico el estado del cursor,
+
+00:36:48.120 --> 00:36:50.690
+en realidad aligerará este texto.
+
+00:36:50.690 --> 00:36:51.770
+Debería haber aligerado el texto.
+
+00:36:51.770 --> 00:36:52.210
+¿Sabes qué?
+
+00:36:52.210 --> 00:36:53.340
+No inspeccioné lo correcto.
+
+00:36:53.340 --> 00:36:54.460
+Déjame hacer eso una vez más.
+
+00:36:54.460 --> 00:36:55.880
+Tengo que asegurarme de que estoy
+en lo correcto.
+
+00:36:55.880 --> 00:36:57.080
+Estoy en ese enlace.
+
+00:36:57.080 --> 00:36:59.820
+Van a alternar
+ese estado de desplazamiento.
+
+00:36:59.820 --> 00:37:04.690
+Y ahora, si inspecciono esto,
+tiene un contraste de 3 a 1,
+
+00:37:04.690 --> 00:37:06.440
+y no cumple este requisito.
+
+00:37:06.440 --> 00:37:10.890
+Y las herramientas para desarrolladores pueden ser muy
+útiles para bloquear estos estados.
+
+00:37:10.890 --> 00:37:12.590
+cuando sé que necesito hacer
+un poco más de pruebas.
+
+00:37:15.180 --> 00:37:17.570
+Sé que estamos
+avanzando rápidamente.
+
+00:37:18.610 --> 00:37:21.370
+A veces dedico unas
+tres horas a estos temas.
+
+00:37:21.370 --> 00:37:23.600
+Va un poco rápido,
+pero, de nuevo, espero...
+
+00:37:23.600 --> 00:37:27.470
+solo los principios tienen algún
+sentido, y luego profundizamos un poco más
+
+00:37:27.470 --> 00:37:28.590
+con algunos de esos artículos.
+
+00:37:29.890 --> 00:37:33.740
+Bien, entonces el número 15 es
+fácil de pasar por alto.
+
+00:37:33.740 --> 00:37:35.690
+Pero bueno, ¿qué pasa con
+la marca de verificación? En realidad,
+
+00:37:35.690 --> 00:37:37.740
+está en este estado marcado.
+
+00:37:37.740 --> 00:37:40.590
+¿Cuál es la indicación de que
+esta cosa está realmente marcada?
+
+00:37:40.590 --> 00:37:41.440
+¿Una marca de verificación?
+
+00:37:41.440 --> 00:37:44.100
+Tengo que probar el contraste
+de eso y asegurarme
+
+00:37:44.100 --> 00:37:46.900
+esa cosa también tiene contraste.
+
+00:37:46.900 --> 00:37:48.180
+Así que ya estoy en mis 15.
+
+00:37:49.880 --> 00:37:51.690
+Pero espera, hay más.
+
+00:37:51.690 --> 00:37:55.150
+En realidad, hay más que estos
+15, porque si miro esta cosa,
+
+00:37:55.150 --> 00:37:57.670
+He leído y acepto
+los términos de uso, básicamente,
+
+00:37:57.670 --> 00:38:01.480
+cada vez que esto o algo
+parecido aparece en un formulario,
+
+00:38:01.480 --> 00:38:02.480
+es obligatorio.
+
+00:38:03.350 --> 00:38:05.970
+Y si tiene algo
+que se requiere, ¿Qué van a hacer?
+
+00:38:05.970 --> 00:38:06.460
+¿con qué terminará?
+
+00:38:06.460 --> 00:38:09.600
+Terminarán con
+el envío de mensajes de error
+
+00:38:09.600 --> 00:38:12.040
+de esa cosa,
+estados de error, ese tipo de cosas.
+
+00:38:13.320 --> 00:38:17.400
+Entonces este es el bono,
+el relámpago aquí,
+
+00:38:17.400 --> 00:38:19.670
+donde se vuelve más rápido.
+
+00:38:19.670 --> 00:38:24.580
+Pero esto va a ser un
+poquito más que esos 15.
+
+00:38:24.580 --> 00:38:30.160
+¿Qué pasa si esto tiene un error?
+Así que lo leí y acepté.
+
+00:38:30.160 --> 00:38:32.220
+a los términos de uso,
+y hay un botón de enviar,
+
+00:38:32.220 --> 00:38:34.760
+pero tiene un contraste muy bajo.
+
+00:38:34.760 --> 00:38:39.510
+Esa es una indicación visual de que
+esta cosa está deshabilitada o inactiva,
+
+00:38:39.510 --> 00:38:41.250
+y no puedo hacer clic en él.
+
+00:38:41.250 --> 00:38:43.420
+Entonces podría intentar hacer clic en él
+y no sucederá nada.
+
+00:38:43.420 --> 00:38:45.080
+Si intento navegar con
+el teclado, va
+
+00:38:45.080 --> 00:38:49.010
+para saltar esa cosa porque
+no puede obtener el foco del teclado
+
+00:38:49.010 --> 00:38:50.620
+mientras esté en ese estado deshabilitado.
+
+00:38:52.540 --> 00:38:54.460
+Entonces, podrías pensar: "Bueno,
+¿qué hago al respecto?"
+
+00:38:54.460 --> 00:38:57.880
+Eso falla, ¿verdad?
+En realidad no falla
+
+00:38:57.880 --> 00:39:01.110
+porque hay una excepción
+para componentes inactivos,
+
+00:39:01.110 --> 00:39:03.180
+porque la forma en que sabes
+algo es inactiva
+
+00:39:03.180 --> 00:39:05.800
+o deshabilitado es que
+tiene bajo contraste.
+
+00:39:05.800 --> 00:39:10.290
+Pero esta no es la
+forma ideal de hacerlo.
+
+00:39:11.360 --> 00:39:14.200
+Estoy seguro de que todos hemos pasado por esta
+situación en la que estábamos, como,
+
+00:39:14.200 --> 00:39:15.690
+¿Por qué no puedo enviar esto?
+
+00:39:15.690 --> 00:39:17.630
+¿Por qué no puedo hacer clic en este botón?
+Y luego se dan cuenta,
+
+00:39:17.630 --> 00:39:20.600
+Oh, me perdí algunas cosas obligatorias
+en otra parte del formulario.
+
+00:39:20.600 --> 00:39:22.540
+Ni siquiera me di cuenta
+de que era necesario.
+
+00:39:22.540 --> 00:39:26.170
+Creo que normalmente es mejor
+permitir la presentación,
+
+00:39:26.170 --> 00:39:30.080
+y luego proporcionar
+retroalimentación de error, mensajes de error.
+
+00:39:30.080 --> 00:39:31.720
+Entonces tenemos este botón.
+
+00:39:32.800 --> 00:39:35.550
+El botón enviar
+ya no está deshabilitado.
+
+00:39:35.550 --> 00:39:38.920
+Entonces voy a hacer clic y obtendré
+algunos mensajes de error.
+
+00:39:38.920 --> 00:39:40.500
+Ahora necesito probar eso.
+
+00:39:40.500 --> 00:39:43.250
+Entonces, el número 16 será
+el contraste del borde del botón.
+
+00:39:43.250 --> 00:39:44.710
+[Inaudible 00:39:43]
+
+00:39:44.710 --> 00:39:47.290
+camino principal... En realidad no.
+
+00:39:47.290 --> 00:39:49.460
+Porque la idea con... ¿Por qué no?
+
+00:39:49.460 --> 00:39:52.700
+Dije que necesitaba el borde de la
+casilla de verificación, pero no del botón.
+
+00:39:52.700 --> 00:39:55.580
+Bueno, eso es porque en
+la casilla de verificación, necesito saber
+
+00:39:55.580 --> 00:39:58.830
+que mi ratón entre dentro de esa caja.
+
+00:39:58.830 --> 00:40:02.120
+Ese es el borde de lo
+que puedo verificar con un botón.
+
+00:40:03.620 --> 00:40:07.920
+Entonces, en realidad no tienen un
+requisito de contraste para ese borde.
+
+00:40:07.920 --> 00:40:10.080
+¿Y qué tal el
+relleno de ese botón?
+
+00:40:10.080 --> 00:40:13.210
+En realidad, ni siquiera el relleno.
+
+00:40:15.510 --> 00:40:21.810
+El relleno con el fondo,
+¿cumple al menos 3 a 1?
+
+00:40:21.810 --> 00:40:23.460
+¿o algo así?
+
+00:40:23.460 --> 00:40:25.270
+No es así.
+
+00:40:25.270 --> 00:40:27.760
+La idea es que
+todos hemos visto botones
+
+00:40:27.760 --> 00:40:31.310
+que no tienen ningún trasfondo
+y aún sabemos dónde hacer clic.
+
+00:40:32.880 --> 00:40:36.830
+Ahora enviar normalmente parece
+un botón, pero a veces
+
+00:40:36.830 --> 00:40:38.170
+podría ser de un color diferente.
+
+00:40:38.170 --> 00:40:42.000
+O puede que tengan un
+botón de reinicio o algo así.
+
+00:40:42.000 --> 00:40:44.250
+que no parece un botón.
+
+00:40:44.250 --> 00:40:46.370
+Entonces, ¿qué necesito probar realmente?
+
+00:40:46.370 --> 00:40:47.840
+Bueno, el contraste
+del texto del botón.
+
+00:40:47.840 --> 00:40:51.800
+Entonces ese sería este
+texto gris oscuro sobre este fondo azul claro.
+
+00:40:51.800 --> 00:40:55.060
+Ese sería el contraste
+que necesitaría probar.
+
+00:40:55.060 --> 00:40:57.530
+En realidad estoy pensando, bueno,
+te estás estirando un poco.
+
+00:40:57.530 --> 00:40:58.640
+para algunos de estos números.
+
+00:40:58.640 --> 00:41:00.630
+De hecho, los traeré de
+regreso hasta aquí.
+
+00:41:00.630 --> 00:41:02.790
+Y lo dejaré
+en 16.
+
+00:41:02.790 --> 00:41:05.830
+Pero en realidad necesitarías
+probar todos los demás estados posibles
+
+00:41:05.830 --> 00:41:07.320
+de este botón también.
+
+00:41:07.320 --> 00:41:09.780
+Así que en realidad serán
+16 o más, más cerca de 20.
+
+00:41:11.020 --> 00:41:13.110
+Digamos que envío esto
+y aparece un error.
+
+00:41:14.120 --> 00:41:22.110
+Y ahora con este error,
+tengo una casilla de verificación que ahora está roja.
+
+00:41:22.110 --> 00:41:24.340
+Entonces, un par de cosas
+con esta casilla de verificación roja.
+
+00:41:24.340 --> 00:41:27.490
+Una es que ahora necesito probar
+el contraste de este elemento.
+
+00:41:27.490 --> 00:41:30.240
+Entonces, ¿tiene al menos un
+contraste de 3 a 1 en el fondo?
+
+00:41:30.240 --> 00:41:31.890
+en su estado de error?
+
+00:41:31.890 --> 00:41:35.800
+He introducido un estado adicional
+ahora que esto tiene un error.
+
+00:41:37.260 --> 00:41:39.010
+Entonces son 17.
+
+00:41:40.780 --> 00:41:44.510
+Entonces, ¿qué pasa con la diferencia
+entre el estado de error
+
+00:41:44.510 --> 00:41:46.230
+¿y el estado de enfoque?
+
+00:41:46.230 --> 00:41:50.310
+Entonces, antes de decir, OK, tenemos esa
+casilla de verificación negra o muy oscura,
+
+00:41:50.310 --> 00:41:52.470
+es este indicador de enfoque azul brillante
+.
+
+00:41:52.470 --> 00:41:56.510
+Estoy listo, ¿no?
+Bueno, ¿y si hay un error?
+
+00:41:56.510 --> 00:42:01.970
+La diferencia que están buscando
+es entre los desenfocados
+
+00:42:01.970 --> 00:42:04.060
+y el
+estado enfocado de ese elemento.
+
+00:42:04.060 --> 00:42:07.750
+Y cuando aparece un error,
+el estado desenfocado ahora es rojo.
+
+00:42:07.750 --> 00:42:11.000
+Y entonces volví a fallar, a menos que hubiera
+agregado tal vez eso...
+
+00:42:11.000 --> 00:42:14.280
+Esa es otra razón,
+otro complemento para agregar ese esquema.
+
+00:42:15.550 --> 00:42:18.130
+Así que ese es.
+
+00:42:18.130 --> 00:42:20.154
+Probablemente el problema más importante
+aquí es que tienen color.
+
+00:42:20.155 --> 00:42:21.430
+eso está provocando una respuesta.
+
+00:42:22.470 --> 00:42:26.450
+Entonces, con este color provocando una
+respuesta, será una falla.
+
+00:42:26.450 --> 00:42:27.730
+En el uso del color.
+
+00:42:27.730 --> 00:42:29.260
+Y podrían decir: Bueno,
+espera, pensé que tenía
+
+00:42:29.260 --> 00:42:33.660
+al menos un contraste de 3 a 1 como el del
+texto del enlace. Bueno, esto es diferente.
+
+00:42:33.660 --> 00:42:36.240
+La razón por la que esto es diferente es
+porque no solo están diciendo,
+
+00:42:36.240 --> 00:42:37.670
+aquí hay una diferencia de color.
+
+00:42:37.670 --> 00:42:42.020
+En realidad, están usando el
+color rojo para transmitir significado.
+
+00:42:42.020 --> 00:42:46.220
+Esto requiere que pueda detectar
+y diferenciar el color rojo.
+
+00:42:46.220 --> 00:42:48.430
+de todos los demás colores.
+
+00:42:48.430 --> 00:42:50.561
+Y entonces, incluso si esto
+tiene suficiente contraste,
+
+00:42:50.562 --> 00:42:52.120
+esto seguiría siendo una falla
+
+00:42:52.120 --> 00:42:58.290
+de ese requisito de uso del color
+porque tengo que poder ver el rojo
+
+00:42:58.290 --> 00:42:59.490
+y distinguirlo de los demás.
+
+00:43:00.970 --> 00:43:01.790
+Entonces, ¿qué podría hacer?
+
+00:43:01.790 --> 00:43:05.810
+Quizás me gustaría agregar un ícono
+y algún tipo de alerta
+
+00:43:05.810 --> 00:43:09.840
+además de ese color para avisarme
+que hay un error,
+
+00:43:09.840 --> 00:43:10.840
+y eso es genial.
+
+00:43:11.790 --> 00:43:16.870
+Ahora, esto es algo cuyo
+contraste también necesitaría probar.
+
+00:43:16.870 --> 00:43:19.370
+Dejando un poco de lado
+este contraste,
+
+00:43:20.400 --> 00:43:26.080
+y es que he usado un
+fondo blanco para todas estas diapositivas.
+
+00:43:26.080 --> 00:43:29.720
+A menudo, veo un formulario, 
+o tal vez incluso esta parte inferior
+
+00:43:29.720 --> 00:43:31.190
+Del formulario por ejemplo, donde es
+como un gris más claro.
+
+00:43:32.430 --> 00:43:36.500
+Cuando se trata de hacer pruebas 
+del contraste de formas,
+
+00:43:36.500 --> 00:43:39.830
+no siempre
+ son sobre solo dos colores.
+
+00:43:39.830 --> 00:43:43.880
+El término que se utiliza en WCAG para
+describir los requisitos de contraste es
+
+00:43:43.880 --> 00:43:46.640
+que es contra colores adyacentes.
+
+00:43:46.640 --> 00:43:50.150
+Las partes de la forma
+que necesito percibir
+
+00:43:50.150 --> 00:43:51.780
+para saber qué está pasando.
+
+00:43:51.780 --> 00:43:55.850
+Y para un ícono de alerta específicamente,
+un triángulo es parte de esa forma.
+
+00:43:55.850 --> 00:43:59.960
+Ahora, si fuera un círculo o un cuadrado
+o simplemente un signo de exclamación, bien.
+
+00:43:59.960 --> 00:44:03.250
+Pero como he decidido usar
+un triángulo, y ese es un símbolo
+
+00:44:03.250 --> 00:44:09.380
+para una alerta, ahora tendría que
+probar realmente el contraste blanco
+
+00:44:09.380 --> 00:44:10.860
+del rojo.
+
+00:44:10.860 --> 00:44:15.080
+Y si eso tiene al menos 3 a 1, estoy
+bien, lo cual, en este caso, es así.
+
+00:44:15.080 --> 00:44:18.690
+Pero el rojo contra el
+fondo gris no.
+
+00:44:18.690 --> 00:44:22.420
+Tiene menos de 3 a 1, por lo
+que esto realmente fallaría.
+
+00:44:22.420 --> 00:44:27.410
+debido a este triángulo, necesito
+percibir o distinguir el triángulo
+
+00:44:27.410 --> 00:44:28.410
+del fondo.
+
+00:44:29.210 --> 00:44:31.890
+Una cosa que puedo abordar es
+agregar orden a los íconos.
+
+00:44:31.890 --> 00:44:35.080
+Si haces eso en general, con los
+pequeños íconos que están usando así,
+
+00:44:35.080 --> 00:44:37.700
+entonces puedes estar seguro de que
+tendrá suficiente contraste
+
+00:44:37.700 --> 00:44:38.980
+sobre cualquier fondo de color.
+
+00:44:40.220 --> 00:44:41.290
+Bien, estamos muy cerca.
+
+00:44:41.290 --> 00:44:42.650
+Ya casi hemos terminado aquí.
+
+00:44:42.650 --> 00:44:44.850
+Voy a concluir
+con una última cosa,
+
+00:44:44.850 --> 00:44:46.580
+y ese es un mensaje de error.
+
+00:44:46.580 --> 00:44:48.780
+¿Y qué si agrego un mensaje de error?
+
+00:44:48.780 --> 00:44:50.850
+Debe aceptar los
+términos de uso para continuar.
+
+00:44:52.490 --> 00:44:58.040
+Una última cosa relacionada
+con los gráficos es que necesitas
+
+00:44:58.040 --> 00:45:01.710
+para tener ese contraste de 3 a 1
+si se requiere el gráfico
+
+00:45:01.710 --> 00:45:06.360
+para entender qué está pasando
+, si se trata de una mejora.
+
+00:45:07.560 --> 00:45:09.570
+Y en este caso,
+se ha convertido en una mejora.
+
+00:45:09.570 --> 00:45:11.830
+No hay ningún requisito de contraste.
+
+00:45:11.830 --> 00:45:14.530
+Ahora es fantástico que esté ahí y
+definitivamente lo recomendaría.
+
+00:45:14.530 --> 00:45:17.540
+pero el mensaje de error por sí solo
+es suficiente para decirte
+
+00:45:17.540 --> 00:45:19.950
+que hay un error aquí.
+
+00:45:19.950 --> 00:45:20.680
+Apareció.
+
+00:45:20.680 --> 00:45:22.170
+Antes no estaba allí.
+
+00:45:22.170 --> 00:45:24.150
+Debe aceptar los
+términos de uso para continuar,
+
+00:45:24.150 --> 00:45:30.520
+me dice que se trata
+de un estado de error.
+
+00:45:30.520 --> 00:45:34.330
+Entonces, en ese caso, necesitaría
+probar el contraste, el mensaje de error.
+
+00:45:34.330 --> 00:45:39.110
+Todavía recomendaría
+un buen ícono de alerta de alto contraste,
+
+00:45:39.110 --> 00:45:45.110
+pero por sí solo,
+eso no sería necesario.
+
+00:45:46.140 --> 00:45:48.860
+Así que lo logramos.
+
+00:45:48.860 --> 00:45:50.270
+Sé que fue
+bastante rápido.
+
+00:45:50.270 --> 00:45:53.210
+Eso fue lo más rápido que
+Pude ir con esto.
+
+00:45:53.210 --> 00:45:55.240
+Pero eso sólo les da una idea
+de que en realidad son hasta 20,
+
+00:45:55.240 --> 00:45:58.120
+cosas diferentes y 
+realmente aún más;
+
+00:45:58.120 --> 00:46:00.480
+con ese botón que les mostré que
+necesitarían probar.
+
+00:46:00.480 --> 00:46:03.660
+Así que tengan cuidado con
+sus pruebas de contraste.
+
+00:46:03.660 --> 00:46:06.980
+Creo que la clave es
+interactuar con el elemento.
+
+00:46:06.980 --> 00:46:10.340
+Interactúen, descubran cuáles
+son sus diferentes estados.
+
+00:46:10.340 --> 00:46:13.670
+Envíen cosas con errores para
+que pueda probar los errores
+
+00:46:13.670 --> 00:46:15.030
+de esos también.
+
+00:46:15.030 --> 00:46:16.830
+Y creo que esas
+serán las verdaderas claves.
+
+00:46:16.830 --> 00:46:21.510
+para aumentar realmente el número de
+esos controles con bastante rapidez.
+
+00:46:22.870 --> 00:46:24.110
+Bien, entonces llegamos al final.
+
+00:46:24.110 --> 00:46:27.230
+Muchas gracias y voy
+a repasar algunas preguntas.
+
+00:46:27.230 --> 00:46:32.920
+Nos
+quedan unos cuatro minutos para preguntas.
+
+00:46:32.920 --> 00:46:36.680
+Tenemos un enlace a esa
+página de recursos de WebAIM.
+
+00:46:36.680 --> 00:46:39.600
+Tenemos muchos otros recursos en
+el sitio WebAIM, lista de discusión,
+
+00:46:39.600 --> 00:46:43.270
+boletín informativo e información sobre
+los servicios que ofrecemos.
+
+00:46:43.270 --> 00:46:45.660
+Entonces, con esto,
+voy a dejar de compartir.
+
+00:46:46.670 --> 00:46:51.370
+y simplemente echaré un vistazo a estas últimas
+preguntas que llegaron.
+
+00:46:51.370 --> 00:46:54.900
+Sí, una cosa
+que preguntó Beatrice, realmente es...
+
+00:46:54.900 --> 00:46:57.710
+que las pruebas se realizan en
+el primer plano y en el fondo del texto,
+
+00:46:57.710 --> 00:46:58.750
+y algún tipo de salto.
+
+00:46:58.750 --> 00:47:01.480
+La pregunta es: ¿Necesitamos
+realizar pruebas de contraste?
+
+00:47:01.480 --> 00:47:04.860
+¿Con el fondo de la
+página en general? Por supuesto.
+
+00:47:04.860 --> 00:47:07.600
+Así que usé blanco,
+como valor predeterminado para estos,
+
+00:47:07.600 --> 00:47:10.070
+pero en realidad será
+el color de fondo.
+
+00:47:10.070 --> 00:47:11.810
+Y muy a menudo no es blanco.
+
+00:47:11.810 --> 00:47:13.400
+Será de otro color.
+
+00:47:13.400 --> 00:47:19.420
+Así que sí.
+
+00:47:19.420 --> 00:47:22.220
+Gary hizo esa pregunta sobre
+no depender completamente del color.
+
+00:47:22.220 --> 00:47:24.970
+de contraste
+y también utilizando atributos ARIA.
+
+00:47:24.970 --> 00:47:28.870
+Creo que una clave de la pregunta
+que hiciste, Jerry o Gary,
+
+00:47:28.870 --> 00:47:34.700
+definitivamente también son atributos ARIA.
+
+00:47:34.700 --> 00:47:36.550
+Esto es todo.
+
+00:47:36.550 --> 00:47:41.100
+Todo lo que hemos hablado al 100% ha
+sido sobre la experiencia visual,
+
+00:47:41.100 --> 00:47:44.460
+y definitivamente querrás
+mejorar esa experiencia usando ARIA
+
+00:47:44.460 --> 00:47:47.170
+para asegurarse de que alguien sepa,
+por ejemplo, que está en un estado de error,
+
+00:47:47.170 --> 00:47:49.340
+y se lee ese mensaje de error.
+
+00:47:49.340 --> 00:47:51.500
+Pero eso sería además
+de todos esos colores.
+
+00:47:51.500 --> 00:47:55.560
+y los requisitos de contraste siguen
+vigentes independientemente de la ARIA
+
+00:47:55.560 --> 00:47:59.200
+que están usando.
+
+00:48:02.120 --> 00:48:04.000
+Evitar la colocación de texto
+en fondos degradados
+
+00:48:04.000 --> 00:48:05.760
+¿Es la mejor práctica en general? Sí.
+
+00:48:05.760 --> 00:48:06.330
+Creo que sí.
+
+00:48:06.330 --> 00:48:08.150
+O fondos muy cargados de imágenes.
+
+00:48:08.150 --> 00:48:10.990
+Quiero decirles que, a veces un gradiente
+puede ser bastante sutil,
+
+00:48:10.990 --> 00:48:15.200
+y creo que eso está bien, pero un
+gradiente bastante significativo
+
+00:48:15.200 --> 00:48:19.850
+o fondo cargado de imágenes.
+
+00:48:19.850 --> 00:48:21.840
+¿Diría que evitar
+la colocación del texto
+
+00:48:21.840 --> 00:48:24.450
+¿sobre un fondo degradado
+es generalmente la mejor práctica?
+
+00:48:24.450 --> 00:48:27.200
+Creo que si en general, a menos que
+ese gradiente sea bastante sutil.
+
+00:48:29.460 --> 00:48:37.330
+¿Existen recursos de paletas de colores
+que en realidad no llamamos colores
+
+00:48:37.330 --> 00:48:40.340
+que ayudan a configurar un tema
+para que todos los colores funcionen
+
+00:48:40.340 --> 00:48:42.980
+en cualquier estado de uso al principio?
+Absolutamente.
+
+00:48:42.980 --> 00:48:44.804
+Creo que tener paletas de colores,
+
+00:48:44.805 --> 00:48:47.540
+y partes de
+la guía de estilo son realmente útiles.
+
+00:48:48.790 --> 00:48:52.220
+No recuerdo bien el
+enlace a una o dos herramientas
+
+00:48:52.220 --> 00:48:54.290
+que pueden ayudarte a
+crear una paleta de colores.
+
+00:48:54.290 --> 00:48:57.440
+Si alguien conoce alguno que quiera
+compartir en el chat, genial.
+
+00:48:57.440 --> 00:48:59.111
+Por supuesto,
+definitivamente puedes usar herramientas
+
+00:48:59.112 --> 00:49:00.490
+como las herramientas de verificación de contraste
+
+00:49:00.490 --> 00:49:03.720
+de los que hemos hablado dentro de
+WebAIM para determinar cuáles son
+
+00:49:03.720 --> 00:49:06.230
+algunos de esos colores
+y esas diferencias.
+
+00:49:06.230 --> 00:49:10.020
+No puedo
+pensar en una herramienta que les ayude
+
+00:49:10.020 --> 00:49:11.170
+A construir esa paleta de colores.
+
+00:49:13.310 --> 00:49:16.840
+Entonces, la última pregunta: normalmente, el flujo de trabajo,
+al decidir los estilos de color,
+
+00:49:16.840 --> 00:49:21.250
+para un sitio web, ¿en qué herramientas o
+controles suele confiar?
+
+00:49:21.250 --> 00:49:21.740
+Sí, gracias.
+
+00:49:21.740 --> 00:49:25.070
+Alguien mencionó, creo, que
+Adobe tiene esa herramienta.
+
+00:49:25.070 --> 00:49:26.920
+Luego hay un par que
+se están agregando al chat.
+
+00:49:26.920 --> 00:49:29.990
+para esa última pregunta
+sobre los creadores de paletas.
+
+00:49:43.867 --> 00:49:45.640
+Jason, lo siento, ¿podrías
+recordarme la última pregunta?
+
+00:49:45.640 --> 00:49:47.360
+Me distraje.
+
+00:49:47.360 --> 00:49:48.280
+JASÓN: Oh, lo siento.
+
+00:49:49.297 --> 00:49:50.710
+Es la última.
+
+00:49:54.950 --> 00:49:57.359
+JONATHAN: Y creo que se trataba
+solo de flujos de trabajo y procesos.
+
+00:49:57.360 --> 00:50:02.190
+Y creo que en este caso,
+el proceso normalmente consistirá 
+
+00:50:02.190 --> 00:50:07.290
+En probar el contraste en su
+estado predeterminado usando herramientas como WAVE,
+
+00:50:07.290 --> 00:50:11.280
+y luego una gran parte
+se convierte en interacciones.
+
+00:50:11.280 --> 00:50:13.180
+Creo que eso se puede
+hacer de dos maneras.
+
+00:50:13.180 --> 00:50:16.150
+Recuerden que mientras
+están probando interacciones,
+
+00:50:16.150 --> 00:50:18.460
+mouse y teclado y
+cosas así, recuerden
+
+00:50:18.460 --> 00:50:20.950
+siempre probar el contraste
+con esas interacciones.
+
+00:50:20.950 --> 00:50:24.690
+O a menudo simplemente
+hago mi prueba de contraste.
+
+00:50:24.690 --> 00:50:29.740
+Entonces es como, OK, predeterminado, foco,
+desplazamiento, error, activo, ya saben,
+
+00:50:29.740 --> 00:50:30.780
+todos los diferentes estados.
+
+00:50:30.780 --> 00:50:35.050
+Y creo que es mucho más fácil cubrir
+mi base si hago todo eso.
+
+00:50:35.050 --> 00:50:36.050
+al mismo tiempo.
+
+00:50:37.230 --> 00:50:38.760
+Creo que se me acabó el tiempo.
+
+00:50:38.760 --> 00:50:39.540
+Muchas gracias.
+
+00:50:39.540 --> 00:50:42.730
+Si puedo, escribiré respuestas a
+estas otras preguntas a medida que avance.
+
+00:50:42.730 --> 00:50:45.330
+O si hay alguna
+otra pregunta.
+
+00:50:45.330 --> 00:50:47.670
+JASON: Sí,
+creo que las abarcaste todas.
+
+00:50:47.670 --> 00:50:48.680
+Muchas gracias, Jon.
+
+00:50:48.680 --> 00:50:50.000
+Fue una gran sesión.
+
+00:50:50.000 --> 00:50:51.443
+Y que tú te encargaras de todas
+las preguntas por mí;
+
+00:50:51.444 --> 00:50:52.210
+hizo mi trabajo realmente fácil.
+
+00:50:53.370 --> 00:50:56.010
+Gracias de nuevo.
+
+00:50:56.010 --> 00:50:59.860
+Y gracias a todos por asistir
+a esta sesión con Jonathan Whiting.
+
+00:50:59.860 --> 00:51:06.960
+Pueden continuar la conversación
+en las redes sociales usando #WPA11YDAY
+
+00:51:06.960 --> 00:51:10.580
+y #WPAD2023.
+
+00:51:10.580 --> 00:51:13.630
+También les agradeceríamos mucho
+que fueran
+
+00:51:13.630 --> 00:51:20.800
+a 2023.WPaccessibility.day/feedback
+para proporcionar comentarios anónimos
+
+00:51:20.800 --> 00:51:23.670
+por nuestros oradores en
+sus presentaciones,
+
+00:51:23.671 --> 00:51:27.780
+y mientras están allí,
+pueden participar para ganar una camiseta.
+
+00:51:27.780 --> 00:51:29.520
+para mí esto lo resume todo.
+
+00:51:29.520 --> 00:51:31.550
+Muchas gracias a todos por
+asistir y espero que hayan aprendido
+
+00:51:31.550 --> 00:51:34.220
+algunos trucos y consejos
+de accesibilidad realmente fantásticos, y tenga la oportunidad.
+
+00:51:34.220 --> 00:51:36.450
+de usarlos en sus sitios.
+
+00:51:36.450 --> 00:51:38.980
+Gracias a WordPress por
+darme la oportunidad
+
+00:51:38.980 --> 00:51:40.760
+de organizar algunas sesiones realmente geniales.
+
+00:51:40.760 --> 00:51:43.240
+Y con eso,
+creo que se lo paso a Joe.
+
+00:51:44.460 --> 00:51:45.190
+Gracias a todos.
+
+00:51:45.190 --> 00:51:49.840
+ÁMBAR: Gracias a
+los patrocinadores del Día de la Accesibilidad de WordPress 2023.
+
+00:51:49.840 --> 00:51:52.760
+Patrocinador Platino: Equalize Digital.
+
+00:51:52.760 --> 00:51:55.500
+Complemento de verificación de accesibilidad
+de Equalize Digital
+
+00:51:55.500 --> 00:51:58.240
+es una
+herramienta automatizada de escaneo de accesibilidad
+
+00:51:58.240 --> 00:52:01.450
+que ayuda a que los sitios web de WordPress
+sean y permanezcan accesibles.
+
+00:52:02.680 --> 00:52:05.550
+Patrocinador Platino: Gravity Forms.
+
+00:52:05.550 --> 00:52:09.170
+Gravity Forms es el
+creador de formularios profesional que necesitas
+
+00:52:09.170 --> 00:52:13.890
+para crear
+formas hermosas, poderosas y accesibles.
+
+00:52:13.890 --> 00:52:20.890
+Patrocinadores de oro: 20i., Deque,
+Empire Caption Solutions, Pressable,
+
+00:52:20.890 --> 00:52:21.940
+y motor WP.
+
+00:52:23.530 --> 00:52:30.420
+Patrocinadores Plata: Code Geek, Drake
+Cooper, GoDaddy, Lone Rock Point,
+
+00:52:30.420 --> 00:52:31.670
+NerdPress.
+
+00:52:31.670 --> 00:52:39.140
+Sitio web nocturno de Kinetic Iris,
+Raiola Networks, A11y Collective,
+
+00:52:39.140 --> 00:52:40.140
+y El Blogsmith.
+
+00:52:41.800 --> 00:52:47.200
+Patrocinadores de bronce: AccessiCart,
+GreenGeeks Web Hosting,
+
+00:52:47.200 --> 00:52:58.949
+Consultoría SEO de Hall Analysis,
+HDC, ITX, IvyCat, Metabox,
+
+00:52:58.950 --> 00:53:03.870
+PixelChefs, simplemente programe
+citas, SiteGround,
+
+00:53:03.871 --> 00:53:09.090
+Termagedón, subrepresentado
+en tecnología, Weglot y Yoast.
+
+
